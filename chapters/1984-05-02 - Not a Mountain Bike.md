@@ -1,0 +1,228 @@
+---
+blog_title: 1984-05-02 - Not a Mountain Bike
+blog_url_basename: 
+blog_url: 
+blog_header_url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ_pyjo07WuMPHe5qLw0SBP_qv-JR0zTH1OTqjwfwikMGjm9bbiN15eraX6G6kkYD-ErOb5v2MKxV0i0CO-W5CqlJeIM_KkXrHBqdkqjQY1ASum3_B8iosufR073mkJXdhJYNdZzpizKph69QfFQOEevY5AldWPl-Kffj-bA6uXDWE6U6qXoX0SQ/s1600/not-mountain-bike.png
+blog_author_note: This is not intended to be the introductory chapter.<br />For now, though, this is it.
+blog_hash: 
+blog_publish_date: 2025-03-10 05:17pm
+blog_update_date: 2025-06-04 01:25pm
+blog_page_id: 
+blog_short_warning: 
+blog_long_warning: 
+blog_tag_line:
+---
+
+
+## Railroad Creek Ranch
+
+I yanked on my jacket, slung my daypack over my shoulder, and bolted. I slammed the door behind me—wrong sound. Still moving, I glanced back—damn it. The thing had bounced open, swinging free instead of latching.
+
+My little A-frame cabin, likely built in the sixties, had only been slapped together. Standing on too few concrete foundation blocks, the floors all sagged link bows between the supports. The front wall, with the door centered in the middle, had it worst. Last summer, I crawled under there once to see why the wall warped so much and found just a rotting pile of crossed 4x4s directly on bare dirt supporting the doorway: no concrete at all. 
+
+I turned around—leapt back onto the deck—pulled the door properly shut, lifting hard on the doorknob to get the latch to click. I turned back—running again. Instant decision—the trail through the woods—the road would take too long. I passed my cursed Subaru that refused to start, the car that made this running a requirement. I ducked down the trail, weaving between the trees, leaping over an occasional downed trunk. 
+
+The creek came into view—swollen, fast. Early May snowmelt and the overflowing beaver ponds up the valley turned my usual crossing into a churning whitewater deathtrap. Too wide. Too dangerous to jump.
+
+Can't have delays—I veered into the undergrowth, crashing through the bramble—twenty yards downstream. The old snag from last summer’s storm still spanned the stream banks.
+
+I scrambled up onto the trunk. Arms out for balance—one foot in front of the other. Careful. Rushed. I reached the far side and leapt down into the brush.
+
+No need to search to rejoin my trail—just push through. Snowberry, serviceberry, dogwood branches clawed at me as I forced my way downhill. Then—open space—the cluster of tourist cabins of Railroad Creek Ranch.
+
+I ran between two closest cabins, around the parked cars, and over toward Gladys's restaurant. This place may have once been an actual ranch, but since the 1950s, it became a tourist attraction. An old hand-painted sign by the highway read, "If you want the best; Railroad Creek Ranch; Glacier National Park, Mont," followed by a list of amenities in a  disquietingly random order: "Fried Chicken, Moonlight Steak Fries, Saddle Horses, Steaks, Cabins, Family Meals." I learned when I moved here two years ago that Moonlight Steak Fries just meant Gladys didn’t cook them long enough to brown properly.
+
+I sprinted up the steps and pushed through the door into the dining room. Kathy, at the cash register, looked up from her romance novel, obviously expecting to see customers. "Hey, Karl, do you want a table?"
+
+"No. Is Gladys in the kitchen?"
+
+"Yeah. That new cook didn't show up again." She looked back down to her book.
+
+I walked, not daring to run, through the dining room, only two tables occupied, and pushed through the door into the kitchen. Gladys, in her late sixties, stood at the grill cooking hamburgers. She scowled at me from under a hairstyle of a different era. She offered no greeting. This wasn't going to work.
+
+"Gladys, I need a favor. I'm teaching at the reservation school in forty minutes, and I can't get my car started. Is there any way I can borrow your car?"
+
+Her scowl deepened, and I braced myself for another one of her tirades about the school. 
+
+“That school’s a goddamn waste of time. I don’t know why the BIA thinks the tribe wants it, let alone needs it.”
+
+"Gladys, I know you don’t like it. It's my job to teach there. I need to get going. Can I borrow your car?"
+
+She looked at me with her skeptical eyes. "No. Go hitchhike."
+
+"I can't get there fast enough that way."
+
+She looked up from the grill with her signature scowl. "Take Bob's motorcycle. The key's on the key rack in the office."
+
+"Um, I don't know how to ride a motorcycle."
+
+"Well, I guess you're not teachin', are ya'?" She started flipping the burgers and turned away. My dismissal.
+
+Knowing I'd get no more help from her, I walked into the office and looked at the rack of keys on the wall. I spotted the bike key quickly by its stubby shape. I pushed through the screen door and over to the open wood shed. Still a whole cord of wood left over—one of my labors for Gladys in lieu of rent.
+
+The motorcycle, a Honda CX500 Deluxe with a maroon tank, sat abandoned, covered with dust and pine needles. Bob hadn’t ridden it since late last summer. 
+
+He’s twenty-six, a couple years older than me. Last fall, he and his mother, Gladys, blew up at each other. I could hear them shouting all the way over from my cabin. For two hours afterwards, he fired rounds at anything that moved on the hillside behind the restaurant: chipmunks, squirrels, and magpies. Then he and his old Datsun 720 inline-four vanished. I never asked where. Didn’t care—I never even tried to befriend the ass.
+
+I approached the Honda, trying to convince myself that a motorcycle must be just like riding a bicycle, just faster—a lot faster. I brushed off dust and some of the pine needles from the seat, tank, and handlebars. There wasn't time for a thorough cleaning. 
+
+ Just below the gas tank, a small lever caught my eye—something that looked like a petcock valve. Leaning in, I saw three markings: ON, RES, OFF. ON made sense. OFF made sense. RES meant nothing to me. I turned it to ON.
+
+I knew motorcycles had transmissions—so there had to be a clutch and a shifter—but where the hell were they? My eyes jumped to the left handlebar. Brake lever, just like a bicycle. Below that, a horn button, high/low beam switch, a horizontal switch with arrows—turn signals, probably.  I squeezed the brake lever—soft, not much resistance. Not a brake at all. I followed the cable down—past the fork—straight to the transmission case. The clutch. 
+
+Wait, what's this little mystery lever? I traced its cable down, disappearing between the cylinder heads. Choke for the carburetor. But where was the damn shifter? I grabbed the left grip and twisted—nothing—not the answer. 
+
+I switched to the right side of the bike. The right-handgrip rolled for the throttle—no surprises there. I squeezed the brake lever—it felt like a brake, but I traced the cable to be sure. Front disc brake. That sent a jolt of fear through me—my cyclist instincts would want the rear brake there, not the front. One mistake, and I’d be flying over the handlebars. I scanned the controls: a switch marked “Off” and “Run”, a button labeled “Start.” OK, those are easy. I glanced down—right-side foot pedal. I pressed it with my hand. Yeah, rear brake. So where the hell was the shifter?
+
+No time to waste. I swung back around to the left side, eyes scanning over the transmission case. The clock in my head ticking. Just above the left footpeg—there—a stubby lever. I pushed at it with my hand, but it wouldn’t budge. Clutch needed. I threw my leg over the seat, settled in, yanked in the clutch, and tapped the lever with my boot. It clicked down once. Locked. I nudged it up, and it landed loose—neutral? Maybe.
+
+Experimentation time was over. I needed to go. I jammed the key into the slot below the speedometer and twisted it to “On.” The indicator light flicked on—good, the battery survived the winter. I pulled the clutch, thumbed the “Start” button.
+
+Nothing.
+
+Damn it. Run/Stop switch. I flipped it to “Run”, hit the starter again. The buzz of the starter motor, then the engine turned over—but didn’t fire. Choke. I yanked the lever near my left thumb and tried again. This time, the engine chugged but didn’t catch. Try again. Another stab at the starter—it caught, sputtered, coughed. Blue exhaust, burning oil stench, gas odor filled the shed. I nudged the choke back. The idle steadied.
+
+Do I have to let it warm up? No time to wait. I gave it maybe a minute, tweaking the choke until the idle evened out. A couple quick twists of the throttle, I revved the engine—startled myself with a backfire as I let go.
+
+Clutch in. Foot down on the shifter. A solid clunk. First gear—I hoped. I eased the clutch and rolled on the throttle—too fast. The bike lurched forward, snapping my head back, then died. Damn it. No finesse. Just like driving stick—clutch control was everything. 
+
+No time for hesitation. I hit the starter again. Engine caught. This time, I let the clutch out even slower, feathering it, easing the throttle. The bike crawled forward—I walked it along with my boots still on the ground  until I felt steady, then lifted them onto the pegs.
+
+Speed crept up. The engine whined—time for second. Clutch in, roll off throttle, kick that shifter up. Another clunk from the transmission. Clutch out, roll throttle. First time in my life riding a motorcycle—fifteen miles per hour. Half a mile to the stop sign at the highway. No way in hell I was trying for third gear on this gravel.
+
+The road curved gently toward the stop sign. I let off the throttle to slow down—then the gravel got deeper. The bike wobbled, the rear tire sliding in the loose rock—panic. I clenched the bars—bad move. I didn’t mean to roll the throttle.
+
+The rear tire spun, spitting gravel. The bike fish-tailed, then suddenly grabbed traction on the hardpack. It launched forward—right onto the highway.
+
+No time to check for traffic.
+
+The bike shot onto the asphalt, aimed straight across the lanes—straight for the embankment—straight for the raging Railroad Creek. My mountain biking instincts kicked in but betrayed me. I threw my weight left, ready to skid the rear tire, hoping to swing the bike around and line up with the road instead of launching off it.
+
+None of it worked.
+
+I leaned—yanked the right-hand lever—wrong move, I predicted this error, but fell into it anyway. This wasn’t a mountain bike. Front brake, not rear. The front tire locked. The bike flipped.
+
+My left shoulder hit the asphalt hard, taking the brunt of the impact from my head. No helmet. The bike crashed down beside me, gratefully not on top of me.
+
+For a moment, I couldn’t move. The world shrank to the pavement beneath me—the rough texture, the tiny stones forming peaks and ridges, the cracks carving deep valleys. Railroad Creek. The mountains of Glacier Park. The asphalt beneath me was a topographic map, and my dazed brain started mapping its contours, sketching imaginary elevations.
+
+The sound of a truck, downshifting and slowing with air brakes, snapped me from my reverie. I looked down the highway and saw nothing, but then turned my head and saw the truck bearing down on me from the other direction. Not completely standing up, I scrambled for the shoulder. The truck rolled to a stop about twenty feet from where the bike lay across his lane. 
+
+The driver jumped out of the truck and ran over to me, "Are you okay? Are you okay?"
+
+"I'm okay. Just stunned." My eyes locked on the bike in utter dismay.
+
+"I didn't see you go down. What happened?" 
+
+"I'm an idiot. I fucked up the turn." Not willing to tell him that I crashed not two minutes into my very first motorcycle ride. "Can you help me pick it back up?"
+
+We walked over to the poor thing lying on its side. We hefted it up and rolled it over to the shoulder of the road, and leaned it on its stand.  The right rearview mirror, its stem folded almost parallel to the handlebars, no longer held glass. 
+
+"Jeez, lucky bastard," he said, "it doesn't really look scraped up too much. Even the bars still look straight. You must not have been going very fast."
+
+I looked down at myself and realized the left elbow of my jacket had torn open, as had the left knee of my pants. I had some minor scrapes, but essentially unscathed. I felt the side of my head for blood. I found a welt, but no leakage.
+
+"You ought to have a helmet."
+
+"I don't own one." I wasn't going to tell him that I didn't own a motorcycle either. "I live right here." I pointed at the Railroad Creek Ranch sign. "Thank you for stopping to help." I hoped that would dismiss him. 
+
+Another couple of cars approached from either direction—crawling by,  gawking at my embarrassment.
+
+"You sure you're okay?"
+
+"Yeah, I'm just going to ride back down to road home." I pointed to the cluster of cabins at the Railroad Creek Ranch. 
+
+He gave me a stern look and walked back to his truck, pulling away. I waited until he disappeared around the next curve before I remounted the bike. It wouldn't start. Lying on its side, the fuel had flooded the carburetor. I just waited, worrying about the time. 
+
+It didn't take long and I got the engine running again. I repeated all the steps that I had done earlier getting the bike up to about twenty miles per hour riding down the road's shoulder. Once I got comfortable, I upshifted to third. Then I realized, I need to know how to stop. I practiced up shifting, speeding up and downshifting, slowing down on the highway shoulder all the way into the town of East Glacier.
+
+Riding through town gave me no trouble. It won't be crowded with tourists until Memorial Day weekend at the end of the month. Once on the far side of town, the road straightens out as it crosses Two Medicine Creek and enters the high plains of the Blackfeet Reservation. Now wanting to get to the school as quickly as I could, I sped up to fifty and moved into the proper place in my lane. 
+
+The sun had warmed my skin, but the air was cold.  I wished I had gloves. As I crossed Two Medicine Creek, an errant mayfly splattered on the left lens of my dark glasses. I felt the splash of its internal juices on my cheek.
+
+Most other traffic passed me, I just kept my speed constant. 
+
+Shifting up and down felt effortless at speed; it was only the slow stuff that felt sketchy. Halfway to Browning, it hit me—I was having one hell of a good time. I started to laugh, a terrified laugh, but a laugh nevertheless. The engine rumbled between my legs, vibrating my balls, the wind tearing past stimulating my skin. It's the same living-in-the-body feeling of riding a fast single track on the mountain bike—times ten. This wasn’t just riding—this felt like freedom. 
+
+Turning a motorcycle is far more instinctive than I expected. On a bicycle, the faster the speed, the more turning is done by weight shifting, not with the handlebars. Leaning the bike onto the sides of rounded tires does the turning. The spinning wheels create gyroscopic stability, keeping the bike upright. It's incredibly simple to slightly lean onto those tire sidewalls. Carving a motorcycle through curves becomes dancing to the rhythm of the landscape.
+
+I was fucking hooked.
+
+## Blackfeet Community College
+
+Once I arrived in Browning, I had to contend with traffic and turns. After waiting to make a left turn into the school parking lot, I killed the engine at an awkward time. I had to put my feet on the ground and walk the bike out of the lane because I got flustered in trying to restart the bike quickly with traffic bearing down on me.
+
+Got to my classroom about three minutes late. I'm usually there about twenty minutes early to set up and gather my thoughts for the day's lecture, but, of course, I had no time today. I am fortunate in that I can wing it pretty well, sounding composed and confident even when I am not. I think my ability to speak in public is the best deception I've ever devised—the true son of a lawyer, perhaps the only useful lesson he ever taught me. 
+
+I had mixed feelings about teaching computer programming on the rez.
+
+There's a paradox to rural education programs. They must either train people in what local employers need or train people to move away. Which one of those adds more value to the community? No corporations were recruiting programmers on Blackfeet lands. 
+
+I didn't want to teach BASIC programming on a Apple II, I wanted to teach structured problem solving. My contract said to teach programming, I tried my best to combine them. 
+
+Today's lecture topic: sorting. I asked the students how they sorted things. I gave an example of sorting a hundred file folders. Most of my students had no idea how they sorted things, they just did it. 
+
+Getting my students to speak up always challenged me. I had only eight students: three women in their thirties, the rest, guys a couple years out from high school. The guys never said anything. The women were always the ones that responded to my questions. This time even they stayed silent. Not a good sign.
+
+I demonstrated the classic elementary sorting algorithm of the era, the bubble sort. I knew I wandered out on a limb here. My students seemed to have a good grip on the concept of a programming loop structure. However, once one is embedded into another, they no longer understood. I even tried the classic odometer analogy, where each subsequent digit is represented by embedding another loop. I struggled with making this clear. 
+
+After explaining the double loop of the sort, one of the quiet guys in the back raised his hand. "That isn't how I sort things at work."
+
+"Great, can you tell me how you do sort things?"
+
+He then gave me the most succinct description of the quick sort algorithm that I had ever heard: pure algorithmic genius.  
+
+"Make a big pile, take the top thing and push it to the back of the table. Go through rest of the pile sorting them into new piles on either side. Then do the same thing again for each new pile. When you run out of piles, you're done."
+
+I just heard the most succinct description of the quick sort algorithm ever: pure algorithmic genius. I had only encountered this recursive algorithm in 400 level undergraduate work. He didn't think in terms of the non-recursive BASIC programming language. He used an intuitive understanding. I desperately wanted to give him an expressive language programming language like Logo or Lisp. Starting students with the BASIC language was starting them out crippled. 
+
+I commended him for his sorting method and identified its name for him. Sadly, then I had to tell him that it's a great algorithm but really difficult to implement in BASIC. 
+
+So I taught them an inferior algorithm using an inferior language on a computer destined for obsolescence, all for jobs that would never be in their reach.
+
+I made the decision to teach escaping, after all, wasn't I so good at that myself? I held back my excitement to return to the motorcycle. I caught up with him as he left the classroom and asked him if he had ever considered going to one of the universities in Bozeman or Missoula. I told him I would help him make connections with the people that could make it happen.
+
+He looked at me as if I had suggested he should live on the moon. He turned and walked away without even declining my offer.  I felt like a fool.
+
+I walked out of the building, relieved that I had the distraction of the motorcycle ahead of me. I beelined across the parking lot to it. 
+
+This time, before starting it, I looked to see how much gas it had; there's no gas gauge. From what I could see in the late afternoon sunlight, it had about three-quarters remaining. I didn't have to learn the fueling part of motorcycles today. 
+
+## US-2 Westbound
+
+Back out on the highway toward East Glacier, I marveled at the wall of mountains twenty miles in front of me: White Calf, Mad Wolf, Red, Rising Wolf, Calf Robe. I imagined the landscape with its vast primal glaciers only ten thousand years ago. 
+
+US2 from Browning to East Glacier has three segments, all roughly equal length straight sections. With little traffic, I decided to practice controlling the bike. 
+
+As I had done earlier, I rode on the shoulder, speeding up and slowing down to a stop.  Each stop was a little more abrupt. I needed to figure out how much pressure it took to slide the rear tire. I feathered that rear brake until I felt that edge where kinetic friction and static friction meet. That consumed the first straight leg of the highway. 
+
+I took the gentle left curve where the highway stopped climbing and instead cut across a series of alternate moraine hills and pothole lakes. The Montana Department of Highways did a great job leveling and straightening this section. I could see the scars of some older incarnation of the highway weaving cutting and weaving through the potholes. The high points had road cuts, the low points and ponds had fill dirt. In this section, I practiced my front brake tests. Over and over I finessed the right brake lever that had betrayed me a couple of hours earlier. I searched for that sweet spot without flipping the bike again. 
+
+Taking the next gentle curve to the right, I entered the final straight section. I repeated the same tests with both brakes, seeking the golden ratio between the right-hand lever and the right-foot pedal for the shortest stopping distance. Tempted, but I did not try an all-out emergency stop.
+
+The next curve took me over the Two Medicine bridge with its spectacular view north to the parallel Burlington Northern trestle. Approaching East Glacier, I slowed down to the speed limit. 
+
+I considered stopping at the East Glacier Market to see if they had riding gloves for my cold hands. Nixed the idea—I'd use my ski gloves. Spending money on riding gloves, even if they had them, would mean missing a meal later in the month. Can't spend money on things I didn't really need. Now that summer approached, I wasn't chopping wood for Gladys and that meant I owed more for rent.
+
+Ten minutes later, beyond town, I came to my turn for Railroad Creek Ranch: my inaugural crash site. I thumbed the turn signal, disliking how it worked. There must be a better design. I waited for a pair of trucks, then I turned onto the gravel. My tension level soared as I entered the deeper gravel just off the pavement, but the bike pushed through just fine. I carefully rode the gravel back to the woodshed and got the bike parked.
+
+My body vibrated with elation at the ride. However, an overtone of sadness swelled as I walked away from the bike. I didn't want to stop; I wanted to keep going. I'm not done with this. I don't think I could ever be done with this. 
+
+I went in through the back door of the café to put the key back. Gladys sat in the office. Her cook must have finally arrived. The dinner hour, the warm kitchen smelled of roast beef, the usual Wednesday special. My stomach growled. Since there were few cars in the parking lot, I knew that I could get a leftover meal from Gladys after they closed at eight.
+
+She turned as I stepped in, looking concerned. "How'd you do?"
+
+"It's the best thing ever. It took a while to get the hang of it, but wow, that was so much fun."
+
+Unexpectedly, her face softened. I've never seen Gladys soften to anything.
+
+"Ed and I used to ride, way back. Been a lotta years, but I remember bein' in the wind." She actually smiled, another first. 
+
+"Any chance I can ride Bob's bike again?"
+
+"Ain’t Bob’s bike. It’s mine—I paid for it—I registered it. I’ll let whoever the hell I want ride it. Here’s the deal—your gas, your oil, your upkeep. I like knowin’ it’s gettin’ used. Bob ain’t gettin’ it back, even if he shows up on my damn porch. Get it outta my wood shed. Keep it in your own."
+
+I grinned hard. "Thank you."
+
+I turned right around and out the back door. I got back on the bike, rode down to where my road forks. Nearly dumped it on the tight turn, but I recovered. My road's kind of rough and rutted in a few places. I'd have to practice, and I couldn't wait to get started.
+

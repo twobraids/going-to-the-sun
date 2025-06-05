@@ -1,0 +1,350 @@
+---
+blog_title: 1984-09-14 - Restaurant Run
+blog_url_basename: 
+blog_url: 
+blog_page_id: 
+blog_header_url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKDzhUnztD6lapyFGiG5GieeiMzefa_qMRdZS9tmY2bmiX636ubN3AVjyjqGqizo8zs2wpYL3dUbBNa-D1lEYnwU1Y2dWPfWekjwT0vtX7DsBxZJrKwrqYpPRXzMK7NxrX0WWhlFi08HvW-Hd_Z0J0VYvSOsBvpcAUAoned6CKgCpi2W3IjQGf8Q/s1600/restaurant.png
+blog_author_note: 
+blog_short_warning: 
+blog_long_warning: 
+blog_hash: 
+blog_publish_date: 2025-04-13 7:46am
+blog_update_date: 
+blog_tag_line:
+---
+
+##  Shelby, MT
+
+David pressed the left turn signal, merged his box truck onto I-15 northbound from the warehouse in Great Falls. It was the Friday northwest restaurant run, the first run of the season that didn’t require two trucks and two drivers. The circuit stretched along US2 from Shelby, Cut Bank, Browning, and to the two big hotels in Glacier National Park: Many Glacier and East Glacier. With the end of the tourist season, the big hotels slowly shut down, reducing the demand. Ironically, this meant a longer day for David, as the work is no longer split between two trucks. He had to hit all the destinations.
+
+David settled in for a ninety-minute drive through the high plains to his first stops in Shelby. He didn’t listen to the radio. He just watched the scenery slide by while listening to his engine, the road and the wind.
+
+The truck felt isolating. He couldn’t feel the road through it, like wearing a condom—not so personal, immediate, and grounded as the bike.
+
+His bike—they're gonna take it. It won't stay hidden for long.
+
+That sheriff seizure notice that he left in the cabin resurfaced in his thoughts again, just like it had every hour of every day since the certified letter had arrived.
+
+Why does everything always go to shit? Why do they do this to me?
+
+What's gonna be like when the bike's gone?
+
+He followed the US2 signs down the Shelby's only offramp. His first stop, the Junction Cafe, a roadside diner, sat right off the interstate, fronting the highway. First delivery of ten deliveries today. There will only be nine next week after Many Glacier shuts down for the winter.
+
+As he pulled in, he noticed a guy standing by a motorcycle at the entrance to the cafe lot. Interesting bike, FLH Electra Glide, looked modified though; the front forks looked odd, not stock. The rider just stood behind his bike, arms crossed, watching David pull in.
+
+Sheriff's gonna sell my bike—my bike. I should fuckin' kill the guy that buys it.
+
+David drove around to the cafe loading door, jumped out, circled around to the back of his truck. The electric motor whined as he unfolded, lowered, and rode the lift-gate back up. The roller door unlatched and opened easily. The tag on the first stack matched the name on his clipboard. He turned to the sidewall and released his hand truck from its mount. He pulled the stack onto the liftgate with the hand truck, then eased the liftgate to the ground.
+
+By this time, a restaurant employee had opened the door and waited for David to wheel the load into the storage room. Once inside, the cafe employee accepted the delivery by signing the paperwork on David's clipboard. Usually, the cafe verifies the order is correct and complete before signing, but it wasn't uncommon for a minimum-wage employee to skip that step.
+
+David took his hand truck back outside and reversed the procedure, securing it, locking the roller door, and raising the lift gate. This process required no thinking on David's part—all completely automatic—done it a thousand times and would do it nine more times today.
+
+Back in the cab, he took the signed paperwork, added his signature, removed it from the clipboard, and put it into the completed folder. He liked having a job that didn't require him to think.
+
+As he pulled the truck back around to the front of the cafe, he noticed that the biker was still there, just standing by his ride looking at him. He examined the guy's bike as he pulled out, disregarding the guy entirely.
+
+Pulling onto US2, David moved on to his second Shelby stop, Barb's Cafe. Just as he'd done twenty minutes earlier, he pulled into the parking area; this cafe had a side door instead of a back door. He unloaded the order, got the signature, re-secured the truck, then sat in the cab, updating the paperwork on his route clipboard. He moved another set of papers into the completed folder.
+
+He restarted the truck and, on pulling out, saw the biker again sitting by the entrance to the parking lot. He wasn't there when he pulled in.
+
+No, not the same biker; this guy rode an FXE Super Glide, blue, not black like the last bike. He stood there next to his bike, arms crossed, just staring at David’s truck.
+
+David frowned at him as he drove out of the lot, but his eyes stayed fixed on the bike. He pointed the lumbering truck west to Cut Bank, about a half hour away.
+
+## Whitefish, MT
+
+Sarah sat in her office in the house south of Whitefish, doing paperwork for one of her charities. The phone rang; she picked it up on the second ring. "This is Sarah."
+
+"This is Rooster. The mark has left Barb's in Shelby. Grizz and I are headin' to Railroad Creek."
+
+"Thank you."
+
+Sarah hung up the phone and picked up Karl's magic blue box. She dialed the 800 number, then played the 2600Hz tone into the handset to get the AT&T system to disconnect but leave the long-distance line open. Then she tapped out the number of the Montana Wholesale Grocers Association in Great Falls.
+
+"Hello? Yes. This is Barb Cranston at Barb's Cafe in Shelby. I just gotta tell you that something’s wrong with the driver that just delivered my order. He acted drunk. Yes... Yes... No... I just thought you ought to know. Thank you."
+
+Sarah hung up with a smirk.
+
+## Cut Bank, MT
+
+David continued westbound on US2 toward Cut Bank. Just before he passed through Ethridge, two bikes passed him at high speed, riding side by side in the same lane. They both turned their heads to him as they got parallel with the cab. It looked like the same two bikes from Shelby. As they pulled in front, his eyes snapped to the patches on the riders’ backs: Bitterroot Bastards.
+
+He remembered seeing that patch on guys playing pool at that bar in Columbia Falls. He'd never seen them anywhere else.
+
+The Iron Horse, the easiest place to find hookers. He gritted his teeth, never going back there again. Not after what happened last time. Her own goddamn fault for making him mad.
+
+He watched the guys, their arms high on the ape hangers. The ripping exhaust rumble, audible even over the truck engine laboring on the hill, tingled the back of his neck. He thought again about his own bike.
+
+Sheriff’s gonna take it—his bike—his truck—his land. Fuckers didn’t respect his rights.
+
+Forty minutes of two-lane later, he pulled into Cut Bank for his third delivery of the day, Marias River Pizza. There was another biker at the parking lot entry. This time, an FXWG, the same model of his own. Like the two in Shelby, the rider just stood behind his bike, arms crossed, looking at him.
+
+David pulled up to the rear door and went through the motions for the third time. Twenty minutes later, back in the cab, he moved the paperwork into the completed folder. Before he pulled out, he sat in the cab and watched the biker standing out by the road.
+
+He thought about his gun in its case back in Great Falls.
+
+This time, on returning to the road, he watched only the road, not the guy, not the bike.
+
+At his second Cut Bank stop, Judy's Coffee Stop, nobody stood in the parking lot. David felt some vague relief.
+
+None of his business what those guy are doing—nothing to do with him.
+
+He shook his head and focused on the delivery. He again went through the programmed motions without thinking, finally moving the paperwork into the completed folder. He pulled his truck out, not seeing anyone watching him, he shrugged.
+
+The third stop in town, Cut Bank Creek Cafe, no biker loitered in the parking lot. David smiled. He made the delivery, moved the paperwork.
+
+He climbed back out of the cab. He strolled around to the front side of the café, walked in, sat at the counter, and bought a cup of coffee. He took his break sitting at the counter. The waitress wasn't the usual flirty teenage girl, just some middle-aged woman that kept calling him "Honey". He didn't talk much. There were only a few other customers there in the midmorning.
+
+On walking out the front door, he stopped abruptly. Four Harleys, two on each side of the cut curb into the parking lot. All four riders stood by their bikes facing him. He rushed to his truck, climbed in, and sat for a few minutes watching them.
+
+They didn't move. They didn't even appear to be talking to each other. He peered around the lot to see if he had another way to exit. He felt the coffee jitter—a mistake—didn't like the twitchiness. If he were in a car, he could exit through the gas station, but this truck couldn't get under the awning.
+
+He made the decision, he started the truck, the old 370 V8 sputtered for only a moment and then rumbled. He checked the axle switch: Low. He wound out 1st Low, lurching into motion, more noise than he wanted. He pulled out from the side of the café, into the parking lot, and threaded between two parked cars, bounced up over the sidewalk, and turned right onto US2.
+
+An oncoming car honked and had to brake hard. David didn't care, he focused on the bikers as he drove by. Yeah, they're all Bitterroot Bastards, but none of the same ones from earlier.
+
+Sequencing up to 3rd Low, about the speed limit, he tromped on the clutch to shift to the High axle. He got up to highway speed about a half mile before the start of the fifty-five speed zone. As the highway descended into the canyon of Cut Bank Creek, he used the slope to pull himself up to seventy-five. He'll lose it all climbing out of the canyon, but the immediate speed seemed like the right thing to do.
+
+As David drove out of sight, one of the Bastards sauntered over to the payphone on the front wall of the café. He dropped coins in the slot and dialed.
+
+## Whitefish, MT
+
+The phone rang again in Sarah's office. Like last time, she answered on the second ring, "This is Sarah."
+
+"This is Goose in Cut Bank. He's heading to Browning. He's already steaming. He rode up over the sidewalk to avoid us."
+
+Sarah laughed. "Good work."
+
+"We're heading on to the party at Railroad Creek."
+
+"Thank you." Sarah hung up.
+
+Again she engaged the blue box, acquired a long-distance line, and called Vince at Railroad Creek Ranch.
+
+"Hello, Gladys, this is Sarah. I need a word with Vince. Thanks..."
+
+"Hey Vince, this workin' already. He just left Cut Bank—drove over the sidewalk to avoid Goose and the boys. This is almost too easy...  Yeah...  Okay, he's on schedule, probably get there 3:30 maybe 4:00."
+
+She played the blue boxes 2600Hz tone again to free the long distance line, then dialed the Montana Wholesale Grocers Association. She handed the phone to Linda, David's first victim from that night at the Glacier View Motel.
+
+"Hi, this is Jackie at the Cut Bank Creek Cafe. We just got a delivery from your driver. I gotta make a complaint." She paused. "Yes, I'll hold..."
+
+## Browning, MT
+
+David tore down the highway toward Browning on the rez. About halfway, six bikers, all Bitterroot Bastards, roared by him. Seeing red, he started yelling to himself in the cab, "Why are you fuckin' with me? What's your fuckin' problem?"
+
+As they receded into the distance, he thought about the Iron Horse in Columbia Falls where the Bitterroot Bastards hung out.
+
+Why the fuck are they doing this?
+
+His mind flashed to that night in July where that asshole, Karl, had made him so mad at the poker table. Then that bitch not giving him what he paid for. They both got what they fuckin' deserved, though he couldn't quite remember what exactly they got.
+
+Karl deals at that bar—he did something to make them mad at me. Yeah, makes sense. Always fuckin' with my plans—ruins the party.
+
+When David pulled into his only Browning delivery, one biker loitered next to his bike in the driveway entrance. With gritted teeth, he concentrated on the motions: liftgate, hand truck, load, unload, paperwork, liftgate, signature, completed folder.
+
+He sat in the cab for a few minutes thinking about what to do. The guy was still there, standing by the highway. He started the truck, shifted into gear.
+
+Confront the fucker. That's the plan. Get in his face—there's only one of him.
+
+He drove out to the highway, almost to the curb, and stopped abruptly, yanked on the parking brake. He practically kicked his door open and then he spotted them. A group of about four bikers in the next lot over. All standing there looking at him.
+
+Jesus—too many of 'em.
+
+He yanked the door closed, released the brake. Clutch down, shifting back to 1st Low, and tromped on the gas pedal, twisted the wheel right back to US2 while flooring it. The truck listed hard to the left as he swung into the oncoming far lane. A big rig, braking hard, swerved to the curb to avoid him. They missed, but only by a few feet. David tore down the road, making a second reckless turn onto MT464.
+
+## Whitefish, MT
+
+After fielding another incoming call, Sarah again used Karl’s untraceable blue box, this time to call the Glacier County Sheriff’s office. She feigned being flustered and reported a truck pulling out of a restaurant parking lot in Browning and driving recklessly.
+
+“Yes, a big box truck. No, I didn’t get the license number. It had something like ‘Grocery Association’ on the side.”
+
+Didn’t want to give the cops too much information. Didn’t want them pulling him over too early. Just wanted to get wasp nest stirred up a bit.
+
+“I just thought I ought to report it. Just so you know. Yes… My name? Doris Johnson. We’re from Ogallala, Nebraska driving to Glacier Park…”
+
+## Many Glacier, MT
+
+For the next hour, David sat stiffly upright in his seat driving furiously to Many Glacier, muttering to himself. He kept his eye on the side mirrors, watching for bikes overtaking him. He saw only a few cars.
+
+As he approached the intersection with US89 and its scattering of tourist businesses, he started to scan parking lots for bikes. He saw a few Goldwings but no riders. Not many tourists left this late in the season. Even the lunch hour failed to draw many vehicles to these businesses. They’d shut down for the season any day now.
+
+After a rolling stop at the flashing red light hanging over the junction, David hung right onto US89, drove a mile, then left onto Many Glacier Road. The Many Glacier Lodge was different from the hotel in East Glacier, smaller, less formal. It's also nearly twelve miles into the park at the foot of Swiftcurrent Lake.
+
+On his route to the hotel's loading dock at the Ptarmigan Dining Hall, he looked for Bastards at every turn. Didn't see any. Some bikes sat way over in the lot with nobody around them, no Harleys, just Hondas, and those plastic sport bikes.
+
+He backed into the loading dock. This is the second biggest delivery of the day, it'll take forty minutes.
+
+Just got to do the delivery like nothing’s wrong—nothing is wrong. Trying to convince himself didn't do the job.
+
+He unloaded only three stacks onto the loading dock, down from an entire third of a truck in August. The pimply-faced kid, a seasonal worker, signed the paperwork. He locked up the rear of the truck and retreated to his cab. He stashed three pages into the completed folder.
+
+He restarted the truck and pulled into the pad of asphalt where trucks usually awaited access to the single loading dock. He sat in the truck for a few minutes as he scanned the area for Bastards. He still saw none.
+
+Hesitating only for a moment, he let out a sigh and he pulled his flask from an inner pocket, twisted the cap off, and downed a mouthful.
+
+This Bitterroot Bastards thing—just not real. No way. Not happening.
+
+He took another drink. That expanding warmth of the whiskey going down—felt immediately calmer.
+
+He felt better after eating lunch in the dining hall. Nobody looked like a Bastard in there. As he walked back to his truck, he kept looking over his shoulders, trying to take in the entire parking lot—as if he expected to get jumped, but it didn't happen.
+
+He saw no bikers on his route back to the highway. He drove back down the Swiftcurrent Valley to US89 South—a short ten-minute drive down to the town of St. Mary along the eastern shore of Lower St. Mary Lake.
+
+He pulled into the second Marias Pizza restaurant of the day, just off the highway next to the gas station. No Bastards. Feeling more confident that he'd just gotten over-excited earlier, he pulled around to the back and stopped at the storage room door. The delivery went off without a hitch. He moved the paperwork to the completed folder.
+
+He started to pull out when he spotted motorcycles at the gas pumps. They didn't seem to be looking at him; they just tended to their pumps. He was waiting for one to turn around to reveal the patch. One of them seemed about to finish; he'd turn around to put the nozzle back on the pump. Then a car pulling an Airstream trailer pulled in, blocking his view.
+
+"You fucker!"
+
+He restarted the truck, 1st Low, spun it up, shifted to 2nd, turned onto US89 South, and accelerated out of town, keeping his eye on the rearview.
+
+US89 is both twisty and a long, gradual uphill grade with few places to pass. Before the first curve, he caught sight of headlights, but he couldn't tell what they were. The grade forced him to downshift as he went slower and slower. He had to drop to the Low range. Every so often in a straighter section, he could see the bikes back there.
+
+Shit.
+
+He kept chugging up the hill. In each straight run, he'd see a bike peek from behind him, looking for an opportunity to pass. Once he crested the ridge, he knew there'd be longer straight sections where they could get a run to pass him.
+
+After the broad switchback, there was a long stretch, and he knew they'd take the initiative. He watched as one pulled into the oncoming lane, then another, and two more—four bikes gaining.
+
+"No way, you fucker. You're not getting me!" He swerved into the oncoming lane to cut the lead bike off—big grin. He watched the bike vector off the side of the road into the deep gravel. That wasn’t a Harley; that was a Honda Goldwing—no way in hell it was a Bastard bike. The road curved; he couldn't tell if it crashed or just stopped.
+
+Shit, shit, shit.
+
+He kept going; he had to get away. He went around the curves faster than he should—he couldn't keep his lane. He needed to get off this highway. Starr School Road would lead to Browning, then to US2 to East Glacier. He didn't have a map, didn't need it. Thinking hard about the road layout, he realized it was behind him, not ahead.
+
+At Kiowa, he made his decision and abruptly turned right onto MT49, a shortcut directly to East Glacier. Immediately, he faced warning signs: "NO TRUCKS", load limits, tight curves. They'd never expect him to take this route.
+
+Back in low range, he began the ascent of Looking Glass Hill. He crawled around the curves almost at a walking pace. One of the switchbacks, he had to use both gravel shoulders and both lanes just to get around the curve.
+
+He thought about that first ride with that Karl—crowding him on these very curves on that fucking rice burner.
+
+This is that goddamn kid's fault.
+
+No way they could pin that Goldwing crash on him. By taking this route and skipping Browning, he shaved ten miles off the route to East Glacier. At his next delivery, the big hotel could timestamp his delivery. That would show him passing where that Goldwing went off the road fifteen minutes before it crashed.
+
+He rolled into the wide scenic view pull off at the top of the hill. He pulled out his flask and took a couple of swallows. From here he could look up the Two Medicine valley into the park. Even in his agitation, he took the time to appreciate the incredible view. 
+
+## East Glacier Park, MT
+
+David pulled back onto the highway for the leisurely ten-minute ride to the East Glacier Hotel. He pulled into the parking lot—no bikers here at all. Swinging around to the north end, he pulled into the loading dock for the largest delivery of the day.
+
+Forty minutes later, he closed and secured the truck, and carefully left the hotel complex. He kept looking for bikers and, now, cops. His truck crawled through the BN underpass, stopped at the US2 junction, turned right and headed west.
+
+It took him only ten minutes to get to the day's last stop, Railroad Creek Ranch.
+
+With the left turn indicator clicking, he yielded to oncoming traffic before turning onto the ranch road. His truck rocked heavily at the potholes and deep gravel of the poorly maintained first thirty yards of the gravel road.
+
+He pulled up at the restaurant, parked and went through the motions of the delivery. He pushed his hand truck up the pathway to the rear door.
+
+A pine needle-cloaked woodshed sat nosed into the hillside, containing about a cord of split firewood and a Honda CX500. David stopped. He swallowed once and drew his breath.
+
+Is that fucker here? I ought find him and beat the crap out of him.
+
+Karl said he lived here, David recognized the bike, but he'd never actually seen Karl here. Not even sure which cabin he lives in.
+
+He knocked on the door and Gladys opened it. She held the door as he wheeled the load in. She slammed it shut unnecessarily loudly.
+
+"Last week you shorted me an entire flat of canned green beans. I'm going to check every item before you go."
+
+"Yes, ma’am. Got the correction right here on the invoice. Looks like they added an extra flat in this delivery."
+
+"Now why the hell did you do that? I want a credit, not an extra goddamn flat of green beans. I ain't got any use for extra green beans this close to the end of the season."
+
+"Sorry, ma'am. I'll write a note for the girls back in the office."
+
+Gladys rolled her eyes. "You're gonna take this flat right back." She snatched the delivery list from him and started to go through it one item at a time.
+
+---
+
+I heard the door slam; that's the signal. Chris and I walked out of the woods across from the restaurant using David's truck to block our approach from being seen. I carried the refilled pint whiskey bottle that Vince had pulled from David's cabin three days ago. I held it in my gloved hand, treating it as if it were a bomb.
+
+Chris got onto his knees by the truck's front left tire. I watched as he twisted the cap off the valve stem. With a Schrader tool, he unscrewed the internal valve almost completely out of the stem. He cocked his head, turning his ear to the tire, listening for the tiniest hiss that indicated he'd done the job correctly.
+
+I shook my head, realizing I should be doing my own job instead of watching Chris. Slowly and quietly, I opened the driver’s door of David's cab. I surveyed the truck’s floor and under the seat. I had only one chance to get this right.
+
+Beneath the driver’s seat seemed like the only viable option. Peering under, I realized that I could lean the bottle against the seat support with the lip of the bottle settled into a groove of the stamped metal. I needed it to be secure, but not too secure. I wanted it to fall over only when the truck hits the big potholes in the gravel where the road meets the highway.
+
+That's same place I dropped the Honda on my very first ride. Before I even knew David or Vince or Chris—any of the Bastards. The before times when the only stress I had came from my own head.
+
+I twisted the cap off and set it on the floorboard. I held the bottle upright and tried to thread it under the seat, but it was too full. I didn't want to spill it prematurely—I needed to dump some out.
+
+I looked at the bottle for a moment and took a deep breath. I lifted the bottle toward David behind the restaurant walls in a mute toast. I downed the shot—a mouthful of fire burning my throat as I swallowed—my punishment for this betrayal. 
+
+Vince said I had to do this—had to participate in taking David down. Only way I could get over it. 
+
+You’re mine now. 
+
+With David, I was just a prostitute. What am I with Vince? Is his fist around my soul or is it my own by proxy?
+
+I refocused on my job—no time to spare. With one shot gone from the bottle, it easily slipped under the seat without a spill. I leaned it near the seat support. I placed a small pebble that I plucked from the floor mat under the bottle to give it a bit more stability. I moved the cap out of sight.
+
+I closed the cab door—gently— no noise—no rocking the cab. I turned just as a wind came up, pelting me with a swirl of road dust. As if he had just whispered in my ear, I heard Willie Nelson's voice in my head: "Pancho needs your prayers, it's true. But save a few for Lefty too. He only did what he had to do..." I shuddered, shut my eyes against the wind, drew in my breath through my mouth. I tasted the dust.
+
+Chris stood by the front tire, looking at me, concerned. With a grimace on my face, I gave him a nod. We retreated back to the woods to wait.
+
+---
+
+Goddamn it, woman—just want to get out of here.
+
+Gladys finished matching every item on the invoice with items spread out on the table and, when that had become full, on the floor. She finally signed the receipt. David took the bound carbonless copy sheets, tore off the top white one, and handed it to Gladys, keeping the yellow, pink, and green copies for his complete folder.
+
+Like a trained parrot, David said, "Thank you for your business. I will see you next week." He looked at Gladys and wondered why she shook her head. He turned and walked out the door.
+
+Twenty-five fucking minutes—should have been a five-minute delivery.
+
+He returned the hand truck to the back of the truck. As he raised the liftgate, he heard a low rumble, could feel it. Harleys? Was that fucking motorcycles? Then he heard the horn and felt relief. Just a freight train on the other side of the narrow valley.
+
+He climbed back into the cab. He put the day's final paperwork into the completed folder. What a fucking day. For a moment, he thought he smelled whiskey. He reached into his jacket's inner pocket and pulled out his metal flask. He opened it and took a long drink. He returned the flask to the pocket.
+
+Two-hour drive back to Great Falls ahead, he rolled down the driver’s window. Needed to get the whiskey smell out of the cab.
+
+He started the truck and crept back down the road toward the highway. There was something dark lining the left side of the road down by the highway ahead. As he got closer, he realized what it was.
+
+Jesus fucking Christ.
+
+Twenty or so Harleys sat in a line like spectators at a parade along one side of the road. The riders, arms crossed, all stood by their bikes watching him.
+
+Holy hell.
+
+He kept driving—no other way out. He had to drive by them.
+
+He recognized the bartender that always wore the "Boss" shirt.
+
+Bitterroot Bastards.
+
+Vince stepped into David's path.
+
+Instinctively, David slammed on the brakes, making the truck slide in the gravel.
+
+Vince deftly stepped out of the way and then closed the distance to David's open window in a couple strides. He locked eyes with David and pointed a finger at him.
+
+"You drive safe now."  Vince's pointing hand became a friendly wave, his carnie smile flashing as he hooked the mark. 
+
+For a split second, David froze—surprise—what the fuck did that mean? He bolted—floored the gas and popped the clutch. The truck lurched, and he wound the engine up nearly to redline. The truck rocked hard on the potholes as he approached the highway. He didn't slow for the turn or look for cross traffic, as the whole truck lurched sideways and leaned as it ascended onto the highway grade.
+
+The whiskey bottle under the seat fell over and drained onto the floor.
+
+He pushed the transmission through all the gears as quickly as he could as he fled eastbound toward East Glacier. He got it up to sixty before he hit the first turn. The Railroad Creek Ranch disappeared from his side mirror.
+
+He kept looking into his mirrors—right side—left side—no bikes followed him. When he got to the town, he did not slow down. He tore through at high speed, passing recklessly on both the right and the left. He shot out of the northeast side of town only seconds after he had entered from the southwest.
+
+He had to gear down on a long, straight section for the ascent out of the Marias River canyon. He kept his eye on the rearview, not looking ahead, until he saw himself in the mirror drift into the oncoming lane. He pulled right on the steering, correcting in time to prevent a head-on.
+
+Ten miles later, his left front tire disintegrated, the tread separating from the sidewalls, yanking the truck out of David's control. Careening over the opposing traffic lane, down the embankment, through a barbwire fence, and into the soft ground by one of the tarn lakes of US2. His forehead hit the steering wheel, and he blacked out.
+
+Only five minutes later, a sheriff patrol car approached from Browning. He answered a dispatch from the owner of Railroad Creek Ranch regarding a drunk commercial truck driver driving eastbound from East Glacier.
+
+The deputy grabbed a first aid kit, left his patrol car, trotted down the embankment to David's mired truck. From his vantage point near the driver’s door, he saw David slumped again at the steering wheel.
+
+He pulled the door open, revealing David's boots in a pool of whiskey on the floorboard. David slowly lifted his head and peered at the officer as if he didn't understand what he saw.
+
+"Buddy, we've been hearing about you all day long. Quite the tour you’ve made around the county.”
+
+A second Glacier County patrol car pulled in behind the first.
+
+Another fifteen minutes later, Vince and Rooster rolled by the accident site on their bikes, confirming the plan had worked. David sat cuffed and in the back seat of the second patrol car.
+
+Vince waved as they rumbled by. The deputy waved back.

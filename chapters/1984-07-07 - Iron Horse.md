@@ -1,0 +1,578 @@
+---
+blog_title: 1984-07-07 - Vince's Iron Horse
+blog_url_basename: 
+blog_url: 
+blog_page_id: 
+blog_header_url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjid5TKazd5I_Apv6ynZsX79775HxemJZuGpA3yGWnttl650f-N-EZRPbPzBXmkqtZAyupMff0N4a8nXYsDwlwP0CP2hY9vi04jdOmVbaLY9kvACD5BwB_DDRCFuA3V1_ZxIc5COnE-ceLh5qyRIchd6RttFgJ2IrmATwYTcEUjsFH8g54iogtSBw/s1600/Iron-horse.png
+blog_author_note: This story was written over three frenetic days in early January 2025.
+blog_short_warning: gay sex, prostitution
+blog_long_warning: 
+blog_hash: 
+blog_publish_date: 2025-02-28 1:30pm
+blog_update_date: 2025-06-04 01:25pm
+blog_tag_line:
+---
+
+
+#Karl #David #Ted #Augusta #Maggie #chris #sheila #Vince #Larry #poker #Augsta #HeartButte #ColumbiaFalls #VinceIronHorse
+
+## The Ride
+
+I left my cabin a couple of hours after sunrise for the ride down to Heart Butte: a clear midsummer morning full of potential. I took the cutoff road, turned a bit too enthusiastically, swinging into the oncoming lane, thankfully empty. I checked my speed and continued, my excitement for today's ride undeterred. Today would be another record long ride for my first summer on a motorcycle: over six hours on the asphalt in grand loop around the famed Bob Marshall Wilderness Complex, one and a half million acres of roadless mountains. 
+
+I arrived at David's cabin precisely on time. David came out his front door to greet me. "Morning, Karl. How's the ride down?"
+
+"Uneventful. Not a single car on Heart Butte Cutoff the whole way down."
+
+"You want some coffee?"
+
+"Sure." I walked into his cabin. He gestured at the machine and set his cup beside it. He walked away. My eyes twitched to the empty coffee machine and then back to him as he sat down at the table. Since I had never made coffee in my life, it took nearly ten minutes to make two of the foulest cups I’ve ever tasted. David, not noticing, unnecessarily recapped the day's plan for me. I had already mapped it on my highway map, and traced every curve in my collection of USGS topographic maps. 
+
+We would ride down to Montana 200 via Augusta, then swing around the southern wilderness border on Roger's Pass. From there, we'd head back north through the Swan Valley and into the expansive Flathead Valley. The destination was Vince's Iron Horse, a biker bar in Columbia Falls where David wanted to spend an evening playing poker, then hire a woman for the night. Tomorrow, we'd swing through Glacier National Park over Going to the Sun Road and back to our respective homes.
+
+David arranged the ride with an old Army acquaintance from the Vietnam War, a retired officer. He lived in Augusta, about an hour and a half south of David's place. He'd join us on the highway about noon. Originally, David had not invited me on this ride, saying I did not have the skill. I insisted I could prove my endurance. He relented long before I exhausted my arguments in my favor, probably just to get me to shut up.
+
+Finishing his coffee without comment on its lack of quality, he said, "Give me the blow job now. I won't need it tonight," he declared.
+
+"I'm up for it anytime or anywhere you want it," I replied. 
+
+He nodded, stood up, and repositioned himself on the sofa, unbuttoning his pants but leaving just the fly open and the waist unbuttoned in his usual manner. I walked over, knelt in front of him, my own dick tenting my jeans, and deftly performed my duty. This time, I discreetly opened my own pants and worked myself while sucking him. He leaned his head back with his eyes closed. When he started to buck and squirt, it tipped me over the edge, and my own load shot onto the leg of his riding pants. With both of us finished, he immediately got up and attended to his final prep to start the ride. I said nothing about my drying spunk on his leg, and he did not notice. 
+
+He had left a twenty-dollar bill on the table for me.
+
+Another ten minutes later, David locked his door, we mounted our bikes, and headed south. 
+
+US89 South parallels the front range of the Rockies about twenty miles out. The mountains just suddenly rise from the plains without discernible foothills, an artifact of the Lewis Overthrust fault. Millions of years ago, as the Bitterroot Batholith lifted the land during an era named the Laramide Orogeny, the crust fractured along long north-south lines. As the tipping increased, the fragments shifted and slid over the top of each other like fanning a deck of cards in the hands of a skilled dealer. Each parallel mountain range crowds against the next as if struggling to see the eastward view over the shoulders of the neighbors.  
+
+I had a difficult time dividing my attention between the mountain view sliding by, and concentrating on my own survival on the road. This highway had potholes.
+
+Ninety minutes later, we pulled into a driveway in Augusta, where a Harley FLT Tour Glide sat packed and poised for a trip: a  two-wheeled car without doors, a roof, or seat belts. Harley's answer to the invading Asian hoard of Honda Gold Wings. 
+
+As we pulled in, a large man with a bushy gray beard, gray nub of a ponytail, and a protruding beer belly stepped from the shade of the garage. David parked and greeted the man like old friends, though without an embrace. I noticed the handshake, the hand-to-wrist clasp that David had shown me on the day of our first ride two months ago.
+
+I stood a few paces behind David as if I were his attendant awaiting a task. David and his friend talked animatedly, David blocking my view of him. After a few moments, the guy leaned to the side, peering around David to see me. His movement reminded David of my existence. David gave an oddly one way introduction, he told his friend my name, but didn't tell me the friend's name. To my chagrin, David then reverted to calling me "kid", a diminutive he used, I supposed, to impress upon his friend that I was a mere camp follower and not an actual friend. His friend ribbed David by saying, “About time you got yourself a boy." 
+
+"Oh, you fuck off."
+
+The guy roared a great loud laugh that could have been heard a block away. I frowned. He stepped up to me, saying, "Don't take shit from him. I'm Ted." He proffered his hand, and we did that same biker handshake. He looked at me for a moment with a slightly puzzled expression. “Have we met before?”
+
+“I don’t think so."
+
+Ted shrugged. "So what are you riding?" He stepped past me to my bike. "Honda CX-500, the Deeelux model," he said without the distain David usually expressed. He looked it over carefully. “She’s got real potential. Transverse V-twin—hell, Harley could take a few notes from her."  He ran a hand along the frame by the radiator, then looked up. “You ever think about choppin’ her?”
+
+"I'm a  computer guy. I don’t do hardware."
+
+“Well, you could always hire someone to do it for you. I know some guys over in Missoula who could turn her into one hell of a sweet ride. Rake out that front fork, really give her some presence, turn some heads."
+
+"It's borrowed. I don't own it. Someday, I'll have my own bike."
+
+"Oh, too bad. How does she do on the highway?"
+
+"It's shaky over 70. I suspect tires, but otherwise fine."
+
+"I hear you and David are out riding almost every weekend. I bet you're always right on his tail on the curves, yeah?"
+
+"Yes" I hesitated puzzled. “How do you know?" I caught a glimpse of David scowling.
+
+"She is made for carving up curves—no two ways about it. Harley cruiser design doesn't hold a candle to this bike for that. Harley cruisers don’t even come close. But for long-haul riding? Yeah, I bet she’s not so great. Probably fine for a young guy like you, but she'd torture an old fart like me.”
+
+He turned and looked me over as if inspecting me like he did the bike. "You really need to get some proper gear. If you ever lay her down on the highway, you're going to road rash down to the bone."
+
+Just then, a gray-haired woman, about sixty, emerged from the garage and greeted David. I heard him say, "Maggie, nice to see you. You're not riding along today?"
+
+"Oh, no, this is the men’s ride. I'm staying home to have the house to myself for a couple of days." She added with a laugh, “Besides, my boyfriend will be here not three minutes after you men leave town."
+
+Ted laughed his great guffaw again. "She's always threatening to trade me in for a new model. Let’r try, I don't mind. If she keeps making me dinner, she can do what ever she wants."  That left me unsure if he was serious or not. 
+
+"Maggie, come over to meet Karl."
+
+She walked up for Ted’s introduction. We shook hands the normal way. "Oh, look at those tattoos, let me see the forearm tree. That's wonderful, so unusual. Where did you have that done?"
+
+"Missoula."
+
+"That's not Ben's work. Ben did most of Ted's tattoos. What parlor?"
+
+"Maggie," Ted interrupted, "Karl here’s got no real riding gear. Been out there in a damn jean jacket and—what are those, gardening gloves?” Ted shook his head, then grinned. “You remember that Langlitz jacket and pants I picked up in Portland? What was it, ‘62? Bet they’d fit him.”
+
+"Yes! I saw that box last week when clearing out the storage room for my sewing. I put them in the Goodwill pile for next time we're in Helena." She turned and walked back into the house.
+
+Five minutes later, she brought a box up from the basement to the garage, where Ted opened it and pulled out the jacket and the leather pants. Maggie wiped them down with a cloth as she unfolded them. She held the jacket up to me. “This looks like a good fit. Try it on."
+
+I put it on and found the sleeves hanging halfway down my hands. "Well, the sleeves are too long for me, and the rest is really short."
+
+"Oh, no, they're not. Get on your bike and put your hands on the bars." We walked over to my Honda, mounted and stretched my hands out to the bars. The sleeves perfectly aligned on my wrists. "See, arms extended, you need extra length. As for the short body cut, well, that was the style back then. You're a classic now."
+
+"Well, this is nice, but I really can't afford to buy these from you." I
+ pulled the jacket off and relinquished it to Maggie.
+
+"I don't think that's the idea, dear."
+
+Ted spoke up, "Man, if they fit you, they are yours. Otherwise, they're just wasted in a box in the basement. No chance I’m squeezing into ‘em again.” He laughed loudly again, while patting his belly. "They deserve to be out on the highway, not sitting in box. My son, Mike, doesn't ride and probably never will. I doubt he'd fit in them anyway—poor guy got the family paunch early," he laughed again. "You're skinny enough that these will last you for years."
+
+David shoved in, "Hate to interrupt your garage sale, but let’s get on the goddamn highway."
+
+Ted turned to David with a frown. "Hold your throttle—this won't take long."
+
+Maggie led me inside to change my clothes into these creaking old leathers. Perhaps a bit overly effusive, I thanked her over and over for this wonderful and unexpected gift. "These will do for this ride, but when you get home, you need to get some leather dressing on these. They've been in a box for years and they are dry, dry, dry. I'm afraid they'll crack."
+
+Twenty minutes later, the three of us rolled out of the driveway, Ted leading, David following, and I took the rear.  We beelined over to the gas station not more than a block away to fill our tanks. I didn't need to add much, but David added several gallons. I got out my wallet to pay, but Ted stopped me, "You don't need that."
+
+"Oh, you don't have to pay for my gas. You've already given me these leathers."
+
+“Karl, I own this station. Got five more—one up in Choteau, four along I-15 north of Great Falls. You roll into any of ‘em on your bike, you don’t pay. Simple as that.”
+
+Ted remounted his bike while David came over to speak to me, holding the flask from his jacket's inner pocket, "I want you to stay a half mile to a mile behind us."
+
+"What? Why?" Am I exiled from the group?
+
+"435 ahead is twisty. You'll have a better time if you're not constantly crowding us on the curves." He took a long draw from the flattened shiny metal flask and slipped back into his jacket.
+
+"Oh, okay, okay." That made some sense, but I still suspected that he just didn't want to be seen with me. He's always criticized my rice burner.
+
+I ended up having a lot of fun on MT435, but I did catch up with them and then had to fall back. Then we switched to MT200, the road straightened out except for the few wider curves of Rogers Pass. 
+
+We made a brief stop in Lincoln, I assumed so that David could take a pull on his flask. David told me, "More curves ahead, you better hang back. If you don't catch up, remember to turn onto 83 at the big cow sculpture." 
+
+"David, I grew up around here, I remember the cow from when I was a little kid, I know where we’re going." He scowled at me. He treats me like I'm an idiot. 
+
+For the next forty minutes, I hung way back. I didn't really try to catch up until I made the turn onto MT83. I rolled the throttle up to just before the bike's uncomfortable vibration range, and ate up the miles to the town of Seeley Lake. I caught up to them just as they pulled off at the Moose River Bar. They were walking in as I pulled into the lot. Ted waved to me from the doorway. 
+
+Just a couple minutes later, I joined them at the bar pulling up a chair near Ted. David sat on the far side of Ted. 
+
+"David stopped me from setting you up with a beer. He said you wouldn't drink it. You in AA?"
+
+"Nope, I've never been a drinker, probably never will be."
+
+"I've not met many people that don't drink that aren't AA, holy rollers, or a Mormon. You don't look like a roller or a Mormon."
+
+"When I was at the university, I had a blood test at the student health center. The doctor asked when I had hepatitis. I didn't know anything about it. She said my liver numbers pointed to hepatitis damage. She advised me not to drink. She didn't have to tell me that. I learned in high school that I get drunk way too easily. Just one 3.2 beer can take me down for a couple of days. I hate it when I go to a bar with friends, I have to sit with a tall glass of watered-down 7-Up looking like an idiot."
+
+“Yeah, that’s rough. Fitting in matters, especially at your age.” Ted paused for a moment, thinking. “Easy fix, though—just grab an empty beer bottle. Pour your 7-Up in it. Nobody’ll look twice.”
+
+I sat silent for more than a moment rolling the idea in my head. "Duh. Why have I never thought of that?"
+
+David jumped in saying, "Because you weren't drunk enough to come up with the lie."
+
+Ted's thunder laugh startled me yet again. 
+
+When Ted finished his bottle of Olympia, he offered it to me. “Here’s your bottle. Rinse it out and dry it off, and always take it with you. Unless you'd rather have David's Rainier."
+
+I took the bottle. "Thank you." Still wondering why I never thought of this deception.
+
+We headed north through the glacially carved Swan Valley and its chain of lakes between the Mission Mountains to the west and the Swan Range to the east. The jagged line between the peaks of the Swans define the western boundary of the Bob Marshall Wilderness. 
+
+Riding north from Seeley Lake, my mood alternated between the exhilarating views of the ragged bare rock of the mountains and the sad devastation of the land between them. The timber industry plundered the valley's rich primeval forests in the last century. Logged right up to the lake shores, the denuded lands, whether subdivided for recreational cabins or just abandoned to erode, lose their ability to support wildlife. The non-native weeds move in: basically unstoppable. It takes more than a hundred years to regrow a forest in this harsh climate; the concept of replanting, foreign on private lands, has only existed for ten years on public lands. 
+
+The Mission Mountains on the west side, tall and rugged to the south, diminished rapidly in stature as we made our way north. By the time we got to the town of Big Fork, where the Swan River joins the Flathead, the range just vanishes into the earth. 
+
+After two more unnecessary stops at bars to sate David's constant need for beer, we rolled into the Glacier View Motor Lodge in the late afternoon. Heading into the office, we learned they had only two rooms left. David quickly pointed at me and said, "I'm not bunking with him."
+
+Ted turned to me and said, "I hope you don't mind my snoring, ‘cause it’s as loud as my laugh." As if to emphasize the point, he laughed again.
+
+David booked the last single room while Ted and I took the double. They unloaded their gear into the rooms. I just left everything in my saddlebags, thinking I'd grab stuff as I needed it. Both David and Ted said they were going down for naps before dinner, as it likely was to be a late night at the poker tables.
+
+As the motel sat right near the Flathead River, I took the opportunity to scope out Columbia Falls’ namesake falls. Even after an hour of walking, I never found them.
+
+## Poker at Vince's Iron Horse
+
+Later that evening, after a truly exceptional steak dinner at the new Grouse Mountain Lodge in Whitefish, we rode back to Columbia Falls to the bar near the railroad tracks: Vince's Iron Horse. 
+
+Thirty or so motorcycles lined up along the building's front wall like a line of carefully arranged dominoes, except with a pronounced lean. The neon sign blazed over the door in the shape of a motorcycle gang patch: the top rocker, in red neon, saying, "Vince's"; the center emblem, a blue and gold motorcycle with a long raked-out fork; the bottom rocker, also in red neon, read "Iron Horse". Though the sky still faded from the sunset an hour ago, the piercing light of the sign painted the asphalt and reflections sparkled from the line of heavy chromed bikes.
+
+Ted and David pulled in ahead of me, swung around, and then pushed themselves backwards into spaces next to a couple of absurdly raked-out Harleys.
+
+When I started my own parking maneuver, David waved his arms at me to stop. He approached, pointing down to the other end of the line of bikes. "You park down there with those Gold Wings." The fucker, he just wanted to demoralize me. I sullenly complied, anger growing.
+
+Ted and David didn't wait for me. They disappeared into the bar before I even got off my bike. I suppose having me park way down at the end saved David the indignity of walking in with a Honda rider. 
+
+I pulled the door open and stepped into a wall of noise and music. The bouncer at the door, a big man with Dolph on his black tank top shirt, looked me up and down. Finding nothing wrong, an upward nod gave me permission to continue into the cloud of cigarette and cigar smoke. A busty woman carrying a tray laden with beer pitchers wheeled around me. I stepped deeper into the crowd: three-quarters men, one-quarter women.  The hypermasculinity, the beards, the muscles, the skin, the hair, the ink: I wondered if I would get high on the testosterone in the air. Did I die and enter my Valhalla? 
+
+Scanning the crowd in the direction of the bar, I saw a hand go up and I traced it down to Ted's smiling face calling to me. I threaded through the throng, reveling in the heady odor of sweat, beer, smoke, and just an occasional whiff of a sweet draft of marijuana. Why were men like this never queer? How could they not be? Why did all of this go straight to my crotch?
+
+I got to the bar where Ted and David stood. Ted called through the tumult, “You got your bottle?" I pulled it from my jacket's inner pocket, he seized it, and a glass of ginger ale from the bar, deftly decanted it into the bottle. David watched with a disapproving eye. Ted handed the bottle to me, picked up his own beer from the bar, and held it up in a toast. We clinked bottles, then he and David did the same. David turned from the bar, saying just "Poker," declining my raised bottle. 
+
+As David moved, my view to the bar opened revealing a tattooed hugely muscled, dark bearded bartender wearing a black tank top emblazoned with the word, "Boss". My gaze froze onto the knotty scar spanning from the gray at the hairline above his right temple to the middle of his right eyebrow. His attention turned to me and, for a moment, we locked eyes. He gave me an upward nod, then turned away toward the till. An electric shiver flashed up my back.
+
+I followed Ted and David through a short passage that dog legged behind the bar to the card room. Decorated with detritus of dead motorcycles, license plates, and old gas station signs, the room had a bare, smooth concrete floor revealing it once had been an actual garage. The music, significantly subdued in comparison to the main bar, allowed for the dealers and players to hear each other clearly. There appeared to be ten tables, but only six of them active this evening. The disused ones had table tops covering the felt for use by customers seeking a quieter venue than the main bar. 
+
+Dave turned and glared at me as we approach the tables. "You’re not ready for this. You're out of your league."
+
+"I know how to play poker," I responded with some anger.
+
+"You're going to lose your money. Don’t come crying that I didn't warn you."
+
+We scored a five-seat table, two seats already occupied. The dealer, a wiry man in his early forties, wore an immaculately trimmed beard with sharp, precise edges. His black tank top shirt had "Dealer" and "Chris" printed on both the front and the back. His heavily tattooed arms displayed a gambling theme: dice pairs that added to seven, snake eyes, and box cars. There were several poker hands I recognized: the Dead Man's hand, two pair, aces over eights; the Steel Wheel, flush ace to five; the Bug Hand, five of a kind aces employing a joker. 
+
+Looking around, all the dealers wore black tank tops or T-shirts emblazoned with "Dealer" and their name. Not the usual buttoned-down, respectable look I had seen at other card rooms around the state. Back when I dealt cards at the Oxford in Missoula, we had to wear white shirts and bow ties. All the dealers, wait staff, and bar tenders with tattoos, muscles, or big tits displayed them. I suspected the staff with black long-sleeve shirts likely lacked the biker bona fides.
+
+Left of the dealer sat the first player, a bald guy with a large gold earring and lots of muddy tattoos on his bare arms, probably in his late fifties. I glanced at his neatly organized chips and I saw instantly that he had one hundred seventy-two in chips. My dealer's eye had not lost its focus in my two years off the felt.
+
+To his left sat an older woman, probably in her early sixties with dyed hair piled up in a style out of the early seventies. Her chips piled as neatly as her hairdo revealed two hundred forty-seven. An ash tray sat next to her with a cigarette burning like an incense stick. I imagined her punching keys at the checkout register at a local grocery store.
+
+The impeccable stacks of these two players spoke of experience and patience. They both displayed the perfect cooperation that the dealers love. I suspected both of them to be regulars at these tables, not the Glacier Park tourists passing through.
+
+When Ted sat next to her, the woman with the tall hair smiled a wide grin crowded with crooked, smoke-stained teeth and said, "I'm Sheila, and this is Dale," nodding to the man on her right. He looked up and made a grunt of acknowledgment.
+
+Ted introduced himself and then said, "David and Karl," gesturing to us, and we took our seats. I sat next to the dealer, on his right, and David filled out the table between Ted and me.
+
+The dealer looked to his three new players. “Fifty-dollar minimum buy-in, gentlemen." Both Ted and David put in a hundred each.
+
+I knew nothing of how Ted and David played, but I made some educated guesses. Ted just wanted to have fun; he would treat his cash as expendable in that pursuit. David, however, fancied himself a strong player, but knowing him, he'd play with his emotions, not his brain.
+
+My plan settled in quickly. None of these people knew my history. David treated me like a camp follower. Tonight, I’ll play the novice. I tentatively put in fifty, and on receiving the chips, I leaned over to David and asked, just a bit louder than necessary, "If I lose my gas money, will you help me get home?"
+
+"Hell, no."
+
+Ted looked at David with a frown, then caught my eye, and gave a subtle nod. I nodded back. David didn't notice.
+
+I feigned nervousness by fidgeting in my chair. I held my gaze on my chips as if I feared they'd flee. The dealer shuffled in my peripheral vision with practiced precision. I made no eye contact with anyone.
+
+"Let's begin. Ma’am," nodding to Shiela, "Gentlemen," nodding in a sweep to the rest of the table. He reached over the table and moved the button to Ted. "The small blind is to you, sir", addressing David. David pushed out a one-dollar chip. "And the big blind to you, sir," nodding to me. I pushed out two chips.
+
+"Blinds are up, we begin with the hole card deal." He smartly distributed the hole cards, once around the table, and then a second round to complete the deal. 
+
+I watched everyone discreetly lift up the corners of their cards. Then, in performing my chosen role, I just picked up my cards to look at them full face: 4♦ and 9♣. The "Trash Hand" to start, good omen. I looked at them for a while and then set them abruptly back down, as if I had just noticed that everyone was staring at me. 
+
+The dealer turned his focus to Dale, who immediately said, "call" and pushed out two chips.
+
+Sheila pushed ten out. "Raise." 
+
+Ted and David called.
+
+I paused, acting unsure and then folded. The game proceeded with me out of the action as I watched how they played. Sheila was a bold player. David, of course, unnecessarily jumped out of the gate running too hot.  Sheila took the pot, the dealer pushed way more to her than her hand deserved.
+
+I folded early in each of the next two hands.
+
+Ted leaned toward me, crossing David. "Son, you're going to have to start playing the game eventually." He sounded sorry for me, perfect. I fixed a sheepish lost look on my face. 
+
+Sheila suddenly spoke to me from across the table, "That's a really pretty earring you got there, honey. You get that down at that place on the reservation in Ronan?"
+
+"No, Blackfeet Reservation, Browning," I said.
+
+"You know that's a ladies' earring, don't you?"
+
+She's trying to fluster me. I retorted, "No, it's my earring."
+
+The dealer interrupted the banter by starting the next round. This time I decided to play, but lose a chunk of my cash. The hand went as planned, and I lost about half of my money. When the hand completed, Sheila blurted out, gesturing to me, “He’s the mark."
+
+This round, they all clearly tried to bait me, and I gobbled it up, ensuring my loss.  I nervously bought another hundred dollars in chips to prepare for my turn around. Having laid my own bait, I floundered through another few hands, waiting for the deal to favor me.
+
+With his mechanical precision, the dealer shuffled and dealt out the hole cards. This time I held the button, the position of power. I peeked at my cards, K♠, Q♠, letting my brow furrow, knowing that Sheila, the hawk, watched me from across the table.
+
+Dale put in the small blind, Sheila put in the big blind. Ted raised to fifteen. David raised it to twenty. 
+
+I called the twenty, as did Dale and Sheila.
+
+The dealer burned the top card and announced "the flop," flipping the first community cards: 10♠, J♠, 4♦
+
+As flops go, this was perfect. I had both an open-ended straight draw and a flush draw—three ways to hit a major hand and even more ways for a lesser hand.
+
+Dale, Sheila, and Ted all checked, but David, ever the aggressor, pushed forward another $10. “Let’s see if you’ve got the guts to stick around.” He clearly aimed the comment at me.
+
+I picked up my chips slowly, fumbling them a bit, “Uh, yeah, I’ll call,” I said, sliding them forward. Dale and Sheila called, Ted folded.
+
+The dealer burned another card, then announcing and revealing the turn: A♠.
+
+I hit the nut flush—the strongest possible hand on the board. Now it was all about extracting as much as I could from David or anyone else that tried to stay in this game.
+
+David, confident, bet $25, saying, "Let's see if this kid's got balls." I frowned and glanced at him. Feigning uncertainty, I suddenly thought about how I had tagged his pants this morning with my now-dried load that he still had not noticed. I fiddled with my chips and looked at the board like I was trying to do complex math in my head. Finally, I pushed forward a clumsy stack. “raise to $75" I added with a note of anger to goad David, "stop calling me kid."
+
+David, incredulous, squinted at me. He looked at my stack, then back at the table.
+
+Dale called, Sheila called. Then it was up to David, “Fine. Call.” He pushed out the fifty.
+
+The dealer burned the final card and flipped over the river: 3♥. It might as well have been a blank card as far as I cared. My flush stood unbeatable.
+
+David smirked looking at me, “you've got only about thirty-five left. Let's raise another thirty-five.”
+
+I widened my eyes, putting on my best “deer in the headlights” look. I squirmed in my chair, counted my chips twice.
+
+“I... I guess I’ll call,” I said meekly, pushing the last of my chips out, "does this make me 'all in'?"
+
+Ted answered, with a note of sadness, "Yes, son, yes it does."
+
+Dale folded. 
+
+Sheila, looked across to me. "Oh, honey, you don't know what you're doing.” She called, pushing out her thirty-five.
+
+David flipped over his cards triumphantly: A♦, J♣. He had two pair—Aces over Jacks—a strong hand. I watched Sheila grin, revealing that she had a better hand than David’s.  
+
+Playing my role next in the cycle, I laid down my cards with a smile: K♠, Q♠. 
+
+Sheila gasped, mucking her cards with her jaw hanging open. Simultaneously, David shouted, "Holy fuck!" Ted's laugh exploded through the din of the crowd, and people all over the room turned toward our table to look. The dealer raked the pile over to me. I'd swear he flashed a grin at me with a little nod, but I wasn't sure, as I concentrated on David's furious reaction. He did not look at me.
+
+Dale retired from the table. A tall man, clearly, at least to me, from the Salish tribe, took his place. He didn’t say his name.
+
+When the waitress came around to me, I had her bring David a shot of whiskey.
+
+For the next half hour, I took every hand. After yet another loss, Ted turned to me. “You’ve been hustling us the whole time, haven't you?"
+
+"Maybe," I grinned. 
+
+"Where'd you learn to play poker like this?"
+
+"Oh! You call this tunnel vision Texas line dance, poker? I thought poker was a proper game where everyone played their own hand. We’re Montanans, we ought to be playing stud poker. This Texas thing was invented by television game show producers. It makes every dealer into a Vanna White wanna-be, turning over the next letter."
+
+The dealer laughed.
+
+Ted turned to David, "Shall we cash out before this man fleeces us down to our shorts?"
+
+David grunted in ascent, still not looking at me.
+
+"I'm gonna stick around here for another half hour. I want to get next month's rent in the bank." 
+
+They cashed out. "We'll be at the pool tables with our remaining quarters or maybe we'll try a nice safe game of pinball." He smiled at me. "Karl, that was beautiful—I'm gonna tell this story for years. I'm sorry Maggie missed this." 
+
+I nodded, turning back to the felt. A couple of new players joined to fill out the table. The following games gave me a run, but I held it together. Sheila cashed out before I could bankrupt her. 
+
+Fifteen minutes later, I noticed that Ted, without David, had returned to watch. He stood with Sheila, quietly talking together and watching me play.
+
+Another twenty minutes, I had a whole lot more than just the rent money, just under a thousand bucks. The guy from the Salish Tribe was the one that gave me the hardest run. I lost one game to him. Some hands can’t win. Overall, I prevailed, routing the table. I requested a cash out, and the dealer racked my chips. "I'm sorry I wiped out your toke for this table. I make it up to you now," I pushed 150 in chips to him.
+
+The dealer broke into a wide grin, saying in an overly formal way, "Thank you, sir. It was a pleasure to watch you work this evening." He handed me my racks.
+
+Quite a few folks had  gathered to watch the rout. When I stepped away from the table, Sheila came right up to me, saying in her cigarette-darkened voice, “Honey, you had me buffaloed. You came in there looking so scared. You even distracted me with your beaded earring. By the way, I still like it; it looks good on a man." She smiled at me, but her gray eyes looked like steel fixed on revenge.
+
+Ted stepped up to me. "Son, that was incredible. Seriously, where did you learn to play like that?"
+
+"Walk with me to the cashier," I turned and continued talking. "I'm the youngest son of a card-playing lawyer. I've been playing since I was five. During my last two years at the university, I dealt cards at the Ox in Missoula on the weekends. It paid for my books, tuition, and food."
+
+"The Oxford? That's it. That's where I recognized you from. When I saw you on my driveway this morning, I just knew I had seen you before. I'm dead sure Maggie and I sat at your table. Wait until I tell her."
+
+"Sorry, I didn't recognize you. I saw a lot of people and spent most of my time concentrating on managing the game. I've been off the felt for about two years."
+
+We walked back into the main bar area. "Where's David?"
+
+"Over there on the other side of the pool tables." He gestured to the other side of the room. "I think he's talking up a hooker."
+
+"Oh, good for him. Getting laid will do him some good."
+
+We took a couple of seats at the bar and started talking. Ted told me of his experience in logistics during the Vietnam War, stationed in Hawaii's Fort Shafter.  Specifically, he worked on the distribution of mechanical supplies, spare parts, and repair tools for Army equipment having engines. When he retired out of the service, he and Maggie relocated to Augusta, Montana, where they bought out the garage and gas station.
+
+Eventually, the conversation returned to David. "So, you and David make kind of an odd pair. I've not figured out what's going on. Seems, well, out of character for him to have befriended you. You willing to tell me what's going on?"
+
+"I do not know why he keeps inviting me out on rides. He's constantly critical of me, my bike, and just about everything I do. Maybe I'm attracted to the criticism as that's all I ever heard in my life.  Affinity of the outcast, perhaps."
+
+"And how are you an outcast?"
+
+I shrugged and sighed heavily. "God, I hate repeating this story over and over. I am the black sheep in a family of overachievers. We'll save this for another time, not here, in this place."
+
+"Fair enough. I just feel I need to warn you about David. He had a really rough time in 'Nam and even more afterwards. Has he told you about it?"
+
+"No, not a word."
+
+"Well, really, that's his story to tell. I'll just say he's got a lot of anger in him. I think he did some time for assault. He hurt his wife pretty bad. Be careful. He didn't like what you did at the poker table. Tread lightly, son."
+
+"Did I take his hooker money?"
+
+"I doubt it." Ted looked over beyond the pool tables. David and the woman were gone. 
+
+We were silent for a while, and Ted stood up. "It's pushing one in the morning. I'm an old man, and I think I'm gonna to call it a night. How about you?"
+
+"I'm going to stick around for a while." I was not enthusiastic to spend a sleepless night listening to Ted snoring. 
+
+"Well, have a good night." He turned and headed for the door. As he approached, he suddenly turned around and caught my eye. He made an exaggerated head movement as his way of pointing to a group of three women sitting at a table together. God, he was the antithesis of David. Ted was pointing out some women that he thought ought to interest me. 
+
+I laughed and gave him a dismissive wave. 
+
+The crowd had thinned significantly. I walked back to the card room. There was only one table still running. Wondering what I was going to do, I turned around and found myself nearly face to face with the dealer from the table earlier.
+
+"Hey there. Chris. Your dealer from earlier tonight."
+
+"Chris, yes, of course I recognize you. I'm Karl."
+
+“Watchin’ you work that table tonight made my damn day. You had it locked down the second you sat. Thought you were gettin’ chewed up ‘til I caught on. Even Sheila—Sheila—called you the mark. She don’t get fooled easy. But you sold it, and you took the whole table for a ride.”
+
+"Beginners luck, I guess."
+
+“Oh, don't feed me that line. The whole nervous act? Chip fumbling, folding clean hands—textbook playing weak to bait action. You let yourself bleed chips early, then hit the nuts and squeezed max value. That’s not luck, Karl. I’m playing a hunch here. Where were you in the box?”
+
+“Box?” I feigned.
+
+“That crack about ‘Texas line dance poker’? The whole Vanna White bit? You’re not talking like a player, you’re talking like a card pitcher. Then after you routed the table, you apologized to me for ruining the toke and then made it right. Only a guy that’s been in the box would do that.”
+
+I paused for a few moments and then confessed. “I dealt five and seven stud at the Ox in Missoula in '80 through '82. There was a push for this Texas Hold’em crap. I did it for a couple of months then dropped out after graduating from the university.”
+
+Chris Nodded “Thought so. The Oxford—that’s Alan’s joint on Higgins, yeah? Place has history. Been runnin’ poker for decades, even before it went legal in ‘73.”
+
+“Yeah, Alan was my boss. I wouldn’t know the history. I was in grade school in ‘73.”
+
+“Yeah, Hold’em is a game show and soap opera at the same time. All-ins, river drama, complicated rules—it’s a TV show more than poker. You played it tight tonight, kept things calm. That’s rare, man.”
+
+“Honestly? I was just pushing David. He’s been an ass on the ride all day. He’s criticized everything I did today. He even told me I had to ride no closer than a mile behind them. I told him that I knew how to play poker, but he kept up belittling me, so I took him for a ride.”
+
+“Well, you knocked him alright. He was steaming hard by the time he left the table. But listen, I have more questions about David later. That ain't why I’m wanting to talk to you.”
+
+“We’re on the edge of the Sturgis rush. Bikers, hundreds of them, pour through from west coast states and Canada, cuttin' through Glacier Park on the way to South Dakota. We're the first card room east of the Idaho border. We’re perfectly situated as a biker rest stop before spending a day riding Going to the Sun in the park.  We will make fifty percent of our yearly profit in the next four weeks. We’re gonna be packed. We can fill all ten tables every night, and I’m short on solid dealers who can keep the action clean and calm. I think you’re my man.”
+
+“Chris, I don’t live here. I’m out near East Glacier. That’s 75 miles—the other side of Marias Pass. I’m not driving three hours round trip for a poker shift.”
+
+“I hear you. The motel across the lot—we own it, we can comp you the room. No late-night mountain passes, just a sixty-second walk to the tables. You’d be right here, no stress. You’d bring in way more money for us than the room would. You totally got the look we want with the long hair, long beard, and ink. I assume you've got a bike out front. Club guys’ll gravitate to a dealer that looks like ‘em. It’s all about affinity.”
+
+“And the cut?”
+
+“Standard base, but forget the base—it’s the tokes where the money is. The bikers are partying, they tip heavy, especially when the game’s smooth. You’ll be clearing way more than you did tonight, and you won’t have to hustle the whole table solo.”
+
+“Still not a fan of the whole Texas Hold’em glamour show. I miss real poker—five-draw, seven-stud.”
+
+“I get it. Honestly? I’d rather deal stud too. But we’re a business—we gotta run what the players are throwin’ money at. They want the glamour, the drama. Think Vegas—people pay out the ass for the show. That said—I’ve been thinking about running a side table for five-draw. Old-school action for the quieter crowd, we don’t know if it would sell, but we’ll never know until we try.  But I need my main tables covered solid before I can try it.” 
+
+"So you're the head dealer?"
+
+"That and half owner of the whole place. I don't have to consult with anyone to offer this gig."
+
+"I'll think about it. How soon do you need to know?"
+
+"Yesterday. Can I get a number for you?"
+
+"I don't have a phone."
+
+"A place to leave a message?"
+
+"Eh, Gladys, my landlady has made it very clear that she's not a message service. I'll call you when I get home tomorrow."
+
+"You got your dealer license on you? Let me get a head start on verification." He led me to the bar where he copied down my license number and the rest of the information he needed. "Hey, you mind if I call Alan at the Oxford?"
+
+"Sure, he's a good man. He'll give me a good recommendation."
+
+“Appreciate you thinkin’ it over. You could get us outta a real tight spot. First time we got competition—Grouse Mountain Lodge opened a card room, poached some of our dealers.”
+
+I laughed. “Ted, David, and I had dinner there this evening. It was really good.”
+
+The crowd was really thinning now, just before the 2 a.m. mandatory closing. The last call sign had been up for quite a while. Staff were already out cleaning tables. 
+
+Chris spoke up again. "Can I ask you a question about your buddy, David?"
+
+"Sure."
+
+"Are you two lovers?"
+
+My eyes slammed shut for a full second. How the holy fuck does everyone figure out that I'm queer? I reopened my eyes, "No," I said emphatically. 
+
+"What are you then?"
+
+I stayed silent for an uncomfortable moment. "I guess I'm just another one of his hookers."
+
+"Yeah, I wondered about that. I recognized him. He's been here before. He links up with the hookers, but he’s always got an eye on the young, wiry guys like you. Though, I’ve never seen him score with one. He pays you?"
+
+“Yeah.”
+
+“What do you do for him?” He saw my eyes widen and quickly continued, “Relax. Not gonna judge, no matter what it is. See that guy with the long ponytail at the other end of the bar closing the till? That's Vince. My business partner—owns this place with me. Also my partner in bed. We suck each other’s dicks, and he fucks my ass. So whatever you got goin’ on? Trust me, I ain’t the one to side-eye it.”
+
+“Oh, ...wow,” I stammered my voice suddenly shaking, “I’ve never met another…”  My eyes started to tear, “… another …”
+
+“Gay man?” Chris finished for me.
+
+I nodded, struggling to hold back tears.
+
+"After your performance at the felt, I didn't realize you were so green." He called out down the bar, "Yo! Vince! I want you to meet the dealer I scoped out this evening."
+
+Vince looked up from his work and nodded, walking down the length of the bar, deftly threading through his employees' cleaning work. I had admired this man from across the bar when we first came in several hours ago. His scar, looking as if someone or something had once tried to remove his scalp, drew my eyes like a magnet. As he approached, I realized his great size. His arm muscles likely out sized my legs.
+
+I quickly turned away, wiping the moisture from my eyes and turned back around to face them.
+
+Vince stepped up and Chris introduced us. "Vince, this is Karl, the dealer I told you about."
+
+Vince reached out with his great hand and dominated mine with the biker hand clasp: a railroad sized monkey wrench versus my slender axe handle. My hand didn't even come close to encircling his wrist. “Howdy, Karl. Heard you put on a damn show at the felt tonight. Not many walk outta that room up a grand—‘cept maybe Sheila. Chris talk you into joinin’ us yet?"
+
+"We're talking about it." I tried to hold down the quaver in my voice.
+
+Chris said to Vince, "Karl here is family." He turned to me. "Now you've met two."
+
+"Family, eh?" A wolfish grin grew beneath his dark beard and my dick unexpectedly awoke in my pants as our eyes connected. “All the more reason you oughta stick with us. Gotta get back, finish up the till. You gonna be around in forty when we lock up?”
+
+"Can be. I don't really have much of a place to go."
+
+"Great," he said to me, and then to Chris, "Treat him right."
+
+Chris nodded and turned back to me. "So you're riding through with David and that older guy, uh..."
+
+"Ted", I filled in.
+
+"You work the same deal with Ted as you do with David?"
+
+"No, I just met Ted today. I rode down to meet David in Heart Butte, we picked up Ted in Augusta at his place with his wife. She didn't come with us."
+
+"Where you staying?"
+
+"Place called the Glacier View, they didn't have a room for me, so I was gonna bunk in the double with Ted."
+
+"I think we can arrange some better accommodations for you. Glacier View is where the hookers take their johns."
+
+Just then, the woman that I recognized as the cashier that converted my chips, approached with a ledger book: "All balanced and ready for your signature."
+
+Chris said to me, "I've got about twenty minutes of work to do here before we lock up for the night. You want a beer?"
+
+"No, I don't drink," I thought of my faux beer bottle lost hours ago to an overeager busboy.
+
+"Oh, yeah, I didn't see you drink anything all night," he turned to the woman, "Thank you, Judy, you can split anytime." Returning to me, he continued, "That's another reason I want you as dealer, sober and level-headed."
+
+"Good night," Judy said as she headed for the back door. 
+
+"I got some closing duties to get to in the office, hang where ever you'd like, we'll be done in a bit."
+
+I killed the next twenty minutes at a Williams Time Fantasy pinball machine near the pool tables. Vince and Chris approached me and said they were ready to go. 
+
+"Where are we going?" I felt some trepidation. 
+
+"I said we'd provide you with accommodations, that means we're taking you home with us." Chris smiled.
+
+We stepped out the back and walked toward a car. I halted abruptly. "My bike's out front. Should I follow you?"
+
+"Ah, shit, sorry,” Vince said. “Let’s stash your bike inside. That way we can talk in the car on the way. Didn’t get to see you clean out the table—figured I oughta get to know you.”
+
+Chris opened the side door, while I fetched the bike. I hadn't realized the layout of the building. We actually rolled the bike into the card room. I flipped open my saddle bags and pulled out a change of clothes what I'd need for the night. I had spent the evening in my new riding leathers.
+
+We drove for twenty minutes, Vince at the wheel. I think we drove toward Whitefish, but maybe toward Kalispell—being unfamiliar with the area, I wasn't sure in the dark. Chris related his perspective of my performance to Vince as we drove.  
+
+Vince, laughing, looked at me in the rear view mirror. "You busted your own buddy for callin' you 'kid'—and took out a little old lady in the process? Damn, you got balls. Sheila’s one of the sharpest regulars we got. Bet she’s gnashin’ her dentures, waitin’ to take another run at you." Chris laughed.
+
+We pulled off the gravel forest road onto a one-lane two-track driveway, with a darkened log house at the end. I got out of the back seat and stood for a moment at the house. Hanging in the sky over it, the Great Bear, Ursus Major, my childhood friend. Another omen?
+
+We talked for a while sitting in the front room of their home. Vince sat in a recliner while Chris and I sat next to each other on the plush couch. Chris reopened our interrupted conversation about my relationship with David. "What does David pay you to do?"
+
+"We go out on rides for an afternoon or a day, and when we get back to his cabin in Heart Butte, I blow him."
+
+"Does he reciprocate?"
+
+"No, but he gives me a twenty-dollar bill."
+
+Vince snorted, "You’re sellin’ yourself short. If that’s the kinda work you want, we can line up better clients—real money."
+
+"I just want someone that’s as interested in me as I am in him. All I get from David is someone to ride with, the twenty bucks, and a shitload of criticism. The paying part was not my idea; he said it had to happen that way so I’d remember that he’s not gay. Blowing David is the only sex I've had for four years."
+
+"What were you doing four years ago?"
+
+"I had a boyfriend at the university in Bozeman, well sort of—he was just a horny guy that dated women. I fell in love with him. To him, I was just a hiking buddy that could get him off. He never reciprocated,” I said. 
+
+"All hell broke loose when my parents found out. They said that homos had no right to a home or a job. They said I could rightfully be sent to prison. They tried to commit me to Warm Springs Mental Institution. The psychiatrist offered shock treatments as an alternative.”
+
+“Christ, did they do that to you?"
+
+"No, I'm an adult, I didn't consent to it. They couldn't force it on me. The doctor said that homosexuality wasn't grounds for involuntary commitment like it used to be. Though he made it clear that he disagreed and really tried to sell me on the shock treatment as the solution to my problem."
+
+Vince weighed in, "Montana—always playin’ catch-up, about forty years late.” 
+
+Chris turned put his hand on my shoulder. “You need to get this—bein’ gay’s just as normal as anything else.”
+
+"My parents threw me out and cut me off because I refused the treatment. I took all my savings and enrolled in the state course for card dealing. I got my license. Dealing at the Oxford, mainly the tokes, paid me the cash I needed to finish my degree. As soon as I graduated, I left Missoula.”
+
+“and you chose the fuckin' Blackfeet Rez? Why not a city—Seattle, or San Francisco?”
+
+“I hate cities. I love mountains and wilderness. I thought I should just disappear. There's no place for me. I figured someday I wouldn't return from a hike, fall from a cliff, or stumble into an grizzly bear, and no one would ever know or care." 
+
+"The things you see on television about gay men in San Francisco, that's not me. I'm not like those men. I hate disco music." I looked to see if that got a smile from them, it didn't. "Until tonight I've never met another gay man, I never knew that gay men like you existed."
+
+“Brother, plenty kinds of gay, same as plenty kinds of men. You been livin’ out on the rez off twenty-dollar blow jobs?”
+
+"No, no, I took a job programming at a little software company in East Glacier. They make school records software for the  reservation schools. It didn't last, I fought with the owner, he fired me. I wrangled a temporary part-time job teaching programming at the Blackfeet Community College through this last spring.  I just found out in May that the college is getting contract teachers from some federal program next year, and so I've lost that job, too."
+
+"To bad nobody offered you a job about two hours ago. Oh, wait..."
+
+"I'm sorry, I didn't mean to just spew my sob story at you. Sometimes, I can't summon my poker face."
+
+Chris responded, "We've all got well-trained poker faces. We need them to stay alive; it’s a rough world.  You don't need it with us."
+
+"It’s past three—we need to crash.” Vince glanced over at Chris, who gave a nod. “Karl, guest room’s yours. But you can bunk in our bed with us if you want.”
+
+A half hour later, I lay naked between these two generous souls, Vince's muscled arm draped over my chest. There had been no sex; they just held me. I fell asleep feeling valued and safe for the first time in my adult life.

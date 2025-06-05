@@ -1,0 +1,223 @@
+---
+blog_title: 1984-06-16 - Riding Logan Pass
+blog_url_basename: 
+blog_url: 
+blog_page_id: 
+blog_header_url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj62itAnONeIx0ipZsflinW9eTWPOxkfb_UXjV8n6GDTyUH58PPVP-AV7PrLGP_JadBSkkXDdijfSc-PGY69MAF270UW-2n87CgErAsfnVUS7hKwcim8NdwJ7BkE_Dw97EHsZIielUz7LDq3t4e4xNqcO1VJHB2NMIRvuoQoHaScWHkLngHVxW0IA/s1600/logan.png
+blog_short_warning: gay sex, prostitution
+blog_hash: 
+blog_publish_date: 2025-02-28 1:30pm
+blog_update_date: 2025-06-04 01:25pm
+blog_author_note: 
+blog_long_warning: 
+blog_tag_line:
+---
+
+#Karl #David #GlacierNationalPark #HeartButte
+
+## Glacier National Park, Montana
+
+We left the East Glacier Park Amtrak Station at nine fifteen, making our first stop at the summit of US2’s Marias Pass after only twenty minutes down the road.  
+
+At the top of Marais Pass, the lowest pass over the continental divide, the Teddy Roosevelt Memorial Obelisk stands on the double yellow centerline of the highway with no protection. These lanes don’t even try to curve around this artifact of 1930s highway engineering. Judging by the skid marks on the asphalt and scars on the monument’s plinth, this obelisk kills. With twin parking areas on the highway shoulders, we saw families with children crossing the 55 mph traffic lanes to pose for pictures: the dumbest tourist lure ever.
+
+I didn’t understand why we stopped here until I noticed David pull a flask from his jacket pocket and take a deep drink. Before we moved on, we watched a BN freight train pull to a stop in the area where the tracks parallel the highway. The crew started walking back the length of their train: an inspection before the long descent down the pass into the Flathead River watershed. I smiled when I realized that David must be a railfan like me.
+
+US2 is a slow road around the southern edge of Glacier Park: curves, heavy truck traffic, gawking tourist traffic, elk, mountain goats, big horn sheep, both black and grizzly bears. The parts within the boundaries of the park are limited to 40 mph, but the Montana Highway Department obviously built it for significantly higher speeds. 
+
+David, leading, of course, kept between 60 and 70 mph, making cringe-worthy and ill-timed passes around slower traffic. I eventually fell more than a mile behind him. I worked to catch up but did not succeed until the town of West Glacier at noon. 
+
+David chose a bar for lunch. As always, he had at least three beers with his meal. I totally refrained from alcohol, and he criticized me for it, referring to me as a wimp and saying I rode my bike like somebody’s grandmother. Irritated with him, I tried to ignore his disapproval. I did, though, continually marveled at his ability to not get drunk. While sitting at the bar, he complained about the "fucking National Park Service" and the fees they unconstitutionally levy on the free citizens of America. I ignored those, too. 
+
+The next leg of our ride, the renowned Going to the Sun Road, traverses back eastbound over Logan Pass at a significantly higher elevation than US2's Marias Pass. Sure enough, David blew through the Park entrance station without paying. Frowning, I stopped and paid the entry fee for both of us. The attendant, forestalled in reporting the scofflaw biker via radio, turned her lecture on me, as if were responsible for David's behavior. 
+
+I declined the tourist pamphlet she offered as I had no place to put it. She warned me that motorcycles must turn around at The Loop because road conditions at the top of the pass may be icy and therefore unsuitable for two-wheeled vehicles. The loop is a singular switchback where the highway climbs out of the McDonald Creek valley at the Lewis Overthrust Fault and starts the ascent to Logan Pass. 
+
+As I expected, forty minutes later, David blew past the warning sign barring motorcycles from continuing. I stopped, thinking of what I was told at the fee station. I didn't know what to do. Suddenly the screeching gears of a Red Jammer behind me pushed me into my decision. I glanced at the motor coach in my mirror, stomped the bike back into first, and took off.  I refused to risk that my lack of courage would dissuade David from riding with me in the future.
+
+I confess, I got a rush for my defiance and my trepidation popped like a balloon. 
+
+As the road climbs Logan Pass, it crosses through the billion-year-old Precambrian Belt, sedimentary quartzites and carbonate rocks, shoved over the top of the younger, 70-million-year-old, Cretaceous group. The Lewis Overthrust fault restacked the sedimentary deck. 
+
+Glaciers of the recent ice ages carved through both layers, leaving behind sheer cliffs that rise to the left and plunge thousands of feet to the right. The shoulderless two-lane road of Going to the Sun slashes the escarpment like a seven mile long knife wound. A meager low rock wall masquerades as a guardrail, offering little more than a minor delay on the surely fatal drop to the valley floor.
+
+This was not my first time climbing Logan Pass. I recall, at least twice, watching the view from the back seat in my parent's car on family trips. When I moved here a couple years ago, I drove my Subaru across it one each Summer. Last summer, I parked the Subaru at the Loop and then rode my mountain bike over the top and down to St Mary. I caught one of the Red Jammers back to the loop to fetch my car. This was my first time riding the pass on a motorcycle.
+
+As we ascended, snowbanks, low at first, soon towered over us, blocking the view into the valley. Rounding a corner, we came to the famous weeping wall. However, on this warm day, with deep snow hanging precariously above, the usual line of weeping rivulets was replaced by a roaring waterfall that crashed across both lanes of the road. Water ran two inches deep on the asphalt, pooling and then cascading through over the edge into the valley.
+
+It started as spray, became heavy rain, spent a moment as an icy firehose. Through the hundred-fifty feet span, it oscillated in intensity, but with a consistent overwhelming cold. The shock of it stole my breath, a piercing cold that paradoxically felt like fire: a jolt through my nerves tensing every muscle in my body. Instinct screamed at me to   brake, but I knew better. The cars ahead and behind had windshield wipers; we had only dark glasses and soaked bandanas. Emerging from the deluge, water streamed from my face, I chanced letting go with my left hand to push my glasses up. I saw no bare asphalt ahead, just slush coating the highway. Treacherous, but electrifying, no stopping, no brakes, no abrupt turns, follow the grade, stay in the wheel paths left by the cars. I rode on, the rush of danger surging through me—a raw, exhilarating high.
+
+Rounding Obeline Bend, the cliffs and slush ended, and we emerged onto the narrow tipped plateau of the pass. Both sides of the road, plowed between towering snowbanks, jammed with tourist cars and snow removal equipment. We pulled into a narrow slot between two snowplows and switched off the bikes. Wet, shivering, but with a grin so broad that it hurt, I called out to David, "I wanna do that again!"
+
+He smiled at me with a devilish grin that made my heart pound. Goddamn, his face, reddened from the glaring sunshine and wet as the highway, thrilled me. I calculated this to be his fourth week of beard growth now. He was as beautiful as the mountains themselves. He pulled his flask from his jacket and held it out to me. I paused for only a moment, then accepted it, took a tiny hit, just a taste and handed it back. 
+
+“Didn’t think you had it in you.” David smirked, his eyes glinting with what I took as approval. “Figured you’d be a good little citizen, follow the rules, turn your ass around when they told you to.”
+
+He leaned in slightly, his voice low but firm. “This is what I’m talking about, kid. You’re a free man. You’ve got the right to chase happiness however the hell you want. Ain’t nobody got the authority to tell you otherwise.”
+
+Shivering cold, wet, tired, but I didn’t want this to ever end. I never felt so certain about anything: this was what I’m supposed to do with my life. I pulled off my gloves and stuffed them between the bike’s cylinders and the frame. My rapidly cooling bike would dry them off. Tiny wisps of steam rose into the blinding sunshine from the drying gloves.
+
+I noticed cross-country and telemark skiers had cut a steep trail up to the top of the snowbank on the south side of the road. Without hesitation, fueled by my endorphin high, I bolted by David and ascended the snow trail. At the top, the scene opened up to an expansive snowfield straddling on the Continental Divide: the Logan Creek to the west, draining to the Columbia River and the Pacific Ocean, and St. Mary to the east, draining to the Missouri, Mississippi, then the Gulf of Mexico. I laughed when the term, "hyperbolic paraboloid" sprang to mind from a far away calculus course. 
+
+Looking back down to the highway, I saw David still standing by his bike, gazing up at me as if I were the crazy one. "David, you gotta come up. The view is incredible."
+
+I think he frowned at me, but begrudgingly, he started the ascent. 
+
+I hadn't realized it until that moment, but I stood twenty feet above the entrance to the unplowed parking lot of the Logan Pass Visitor Center. The building itself didn't show under all the snow: just a hump about forty yards up the hill. 
+
+David joined me. His awestruck expression gave me another rush.
+Clements Mountain, sheer cliffs like the triangular Matterhorn, dominated the southwest skyline. The great maw of the St. Mary Valley, curving slightly to the north, laden with a broad turquoise lake extended eastward flanked by ranks of mountain peaks.
+
+I recited the mountain names from memory that I had seen on my maps since I was a child: "Peigan, Reynolds, Heavy Runner, Going-to-the-Sun, Citadel, Little Chief, Mahtotopa, Red Eagle." In the distance, the mountains suddenly quit, and the high plains of the Blackfoot lands stretched to the dusty eastern horizon. 
+
+We stood there entranced with the view for twenty minutes before begrudedly heading back to the bikes to start the descent into the valley.
+
+Pulling away from the buried visitor center, we rode down a canyon of snow.  The walls got higher and higher: Big Drift, a cornice of snow that buries the highway up to eighty feet deep on the worst winters. This year, the walls of snow flanking the highway loomed fifty feet above us as if we rode down a giant curving hallway of ice.
+
+As we descended the pass, eastbound, the air temperature got warmer and warmer. I completely dried out by the time we got to the town of St. Mary just beyond the foot of its namesake lake. 
+
+We pulled into a gas station and indulged in National Park-priced fuel for our bikes. David also wanted to head into Marias River  Pizza for a beer. We settled in at the bar. When I ordered 7-up, David gave me a look, but then shrugged.
+
+“Didn’t think you’d make it through this ride today.” David nodded to me. “But hell, you did alright. Way better than I figured.”
+
+I was thrilled for his praise, but tried to hide the flush that I felt through my body at his words. It wasn’t until that moment that I realized how desperately craved his approval. That contrarian in the back of my mind started waving a red flag, but I suppressed the thought.
+
+“Pulled a couple of elk steaks from the freezer this morning, just in case you actually made it.” David gave me a sideways glance. “The cabin’s about an hour from here. If you’re up for it, I’ll throw them on the grill—you can stick around for dinner.”
+
+"Sure, that would be great" I felt a strong need for a poker face with him, while inside I whooped with excitement. David obviously planned this ride a test, and I aced it.
+
+Just a little over an hour later, we turned up his dirt road to his cabin. This is where he said I'd fail last time we rode together. I started with apprehension, expecting the worst, another test, but it was actually easier than the road to my own cabin. 
+
+We dismounted our bikes behind his F250 pickup truck. I wondered how he financed, insured, and registered a truck with his uncooperative stance on state licenses. Were these stolen plates, too? Best not to rock his boat by asking.
+
+It started cooling rapidly outside by the time he had a fire going in the grill near the picnic table. He had good coals glowing after forty minutes and started grilling the elk steaks. "How do you like it cooked?"
+
+"I'll take it like you give it to me." I didn't realize I had said something provocative until I saw him flash a fleeting smirk at me. 
+
+"Rare, then."  Soon thereafter, he stabbed the steaks with a large fork and placed them on plates. Lifting the grill with his spatula, he reached into the coals with tongs and pulled out two foil-wrapped potatoes. I hadn't even seen him start those.
+
+Retiring inside to avoid the gathering mosquito clouds, we dug into our meal on his small two-seat table. I didn't realize how hungry I had become. We ate in silence, both just concentrating on the food. 
+
+I had not many opportunities in my life to eat elk; my father did not hunt. I never learned to hunt. Living in Montana and not hunting seemed a shameful thing to me. It was a great meal, though entirely lacking anything green. 
+
+Afterwards, David cracked open a Rainier. "I'm going to give up offering you beer."
+
+"Yeah, I'm just not interested in alcohol. It just makes me stupid and clumsy. I had hepatitis as a kid; doctors say my liver doesn't work right."
+
+"Is that why you're so damn scrawny?"
+
+“Maybe, I don’t know. I just know alcohol is not a good time. I’m a pot smoker, though.”
+
+“Go for it. If you’ve got it, smoke it. If you’re sharing, well… I ain’t saying no.”
+
+"Great. Yes, I have it here," I said and pulled a little deer leather pouch out of my pocket. I loaded the pipe quickly and offered it to David.
+
+He took a hit, snorked on it a bit, held it, and then exhaled a long smoke plume. He smiled as he offered it back.
+
+“Glad to see you got some kind of vice. Not drinking just doesn’t sit right—feels damn unnatural. ‘Specially out here on the rez.”
+
+I took my hit on the pipe, and we passed it back and forth several times.
+
+"You got family here?"
+
+"No, I grew up in Missoula; my parents are still there."
+
+"Why the hell are you up here of all places?"
+
+I paused for quite a while before answering, "To get away."
+
+David raised an eyebrow. “From what? You running from the law?”
+
+"My parents threw me out. They disowned me."
+
+"What'd you do?"
+
+"Don't I have the right as one of your so-called Sovereign Citizens to remain silent?"
+
+After a pause, "Fair enough. How are you making a living here?"
+
+"I was teaching at the Blackfoot Community College. Computer programming. That jobs gone, hoping I can pick it up again in the fall."
+
+David smirked, giving me a once-over. “You’re a real interesting one, kid—” he caught himself, then shrugged. ”—I mean no disrespect. Man.”
+
+He snorted. “You talk like a goddamn nerd, but with the tats, the hair, the earrings… you look like some scrawny-ass Hell’s Angel reject.” He eyed me, like trying to figure me out. “You ain’t makin’ much at that college gig, are ya? You even gettin’ by?”
+
+"Barely. I eat a lot of rice and beans. I split and stack wood for Gladys and her restaurant, so she gives me enough wood to keep warm.  I use the motorcycle or my mountain bike to get to town, saves on gas money. I got a 4-wheel drive Subaru for when I need to get to Browning to teach or in winter to get supplies."
+
+"You love your rice burners. How long have you been up here?"
+
+"Moved here in '82. So two years. What about you?"
+
+“Only up here on weekends in the summer. I live in Great Falls.” David leaned back slightly. “Drive trucks for the Wholesale Grocers Association—supply the park lodges, restaurants, grocery stores, everything north and west of Great Falls. Many Glacier down to Augusta.”
+
+He nodded once, as if reassuring himself. “Union shop, so I do alright.”
+
+David kept talking, unprompted, like he just needed to get it out. “Wife divorced me a year ago. Took damn near everything. Didn’t want the cabin, though, so at least I got this.” He smirked, bitter. “Ain’t payin’ no fuckin' alimony, either.”
+
+Before I could respond, he shifted gears. “Been watchin’ you all day. You didn’t even see that girl at the pizza place in St. Mary tryin’ to catch your eye. Damn near flashed her tits at you, and you weren’t even lookin’.”
+
+He gave me a knowing look. “But you were watchin’ them guys in the booth near the jukebox. Ninety-nine percent sure you’re a queer.” He let that hang, waiting, like he expected me to confirm it.
+
+I tensed, preparing to bolt, shifting my hand to my pocket to ensure I had quick access to my bike key.
+
+“It’s alright. Knew plenty of guys in ‘Nam that leaned that way.” David’s tone was oddly even, like he was stating a fact. “Damn good fighters. Loyal as hell. Had it rough, though—just like I figure you’re havin’ it.”
+
+I stayed silent, looking at him, keeping my face as neutral as I could.
+
+David exhaled slowly, his voice dropping into something almost casual. “Alright, now that you’re—well, both of us are—good and stoned, I’ve got a proposition for you.” He looked directly at me, his expression like he's about to give me a military order. “I’m in need. Give me a blow job. I'll give you twenty bucks.”
+
+Not what I expected to hear. My body responded before my brain. Betraying my strained nonchalance, I instantly had a hard-on pushing against my pants. My heart pounding through twisted contradicting impulses, I confessed. "Yeah, I’m gay." 
+
+The money would sure be helpful and I had been so turned on by this crazy vet since the moment I met him. I wanted his dick really bad: a hot man with his dark beard, hairy forearms, the man of my dreams. "I would do that," I said.
+
+With no hesitation, David stood up and unzipped his pants. I slipped off the chair to my knees. In just seconds his hard dick aimed at my face, the large head, slightly asymmetric, already dripped clear pre-cum. I took him slowly, first gently with the tip of my tongue on the slippery frenulum below his dickhead. I lapped at his dick, while drawing in the scent of his crotch deeply into my lungs. I let him push his dick into my mouth. The flavor was ecstasy. In moments, he started thrusting, literally fucking my face.
+
+Sometime later, could have been two minutes, twenty minutes or a month, he shouted, "Fuck" and unloaded into my mouth.  I savored hot pulses of fluid and its essential flavor for a moment, and then swallowed. 
+
+David let out a satisfied sigh, shaking his head slightly. “Shit, man… you’re real good at that.” His voice had that lazy, hazy edge of someone riding the afterglow. “Better than D'—" He cut himself off and then continued, "—my wife ever sucked me off. Hell, it was like she didn’t know how or just didn’t want it.”
+
+He let out a low chuckle, half pleased with himself for pegging me, half pleased for getting what he wanted. “But you? Goddamn. You wanted it. And you did it right.”
+
+"I suspect it takes a person with a dick to truly understand how to suck a dick."
+
+"You earned it." He pulled a twenty-dollar bill out of his pocket at the same moment his withering dick retracted back into his pants. He handed the bill to me.
+
+"There's not much reason to pay me for a job that I would volunteer to do."
+
+David’s expression hardened, his tone flat and unwavering. “No. It’s gotta be this way.” He held my gaze. “Consider it a reminder—I ain’t part of your tribe.”
+
+"I'm not Blackfeet—"
+
+David cut me off, his voice sharp. “No, that's not what I mean.” He leveled a look at me, all tension and certainty. “I not gonna do you. That’s not how this works. I don’t do sex with men. I ain’t gay.”
+
+He exhaled loudly, like he was clarifying something that shouldn’t need explaining. “This is transactional. That’s it. One free man doin’ business with another.”
+
+"I understand," I replied slowly, wondering if this was also part of being a Sovereign Citizen, you're not gay if you pay for it.
+
+Looking at the twenty he handed me for a moment, I looked back to him. "Wanna give me six more bucks for the Park entrance fee I spotted for you?"
+
+"How about I open a tab?"
+
+"I need the money. I got next month's rent covered, but I'm short on grocery and gas money."
+
+"Jesus." He shook his head and pulled out his wallet. He held out a ten to me.
+
+"I don't have change." I snagged the ten from his hand.
+
+“Well, you owe me then. Listen, this was a damn good day. Good ride, good meal… and the best kinda way to wrap it up.”
+
+He leveled his eyes at me. “If you wanna make that a regular thing, I’m up for it.”
+
+I barely believed what I heard. This incredibly sexy man wanted me to regularly ride with him, then pay me to suck him off. Totally up for the deal, but stoned and mad with lust, I couldn't find where or if the strings attached. I nodded to him.
+ 
+David nodded, already shifting gears. “I’ll come up with a ride for next week. Same time, same spot by the Amtrak station.”
+
+Then, just like that, he waved me off. “Alright, you better hit the road. Deer and elk’ll be all over the highway come dusk. Get your ass out of here.”
+
+Stunned by his abrupt dismissal, I climbed back onto my bike and rode away.
+
+He was right; the deer were dangerous at that hour. I had one close call where a doe ran out in front of me, then reversed suddenly, negating my defensive swerve. We missed by inches. Getting back to my cabin as night fell, I reviewed the incredible day in my mind. 
+
+As I do on so many nights, I sat outside watching the sky. The constellations have always remained my loyal friends since I learned their names as a child.  Ursus Major, the Great Bear, owned this night hanging in the sky above one of the last places in this country where grizzlies roamed free. I smoked a bowl and then jerked off while revisiting the scent of David in my beard.  My load spattered on the ground several feet in front of me.
+ 
+I slept so well that night.

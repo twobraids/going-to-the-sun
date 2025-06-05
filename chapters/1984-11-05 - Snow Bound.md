@@ -1,0 +1,132 @@
+---
+blog_title: 1984-11-05 - Snow Bound
+blog_url_basename: 
+blog_url: 
+blog_page_id: 
+blog_header_url: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz-_-xY83xHIQA7sf3HX1uqgMwouQIgF5l1l8WwZV6n1-mQgBxoaWFfWjdj8KELI9yyNb9GGlb5bb7dfUt3-xAJHSCvmMfNp3VvT8N_b0tUVz1T4TE9o36O7dbKZ8cust1SJKa_JXtttgHjoKra2jtFBuifAgCYUiMk7l4O8zzPAkmtSe3o42iTg/s1600/dead-of-winter.png
+blog_author_note: Unfinished draft
+blog_short_warning: 
+blog_long_warning: 
+blog_hash: 
+blog_publish_date: 
+blog_update_date: 
+blog_tag_line:
+---
+## Railroad Creek Ranch
+
+I peeked out my front door at the snow. Yesterday, the high had only been nineteen degrees. The front came through during the night from the West. It clearly didn't exhaust its moisture crossing the mountains as the landscape went from bare earth to two feet of snow since I went to bed. Hard to see the real accumulation, the wind rearranges it into drifts. The biggest one plugged my road down to the ranch—don't think even the Subaru could get through it.
+ 
+I donned my goose down parka and boots to fetch fire wood. I spent so much of October chopping wood—ten cords for Gladys and five for me. My wood shed only held three, so I had two cords out in the snow. I needed to tarp it, but never got around to it. No need to worry. This snow won’t last.
+
+The Ironhead Sportster was gone. Vince said he didn't want it sitting in a wood shed unprotected for the Winter. A couple weeks ago, Dolph dropped by and took it away. Yeah, I needed the space in the woodshed, but I confess to shedding a tear after Dolph left with it strapped down in the back of his pickup—not my bike—but I suppose it was the first bike I ever loved.
+
+Over the next half hour, I hauled in five days of wood into the A-frame. My wood bin only held a half day's worth, so this, so I had to stack the wood on the floor on either side of the wood stove. 
+
+Wood—cheaper than the propane. 
+
+It’s rare for the snow to last very long around here. Either the wind blows it away as it falls or it sublimates in the cold. 
+
+If the winds died down by afternoon, I planned on skiing up to the railroad tracks and then take the West loop back around to the cabin. 
+
+Once I got the fire roaring, I made my oatmeal breakfast and sat shivering at the little table by the front window. The ceiling fan doesn't work, so I can't distribute the heat evenly across the whole interior of the cabin. The loft was where I lived in the winter—up where the heat collected. 
+
+Since there's only just a ladder into the loft, its hard to bring a bowl of oatmeal up. So I ate in the cold. 
+
+After eating I lifted weights. Vince had insisted that become stronger to defend myself. He supplied the dumbells last fall and Dolph coached me on how to use them. After all that wood chopping, and, I guess because I’m young, I could see my progress rack up quickly.
+
+I had taken only a couple of the Aikido classes that Sarah roped me into. After David, she wanted all her girls trained to defend themselves. They were just too far away for me to go regularly. 
+
+I climbed into the loft to spend my morning studying. I had subscribed to two magazines: Byte and Dr. Dobb's Journal of Software Tools. From the ads in the back, I found I could mail order technical books, that how I acquired K&R's The C Programming Language; The Art of Computer Programming; Gödel, Escher, Bach: An Eternal Golden Braid; and The Fractal Geometry of Nature. With the new influx of cash from the Iron Horse, I added a shelf of new technical programming books for the long winter: Smalltalk-80; Common Lisp: The Language; APL: A Programming Language; FORTRAN 77 Programming; SQL/Data System; and finally, The Theory of Poker. 
+
+That last book was my backup. The reality is that I'm dealing cards for the second time in my life—might be the only career I ever get to have. Practicality—nobody hires programmers from biker bars. Somebody to ought hire me to ride my motorcycle.  I snorted out loud at the thought. 
+
+I grabbed the Smalltalk book and propped myself up in the bed in the loft under the USGS topo map of Glacier Park. 
+
+---
+
+I heard a motor behind the wind noise. I looked up and tried to focus my hearing. It's a truck, not low enough rumble for a train, certainly not the whine of a snowmobile. It only got louder.
+
+I jumped out of bed and climbed down the ladder to the front room. It definitely labored up my road. I pulled on my parka and boots and opened the door just as a snow plow, headlights mounted up over the blade, pushed into the open area in front of the cabin. 
+
+It turned and shoved its bow wave of tumbling slow deftly down the embankment left of my wood shed. 
+
+Dolph's F250.
+
+Over the next five minutes, Dolph cleared all the snow drifts off my parking era opening path for my Subaru to easily drive out. 
+
+Once he completed the job, he parked and jumped out of the truck. He didn't give any greeting—typical silent Dolph—he just stepped up to me and held out an envelope. 
+
+"We got to get going, this weather's bad."
+
+"Going, where are we going?" I looked at him with confusion.
+
+"Open the letter. Vince wants you in Cut Bank."
+
+"Cut Bank? What’s in Cut Bank? I'm surprised they haven’t closed the highway."
+
+"They might, that's why we got to go now."
+
+"C'mon in. Let me read this letter." I turned around and walked back inside without looking to see if Dolph would follow me. He didn't and it felt really weird to just shut the door on him. I stood in the doorway. "You can come in, too."
+
+"We need to get going. Meet me in the truck when you're ready." He then turned and walked back to the truck. 
+
+I shut the door and walked to the kitchen. I hadn't been running the generator, so I had only the dim twelve volt battery lights over the propane stove to read by. I opened the envelope and pulled out a folded page enclosing a dozen hundred dollar bills. The page had a brief message in Vince's crude handwriting: "Karl: Cut Bank Auction 2pm - Lot 1984-0688.  Bid up to $1200. You sign for it."
+
+I read it three times trying to understand. 
+
+I thought about my book upstairs in the loft—my day derailed. I resented this intrusion into my solitude. Why do I have to be the one to do this?
+
+You're mine now. 
+
+I came down to that again. If I'm going to be a club member, I need to do club business when commanded to do so. Heavy sigh.
+
+I stepped back into my bedroom and changed my clothes—need something more presentable. I turned the propane furnace on, setting the thermostat to about fifty. I dampened down the wood stove. I climbed back into the loft, grabbed my day back and put the book into it—climbed back down. In the kitchen, I collected a bag of trail mix, some jerky and the last apple from the grocery store last week. Parka, tuque, gloves—ready.
+
+I stepped back outside ensuring my door actually latched. I pulled off the parka—wouldn't need it inside the truck. I climbed into the passenger side, suffing my parka behind the seat.  Not looking forward to two hours with a silent man. 
+
+Dolph nodded to me, putting the truck into gear. We descended the road down to the highway where the wind already had started to fill in his plowing work. 
+
+The highway had some patches of hardpack snow, but mostly clear. That lasted about half way to Browning where it shifted to mostly bare pavement with periodic ten yard strips of growing drifts on the leeway sides of hills and road cuts. 
+
+With the chains on the rear tires the ride took forever—stuck at no more than thirty miles per hour—gonna take three hours to get there. 
+
+After Browning it got much worse. The drifts became deeper and deeper. Dolph knew what to do. He kept the truck in two wheel drive on the dry pavement, and used four wheel drifts only on drifts. He mostly just bashed through them, but used the blade to cut into several of them.
+
+I struggled to recall tho last time I saw an oncoming car—the highway was closed. 
+
+After carving a path from a particularly deep drift, we encountered a car stopped in the lane just before the next drift—they clearly knew they couldn't get through it. Dolph gave out a heavy sigh.
+
+ He stopped behind them, jumped out and approached the car. The driver door opened and he and Dolph talked for a moment, then Dolph gestured to the shoulder side of the drift. The driver nodded and Dolph returned to the truck. 
+
+"We're gonna plow him a way to Cut Bank."
+
+Dolph put the truck back in gear, moved around to the shoulder side of the drift and began carving it away. He didn't take it down to bare asphalt, but low enough the car could follow. 
+
+Two drifts later, we encountered another car stopped between drifts. 
+
+It took us thirty minutes to get to Cut Bank, where we had a four car convoy behind us. In the long downslope to Cut Bank Creek , we could see backed up traffic behind the Highway Department's road closed sign. 
+
+---
+
+We pulled into the lot of the county courthouse, I felt my stomach sink—not a commercial auction—a sheriff auction. I knew why Vince set me here—poetic justice. I was to stake a claim to David’s Harley. As Dolph pulled into to a parking space, I dropped my head into my hands and whispered, “Goddamn you, Vince.”
+
+Dolph heard me and gave me side eye.
+
+“I don’t want David’s bike.” Jesus the first time saw that bike, I lusted after it along with its rider—different now. I gotta lose this auction any way I can. Been riding another guy’s bike all summer, Vince wants that permanent.
+
+“Expected you’d feel that way.” Dolph looked at me with empathetic eyes. “Vince knows what he’s doin’.  Club justice. David owes you.”
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

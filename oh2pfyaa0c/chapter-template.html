@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ blog_title }}</title>
+        <meta name="description" content="A draft day/chapter for a book that'll never exist.">
+        <meta name="author" content="K Lars Lohn">
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" href="../gf4ulgcxmm/style.css" />
+    </head>
+    <body>
+        <img class="header-image" src="{{ blog_header_url or "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz-_-xY83xHIQA7sf3HX1uqgMwouQIgF5l1l8WwZV6n1-mQgBxoaWFfWjdj8KELI9yyNb9GGlb5bb7dfUt3-xAJHSCvmMfNp3VvT8N_b0tUVz1T4TE9o36O7dbKZ8cust1SJKa_JXtttgHjoKra2jtFBuifAgCYUiMk7l4O8zzPAkmtSe3o42iTg/s1600/dead-of-winter.png" }}"/>
+        
+        <div class="top-bar">
+            <div class="title"><a href="https://twobraids.com">twobraids</a></div>
+        </div>
+    
+        <div class="content">
+            <h1>{{ blog_title }}</h1>
+    
+        
+            <div class="lars-nav-section">
+                <div class="lars-nav-newer">
+                {% if prev %}
+                    <a href="{{ prev.blog_relative_url }}#top">&#9668; Story Arc Backward</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">&#9668; Story Arc Backward</span><br />
+                {% endif %}
+                </div>
+                <div class="lars-nav-center">
+                    <a href="{{ contents_relative_url }}">Going to the Sun - Contents</a>
+                </div>
+                <div class="lars-nav-older">
+                {% if next %}
+                    <a href="{{ next.blog_relative_url }}#top">Story Arc Forward &#9658;</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">Story Arc Forward &#9658;</span><br />
+                {% endif %}
+                </div>
+            </div>
+            
+            <p>&nbsp;</p>
+            
+            <div class="lars-inner-box">
+                <p class="orange"><strong>Rough Draft</strong><br /></p>
+                {% if blog_author_note %}
+                  <p><strong>Author's Note:</strong></p>
+                  <p>{{ blog_author_note }}</p>
+                {% endif %}
+                {% if blog_publish_date %}
+                  <p>Original Post: {{ blog_publish_date }}<br />
+                  Latest Update: {{ blog_update_date }}</i></p>
+                {% endif %}
+                {% if blog_long_warning or blog_short_warning %}
+                  <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
+                  {{ blog_long_warning or blog_short_warning }}</p>
+                {% endif %}
+                {% if blog_author_note and "placeholder" in blog_author_note %}
+                  <p class="green"><a href="{{ next.blog_relative_url }}#top">Skip to the next chapter &#9658;</a></p>
+                {% endif %}
+                {% if blog_updates_present %}
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
+                {% endif %} 
+            </div>
+                  
+            {{ content_html }}
+            
+            {% if blog_updates_present %}
+                <p><b><span id="{{ end_dot_string }}" style="color: orange;">&#x25CF;</span></b>  
+            {% endif %}
+            <div class="lars-nav-section">
+                <div class="lars-nav-newer">
+                {% if prev %}
+                    <a href="{{ prev.blog_relative_url }}#top">&#9668; Story Arc Backward</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">&#9668; Story Arc Backward</span><br />
+                {% endif %}
+                </div>
+                <div class="lars-nav-center">
+                    <a href="{{ contents_relative_url }}">Going to the Sun - Contents</a>
+                </div>
+                <div class="lars-nav-older">
+                {% if next %}
+                    <a href="{{ next.blog_relative_url }}#top">Story Arc Forward &#9658;</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">Story Arc Forward &#9658;</span><br />
+                {% endif %}
+                </div>
+            </div>
+            
+            <div class="lars-inner-box">
+              <p>This is a work of fiction based on experiences from my life.</p>
+              <p>©2026 by K Lars Lohn All rights reserved</p>
+              <iframe src="https://www.twobraids.com/p/uqghhkupi9qguq9qkdym.html" width="1" height="1" style="border:0; visibility:hidden;"></iframe>
+            </div>
+            
+        </div>
+{% if blog_updates_present %}
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
+{% endif %}
+
+    </body>
+
+</html>

@@ -105,11 +105,11 @@ a:hover {
     color: dimgray;
 }
 
-/* Float containers */
+/* Adjusted float containers with reduced padding */
 .image-container-left,
 .image-container-right {
   background-color: #222222;
-  padding: 1em;
+  padding: 0.5em;          /* reduced from 1em to 0.5em */
   max-width: 40%;
   box-sizing: border-box;
   border-radius: 8px;
@@ -125,34 +125,34 @@ a:hover {
   margin: 0 0 1em 1em;
 }
 
-/* Image‐Wrapper: shrink‐to‐fit around image + attribution */
+/* Image wrapper now spans full container width and has smaller padding */
 .image-wrapper {
-  display: inline-block;           /* shrink‐to‐fit width */
-  padding: 1em 1em 0 1em;          /* top/right/left padding, bottom = 0 */
+  display: block;          /* fill the container’s width */
+  padding: 0.5em;          /* reduced padding all around */
   box-sizing: border-box;
-  max-width: 100%;                 /* never exceed container’s inner width */
+  width: 100%;             /* match container’s inner width */
 }
 
-/* Image inside the wrapper */
+/* Image inside wrapper fills nearly all available space */
 .image-wrapper img {
   display: block;
-  max-width: 100%;                 /* cap image to wrapper’s containing block width */
+  width: 100%;             /* fill wrapper width */
   height: auto;
-  margin: 0;                       /* no extra gap */
-  padding: 0;                      /* remove any padding here */
+  margin: 0;
+  padding: 0;
 }
 
-/* Attribution: immediately below image, flush against its bottom edge */
+/* Attribution flush under the image, right-justified */
 .image-wrapper .image-attribution {
-  font-size: 0.5em;               /* tiny font */
-  font-family: sanserif;
-  margin: 0;                       /* no margin pushing it down */
-  padding: 0;                      /* no padding */
-  text-align: right;               /* align to right edge of wrapper */
-  color: #cccccc;                  /* subtle contrast */
+  font-size: 0.5em;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  color: #cccccc;
 }
 
-/* Comment text (unchanged) */
+/* Comment text unchanged */
 .image-comment {
   text-align: center;
   margin: 0.5em 0 0 0;

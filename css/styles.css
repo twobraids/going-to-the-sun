@@ -29,6 +29,13 @@ a:hover {
   z-index: 10;
 }
 
+.top-bar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+
+
 .title {
   color: white;
   font-size: 1.5rem;

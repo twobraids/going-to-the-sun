@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ blog_title }}</title>
+        <meta name="description" content="A chapter for a book that'll never exist.">
+        <meta name="author" content="K Lars Lohn">
+        <meta name="robots" content="noindex">
+        <link rel="stylesheet" href="../gf4ulgcxmm/style.css" />
+    </head>
+    <body>
+        <img class="header-image" src="{{ blog_header_url or "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhz-_-xY83xHIQA7sf3HX1uqgMwouQIgF5l1l8WwZV6n1-mQgBxoaWFfWjdj8KELI9yyNb9GGlb5bb7dfUt3-xAJHSCvmMfNp3VvT8N_b0tUVz1T4TE9o36O7dbKZ8cust1SJKa_JXtttgHjoKra2jtFBuifAgCYUiMk7l4O8zzPAkmtSe3o42iTg/s1600/dead-of-winter.png" }}"/>
+        
+        <div class="top-bar">
+            <div class="title"><a href="https://twobraids.com">twobraids</a></div>
+        </div>
+    
+        <div class="content">
+            <h1>{{ blog_title }}</h1>
+    
+        
+            <div class="lars-nav-section">
+                <div class="lars-nav-newer">
+                {% if prev %}
+                    <a href="{{ prev.blog_relative_url }}#top">&#9668; Story Arc Backward</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">&#9668; Story Arc Backward</span><br />
+                {% endif %}
+                </div>
+                <div class="lars-nav-center">
+                    <a href="{{ contents_relative_url }}">Going to the Sun - Contents</a>
+                </div>
+                <div class="lars-nav-older">
+                {% if next %}
+                    <a href="{{ next.blog_relative_url }}#top">Story Arc Forward &#9658;</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">Story Arc Forward &#9658;</span><br />
+                {% endif %}
+                </div>
+            </div>
+            
+            <p>&nbsp;</p>
+            
+            <div class="lars-inner-box">
+                {% if blog_author_note %}
+                  <p><strong>Author's Note:</strong></p>
+                  <p>{{ blog_author_note }}</p>
+                {% endif %}
+                {% if blog_publish_date %}
+                  <p><i>Posted: {{ blog_publish_date }}
+                  </i></p>
+                {% endif %}
+                {% if blog_long_warning or blog_short_warning %}
+                  <p class="yellow"><strong>CONTENT WARNING</strong></p>
+                  <p>{{ blog_long_warning or blog_short_warning }}
+                {% endif %}
+                {% if blog_author_note and "placeholder" in blog_author_note %}
+                  <p class="green"><a href="{{ next.blog_relative_url }}#top">Skip to the next chapter &#9658;</a></p>
+                {% endif %}
+                
+            </div>
+                  
+            {{ content_html }}
+            
+            {% if blog_author_note and "placeholder" in blog_author_note %}
+            {% else %}
+                <div class="lars-nav-section">
+                    <div class="lars-nav-newer">
+                    {% if prev %}
+                        <a href="{{ prev.blog_relative_url }}#top">&#9668; Story Arc Backward</a><br />
+                    {% else %}
+                        <span class="lars-nav-not-written">&#9668; Story Arc Backward</span><br />
+                    {% endif %}
+                    </div>
+                    <div class="lars-nav-center">
+                        <a href="{{ blog_relative_url }}">Going to the Sun - Contents</a>
+                    </div>
+                    <div class="lars-nav-older">
+                    {% if next %}
+                        <a href="{{ next.blog_relative_url }}#top">Story Arc Forward &#9658;</a><br />
+                    {% else %}
+                        <span class="lars-nav-not-written">Story Arc Forward &#9658;</span><br />
+                    {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+            
+            <div class="lars-inner-box">
+              <p>This is a work of fiction based on experiences from my life.</p>
+              <p>©2025 by K Lars Lohn All rights reserved</p>
+            </div>
+            
+        </div>
+    </body>
+
+<html>

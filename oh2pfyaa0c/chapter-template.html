@@ -48,12 +48,12 @@
                   <p>{{ blog_author_note }}</p>
                 {% endif %}
                 {% if blog_publish_date %}
-                  <p><i>Posted: {{ blog_publish_date }}
-                  </i></p>
+                  <p>Original Post: {{ blog_publish_date }}<br />
+                  Latest Update: {{ blog_update_date }}</i></p>
                 {% endif %}
                 {% if blog_long_warning or blog_short_warning %}
-                  <p class="yellow"><strong>CONTENT WARNING</strong></p>
-                  <p>{{ blog_long_warning or blog_short_warning }}
+                  <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
+                  {{ blog_long_warning or blog_short_warning }}</p>
                 {% endif %}
                 {% if blog_author_note and "placeholder" in blog_author_note %}
                   <p class="green"><a href="{{ next.blog_relative_url }}#top">Skip to the next chapter &#9658;</a></p>

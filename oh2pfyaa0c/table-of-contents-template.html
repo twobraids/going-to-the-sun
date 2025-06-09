@@ -108,18 +108,20 @@
 
             <ul>
             {% for a_chapter in chapters[1:-1] %}
-                <li><a href="{{ a_chapter.blog_relative_url }}">{{ a_chapter.blog_title }}</a>
+                <li class="lars_top_list_padding"><a href="{{ a_chapter.blog_relative_url }}">{{ a_chapter.blog_title }}</a> <span  class="lars-small-tag-line" style="color: {{ a_chapter.blog_days_since_color }};"}> {{ a_chapter.blog_days_since_update }} days since last update</span>
                     <ul>
-                        {% if a_chapter.blog_short_warning %}
+                       {% if a_chapter.blog_tag_line %}
+                          <li class="lars-small-tag-line-italic">{{ a_chapter.blog_tag_line }}</li>
+                       {% endif %}
+                       {% if a_chapter.blog_author_short_note %}
+                          <li class="lars-small-tag-line" style="color: bisque;">{{ a_chapter.blog_author_short_note }}</li>
+                       {% endif %}
+                       {% if a_chapter.blog_short_warning %}
                           <li class="lars-small-tag-line">
                           <span class="lars-content-warning">CONTENT WARNING</span>:
                           <span class="lars-warnings">{{ a_chapter.blog_short_warning }}</span>
                           </li>
-                        {% endif %}
-                        {% if a_chapter.blog_tag_line %}
-                          <li class="lars-small-tag-line">{{ a_chapter.blog_tag_line }}</li>
-                        {% endif %}
-                        <li><span  class="lars-small-tag-line" style="color: {{ a_chapter.blog_days_since_color }};"}> {{ a_chapter.blog_days_since_update }} days since last update</span></li>
+                       {% endif %}
                     </ul>
                 </li>
             {% endfor %}

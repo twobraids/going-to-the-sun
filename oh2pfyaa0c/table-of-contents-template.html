@@ -108,7 +108,14 @@
 
             <ul>
             {% for a_chapter in chapters[1:-1] %}
-                <li class="lars_top_list_padding"><a href="{{ a_chapter.blog_relative_url }}">{{ a_chapter.blog_title }}</a> <span  class="lars-small-tag-line" style="color: {{ a_chapter.blog_days_since_color }};"}> {{ a_chapter.blog_days_since_update }} days since last update</span>
+                <li class="lars_top_list_padding"><a href="{{ a_chapter.blog_relative_url }}">{{ a_chapter.blog_title }}</a> <span  class="lars-small-tag-line" style="color: {{ a_chapter.blog_days_since_color }};"}> 
+                {% if a_chapter.blog_days_since_update == 0 %}
+                  Updated today</span>
+                {% elif a_chapter.blog_days_since_update == 1 %}
+                  Updated yesterday</span>
+                {% else %}
+                  {{ a_chapter.blog_days_since_update }} days since last update</span>
+                {% endif %}
                     <ul>
                        {% if a_chapter.blog_tag_line %}
                           <li class="lars-small-tag-line-italic">{{ a_chapter.blog_tag_line }}</li>

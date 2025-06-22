@@ -220,6 +220,10 @@ a:hover {
   padding-top: 0.3em;
 }
 
+.revised {
+  color: yellowgreen;
+}
+
 
 @media (max-width: 600px) {
   .content {

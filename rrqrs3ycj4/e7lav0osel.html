@@ -239,140 +239,119 @@
             
         </div>
 <script>
-    // --- CONFIGURATION ---
-    // You can adjust these values to change the scrolling behavior.
-    const CONFIG = {
-      // The unique ID for the introductory dot.
+  // --- CONFIGURATION ---
+  // You can adjust these values to change the scrolling behavior.
+  const CONFIG = {
+    // The unique ID for the introductory dot.
     headerDotId: 'Ustart',
-                                          // Scroll animation duration in milliseconds.
+    // Scroll animation duration in milliseconds.
     scrollDuration: 800,
-                                    // Time in milliseconds to hold for a long press (reverse scroll).
-    longPressDelay: 500,
-                                               // The final position for the first dot, in pixels from the top of the window.
+    // Time in milliseconds to detect a double click/tap.
+    doubleClickDelay: 300,
+    // The final position for the first dot, in pixels from the top of the window.
     // This is used only when clicking the introductory dot.
     topOffsetPixels: 100,
-                                                        };
+  };
 
-    document.addEventListener('DOMContentLoaded', () => {
-      // --- ELEMENT DISCOVERY ---
+  // Switched to the 'load' event to ensure all page assets (images, fonts)
+  // are loaded. This provides stable element positions for accurate scrolling.
+  window.addEventListener('load', () => {
+    // --- ELEMENT DISCOVERY ---
     const headerDot = document.getElementById(CONFIG.headerDotId);
-    // Select all spans whose ID starts with "U" (numeric content dots).
-    const contentDots = Array.from(document.querySelectorAll('span[id^="U"]')).sort((a, b) => {
-        // Sort numerically to ensure correct order, just in case.
+    const contentDots = Array.from(document.querySelectorAll('span[id^="Un"]')).sort((a, b) => {
       const numA = parseInt(a.id.substring(1), 10);
       const numB = parseInt(b.id.substring(1), 10);
-        return numA - numB;
-        });
+      return numA - numB;
+    });
 
-        if (!contentDots.length) return; // Exit if no content dots are found.
+    if (!contentDots.length) return;
 
-        // Combine header and content dots for attaching events.
-        const allDots = headerDot ? [headerDot, ...contentDots] : [...contentDots];
+    const allDots = headerDot ? [headerDot, ...contentDots] : [...contentDots];
 
-        // --- CORE SCROLLING FUNCTION ---
-        /**
-            * Animate scroll to a target element.
-            * @param {HTMLElement} targetElement The element to scroll to.
-            * @param {number} finalPosition The target vertical position in the viewport for the element.
-            */
-        const smoothScrollTo = (targetElement, finalPosition) => {
-        const startY = window.scrollY;
+    // --- CORE SCROLLING FUNCTION ---
+    const smoothScrollTo = (targetElement, finalPosition) => {
+      const startY = window.scrollY;
       const targetY = targetElement.getBoundingClientRect().top + startY - finalPosition;
       const distance = targetY - startY;
       let startTime = null;
 
-      // Easing function for acceleration/deceleration effect.
       const easeInOutQuad = (t, b, c, d) => {
-          t /= d / 2;
+        t /= d / 2;
         if (t < 1) return c / 2 * t * t + b;
         t--;
-            return -c / 2 * (t * (t - 2) - 1) + b;
-            };
+        return -c / 2 * (t * (t - 2) - 1) + b;
+      };
 
-            const animation = (currentTime) => {
-          if (startTime === null) startTime = currentTime;
+      const animation = (currentTime) => {
+        if (startTime === null) startTime = currentTime;
         const timeElapsed = currentTime - startTime;
         const run = easeInOutQuad(timeElapsed, startY, distance, CONFIG.scrollDuration);
         window.scrollTo(0, run);
         if (timeElapsed < CONFIG.scrollDuration) {
-            requestAnimationFrame(animation);
+          requestAnimationFrame(animation);
         }
-        };
+      };
+      requestAnimationFrame(animation);
+    };
 
-            requestAnimationFrame(animation);
-        };
+    // --- SCROLL HANDLERS ---
+    const handleForwardScroll = (dot) => {
+      const currentDotIndex = contentDots.indexOf(dot);
+      const isHeader = (dot.id === CONFIG.headerDotId);
+      
+      let targetDot;
+      if (isHeader) {
+         targetDot = contentDots[0];
+      } else if (currentDotIndex === contentDots.length - 1) {
+        targetDot = contentDots[0]; // Loop from last to first
+      } else {
+        targetDot = contentDots[currentDotIndex + 1];
+      }
 
-        // --- EVENT HANDLING LOGIC ---
-        allDots.forEach(dot => {
-        let pressTimer = null;
-      let isLongPress = false;
+      const finalPosition = isHeader ? CONFIG.topOffsetPixels : dot.getBoundingClientRect().top;
+      smoothScrollTo(targetDot, finalPosition);
+    };
 
-      const handlePress = (e) => {
-          // Prevent default browser actions (like text selection on long press).
-        e.preventDefault();
+    const handleReverseScroll = (dot) => {
+      const currentDotIndex = contentDots.indexOf(dot);
+      const isHeader = (dot.id === CONFIG.headerDotId);
+      
+      let targetDot;
+      if (isHeader || currentDotIndex === 0) {
+        targetDot = contentDots[contentDots.length - 1]; // Loop from first to last
+      } else {
+        targetDot = contentDots[currentDotIndex - 1];
+      }
+      
+      const clickPosition = dot.getBoundingClientRect().top;
+      smoothScrollTo(targetDot, clickPosition);
+    };
 
-        isLongPress = false;
-        pressTimer = setTimeout(() => {
-            isLongPress = true;
-          // LONG PRESS: Scroll backwards.
-          const currentDotIndex = contentDots.indexOf(dot);
-          const isHeader = (dot.id === CONFIG.headerDotId);
+    // --- EVENT LISTENER ATTACHMENT ---
+    allDots.forEach(dot => {
+      let clickTimer = null;
 
-          let targetDot;
-          if (isHeader || currentDotIndex === 0) {
-              // Header dot or first content dot goes to the last content dot.
-            targetDot = contentDots[contentDots.length - 1];
-            } else {
-              // Go to the previous content dot.
-            targetDot = contentDots[currentDotIndex - 1];
-          }
+      // The 'click' event handles both mouse clicks and mobile taps.
+      dot.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevents text selection on double click
 
-          const clickPosition = dot.getBoundingClientRect().top;
-          smoothScrollTo(targetDot, clickPosition);
-
-          }, CONFIG.longPressDelay);
-        };
-
-      const handleRelease = (e) => {
-          clearTimeout(pressTimer);
-        // If it was a short press, handle the forward scroll.
-        if (!isLongPress) {
-            // SHORT PRESS / TAP: Scroll forwards.
-          const currentDotIndex = contentDots.indexOf(dot);
-          const isHeader = (dot.id === CONFIG.headerDotId);
-
-          let targetDot;
-          if (isHeader) {
-              // Header dot always goes to the first content dot.
-             targetDot = contentDots[0];
-             } else if (currentDotIndex === contentDots.length - 1) {
-              // Last content dot loops back to the first content dot.
-            targetDot = contentDots[0];
-            } else {
-              // Go to the next content dot.
-            targetDot = contentDots[currentDotIndex + 1];
-          }
-
-          // Determine the final scroll position.
-          const finalPosition = isHeader 
-          ? CONFIG.topOffsetPixels 
-            : dot.getBoundingClientRect().top;
-
-            smoothScrollTo(targetDot, finalPosition);
+        // If a timer is running, this is a double click.
+        if (clickTimer) {
+          clearTimeout(clickTimer);
+          clickTimer = null;
+          handleReverseScroll(dot); // ⏪ Double-click scrolls backward
+        } else {
+          // On the first click, set a timer.
+          clickTimer = setTimeout(() => {
+            clickTimer = null;
+            handleForwardScroll(dot); // ⏩ Single-click scrolls forward
+          }, CONFIG.doubleClickDelay);
         }
-        };
-
-      // Assign events for both mouse and touch devices.
-      dot.addEventListener('mousedown', handlePress);
-      dot.addEventListener('mouseup', handleRelease);
-      dot.addEventListener('mouseleave', () => clearTimeout(pressTimer)); // Cancel if mouse leaves
-
-      dot.addEventListener('touchstart', handlePress, { passive: false });
-      dot.addEventListener('touchend', handleRelease);
-      dot.addEventListener('touchcancel', () => clearTimeout(pressTimer)); // Cancel on interruption
       });
     });
+  });
 </script>
+
 
     </body>
 

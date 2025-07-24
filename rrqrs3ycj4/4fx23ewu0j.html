@@ -41,7 +41,7 @@
                   Latest Update: 2025-07-15 14:36:26-07:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   heavy emotional shit ahead</p>
-                  <p>The symbol <b><span class=orange>&#x25CF;</span></b> indicates an <br />
+                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
                   updated paragraph within the last 10 days.<br />
                   The darker the symbol, the older the update.</p>
  
@@ -94,7 +94,7 @@
 <p>I rode up to Big Fork. If I kept up heading north, I'd be right back in Columbia Falls. Didn't want to go there. Hard right turn onto MT83 south—the reverse direction from that first ride with David and Ted—gotta go the long way around to get home.</p>
 <p>Stopped in Seeley Lake for gas. The guy filling up on the other side of the pump—nervous, twitchy—kept sneaking glances at me. I scowled. The cashier went wide-eyed as I stepped up—like she was afraid. She said something, I saw her lips move. I couldn't hear her. I kept my head down.</p>
 <p>"Pump five." I dropped a twenty on the counter. Took the bills, left the coins.</p>
-<p><b><span id="U0047" style="color: #753e00;">&#x25CF;</span></b>Back on the highway, I flew down the valley past the descending chain of glacial lakes: Seeley, Placid, Salmon, Elbow, and Harpers. I turned left on MT200—Clearwater Junction—toward Rogers Pass. As a kid, I loved seeing that ridiculous giant cow sculpture at the junction. Looks stupid now.</p>
+<p><b><span id="U0047" style="color: #663300;">&#x25CF;</span></b>Back on the highway, I flew down the valley past the descending chain of glacial lakes: Seeley, Placid, Salmon, Elbow, and Harpers. I turned left on MT200—Clearwater Junction—toward Rogers Pass. As a kid, I loved seeing that ridiculous giant cow sculpture at the junction. Looks stupid now.</p>
 <p>I wanted the wind and the highway to settle me. Always works. Not today.</p>
 <p>Vince dead? No, that's not right. He's gotta be with Chris and Sarah. They're safe, just don't know where.</p>
 <p>I stopped at the top of the pass by the sign announcing the continental divide—5,610 feet. I walked into the forest on the north side of the road to piss. A rough trail snaked through the trees up along the ridge line.</p>
@@ -124,7 +124,7 @@
 <p>Of all things, she used a bottle of superglue to close the wound. "This is a trick the Army developed for battlefield injuries. Strong. Waterproof. Fastest way to close a wound, pretty easy to reopen if we gotta go in again. Someday this'll replace stitches everywhere."</p>
 <p>Ted picked up the shot glass and examined it. "That's buckshot." He looked at me. "Karl, you've been shot."</p>
 <p>Maggie pointed at my forehead. "You can see the path. Grazed above the eyebrow, skipped over the temple and into the scalp at the hairline. They line up perfectly." She looked straight at me. "An inch lower, you woulda lost your eye, or worse."</p>
-<p><b><span id="U0077" style="color: #753e00;">&#x25CF;</span></b>Ted mused, "Gotta be a ricochet. Would've gone right through his head straight from the barrel." He looked back to me sitting at the table. "Karl, it’s time to talk. How did this happen?"</p>
+<p><b><span id="U0077" style="color: #663300;">&#x25CF;</span></b>Ted mused, "Gotta be a ricochet. Would've gone right through his head straight from the barrel." He looked back to me sitting at the table. "Karl, it’s time to talk. How did this happen?"</p>
 <p>Our eyes locked and my question just spilled out. “Cherry is my brother. Why'd he shoot at me?” The first words I spoke since arriving seemed distant, as if somebody else's voice. I gasped, my throat seizing as the realization swept over me. I just ratted out a brother—I broke the code.</p>
 <p>“Your brother?” Maggie looked horrified.</p>
 <p>Ted shook his head. “He means bike club brother, not real brother." He let out a loud breath. "This is real bad."</p>
@@ -181,6 +181,142 @@
             </div>
             
         </div>
+<script>
+    // --- CONFIGURATION ---
+    // You can adjust these values to change the scrolling behavior.
+    const CONFIG = {
+      // The unique ID for the introductory dot.
+    headerDotId: 'Ustart',
+                                          // Scroll animation duration in milliseconds.
+    scrollDuration: 800,
+                                    // Time in milliseconds to hold for a long press (reverse scroll).
+    longPressDelay: 500,
+                                               // The final position for the first dot, in pixels from the top of the window.
+    // This is used only when clicking the introductory dot.
+    topOffsetPixels: 100,
+                                                        };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- ELEMENT DISCOVERY ---
+    const headerDot = document.getElementById(CONFIG.headerDotId);
+    // Select all spans whose ID starts with "U" (numeric content dots).
+    const contentDots = Array.from(document.querySelectorAll('span[id^="U"]')).sort((a, b) => {
+        // Sort numerically to ensure correct order, just in case.
+      const numA = parseInt(a.id.substring(1), 10);
+      const numB = parseInt(b.id.substring(1), 10);
+        return numA - numB;
+        });
+
+        if (!contentDots.length) return; // Exit if no content dots are found.
+
+        // Combine header and content dots for attaching events.
+        const allDots = headerDot ? [headerDot, ...contentDots] : [...contentDots];
+
+        // --- CORE SCROLLING FUNCTION ---
+        /**
+            * Animate scroll to a target element.
+            * @param {HTMLElement} targetElement The element to scroll to.
+            * @param {number} finalPosition The target vertical position in the viewport for the element.
+            */
+        const smoothScrollTo = (targetElement, finalPosition) => {
+        const startY = window.scrollY;
+      const targetY = targetElement.getBoundingClientRect().top + startY - finalPosition;
+      const distance = targetY - startY;
+      let startTime = null;
+
+      // Easing function for acceleration/deceleration effect.
+      const easeInOutQuad = (t, b, c, d) => {
+          t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+            };
+
+            const animation = (currentTime) => {
+          if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutQuad(timeElapsed, startY, distance, CONFIG.scrollDuration);
+        window.scrollTo(0, run);
+        if (timeElapsed < CONFIG.scrollDuration) {
+            requestAnimationFrame(animation);
+        }
+        };
+
+            requestAnimationFrame(animation);
+        };
+
+        // --- EVENT HANDLING LOGIC ---
+        allDots.forEach(dot => {
+        let pressTimer = null;
+      let isLongPress = false;
+
+      const handlePress = (e) => {
+          // Prevent default browser actions (like text selection on long press).
+        e.preventDefault();
+
+        isLongPress = false;
+        pressTimer = setTimeout(() => {
+            isLongPress = true;
+          // LONG PRESS: Scroll backwards.
+          const currentDotIndex = contentDots.indexOf(dot);
+          const isHeader = (dot.id === CONFIG.headerDotId);
+
+          let targetDot;
+          if (isHeader || currentDotIndex === 0) {
+              // Header dot or first content dot goes to the last content dot.
+            targetDot = contentDots[contentDots.length - 1];
+            } else {
+              // Go to the previous content dot.
+            targetDot = contentDots[currentDotIndex - 1];
+          }
+
+          const clickPosition = dot.getBoundingClientRect().top;
+          smoothScrollTo(targetDot, clickPosition);
+
+          }, CONFIG.longPressDelay);
+        };
+
+      const handleRelease = (e) => {
+          clearTimeout(pressTimer);
+        // If it was a short press, handle the forward scroll.
+        if (!isLongPress) {
+            // SHORT PRESS / TAP: Scroll forwards.
+          const currentDotIndex = contentDots.indexOf(dot);
+          const isHeader = (dot.id === CONFIG.headerDotId);
+
+          let targetDot;
+          if (isHeader) {
+              // Header dot always goes to the first content dot.
+             targetDot = contentDots[0];
+             } else if (currentDotIndex === contentDots.length - 1) {
+              // Last content dot loops back to the first content dot.
+            targetDot = contentDots[0];
+            } else {
+              // Go to the next content dot.
+            targetDot = contentDots[currentDotIndex + 1];
+          }
+
+          // Determine the final scroll position.
+          const finalPosition = isHeader 
+          ? CONFIG.topOffsetPixels 
+            : dot.getBoundingClientRect().top;
+
+            smoothScrollTo(targetDot, finalPosition);
+        }
+        };
+
+      // Assign events for both mouse and touch devices.
+      dot.addEventListener('mousedown', handlePress);
+      dot.addEventListener('mouseup', handleRelease);
+      dot.addEventListener('mouseleave', () => clearTimeout(pressTimer)); // Cancel if mouse leaves
+
+      dot.addEventListener('touchstart', handlePress, { passive: false });
+      dot.addEventListener('touchend', handleRelease);
+      dot.addEventListener('touchcancel', () => clearTimeout(pressTimer)); // Cancel on interruption
+      });
+    });
+</script>
+
     </body>
 
 <html>

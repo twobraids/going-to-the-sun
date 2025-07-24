@@ -37,7 +37,7 @@
             <div class="lars-inner-box">
                   <p>Original Post: 2025-03-16 19:23:52-07:00<br />
                   Latest Update: 2025-07-16 21:21:46-07:00</i></p>
-                  <p>The symbol <b><span class=orange>&#x25CF;</span></b> indicates an <br />
+                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
                   updated paragraph within the last 10 days.<br />
                   The darker the symbol, the older the update.</p>
  
@@ -209,21 +209,21 @@
 <p><b><span id="U0163" style="color: #844900;">&#x25CF;</span></b>I certainly had never seen Gladys looking so flustered—or so torn—when they drew apart.</p>
 <p>She looked up to Vince. "I've got food on the grill. I gotta get back to the kitchen. I'll be back in five minutes." She turned away and disappeared through the swinging kitchen door.  Vince returned to his seat, still looking back at the door.</p>
 <p><b><span id="U0165" style="color: #844900;">&#x25CF;</span></b>I just watched him, waiting for his explanation.</p>
-<p><b><span id="U0166" style="color: #844900;">&#x25CF;</span></b>His distant eyes lingered for a few moments before he started speaking. "Back in ‘55, she married one of my club brothers in Butte. That was before we merged—Silver Bow MC and Bitterroot MC outta Missoula. Ed was dead set against it. Patched out. Left in good standing, no trouble."</p>
+<p><b><span id="U0166" style="color: #753e00;">&#x25CF;</span></b>His distant eyes lingered for a few moments before he started speaking. "Back in ‘55, she married one of my club brothers in Butte. That was before we merged—Silver Bow MC and Bitterroot MC outta Missoula. Ed was dead set against it. Patched out. Left in good standing, no trouble."</p>
 <p>"Ed was her late husband’s name."</p>
 <p>"Ah, he's gone now." A brief flush of sadness crossed his face.  "I remember she had a baby in ‘56 and maybe another in ‘58." Vince's expression slowly transformed to wistful. He hovered over his plate in reverie.</p>
 <p><b><span id="U0169" style="color: #844900;">&#x25CF;</span></b>I started on my meatloaf and mashed potatoes. Gladys really made good gravy, though she really overcooked the vegetables.</p>
 <p>"Your meatloaf is getting cold."</p>
 <p>He gave himself a slight shake, and his eyes refocused on me. "Sorry, just thinkin'." He started eating.</p>
 <p>We didn't even get halfway through our meal before Gladys came back out to deliver plates to the couple that came in after us. She came right over to our table. With a head gesture, she signaled me to move over, as she wanted to sit across from Vince. I shifted toward the window wall, and she sat next to me.</p>
-<p><b><span id="U0173" style="color: #844900;">&#x25CF;</span></b>She looked like she had an urgent question, all knitted brow and steely eyes. "Were you in prison? We heard about the..." She paused. "...murders and arrests."</p>
+<p><b><span id="U0173" style="color: #753e00;">&#x25CF;</span></b>She looked like she had an urgent question, all knitted brow and steely eyes. "Were you in prison? We heard about the..." She paused. "...murders and arrests."</p>
 <p><b><span id="U0174" style="color: #844900;">&#x25CF;</span></b>"No." Vince shook his head hard.  "Back in '70, Sarah and I moved up to Columbia Falls and opened a bar—"</p>
-<p><b><span id="U0175" style="color: #844900;">&#x25CF;</span></b>"That girl from the carnival? You got married?" Gladys leaned forward on the table looking perplexed.</p>
-<p><b><span id="U0176" style="color: #844900;">&#x25CF;</span></b>"Yeah, Sarah and I have always been together. But we split from George in ‘75. Washed our hands of him. None of us went down in that mess."</p>
+<p><b><span id="U0175" style="color: #753e00;">&#x25CF;</span></b>"That girl from the carnival? You got married?" Gladys leaned forward on the table looking perplexed.</p>
+<p><b><span id="U0176" style="color: #753e00;">&#x25CF;</span></b>"Yeah, Sarah and I have always been together. But we split from George in ‘75. Washed our hands of him. None of us went down in that mess."</p>
 <p>Gladys pushed back into the seat. "You and George were so close."</p>
 <p>"Wasn’t the same guy we knew. Lost sight of what we stood for."</p>
 <p><b><span id="U0179" style="color: #844900;">&#x25CF;</span></b>"Hearing about the deaths and arrests broke Ed’s heart." She let out a long sigh. "He died in a car wreck near Great Falls, maybe ten years back. Drove too damn fast, always did. I used to holler at him for it."</p>
-<p><b><span id="U0180" style="color: #844900;">&#x25CF;</span></b>"I remember." Vince's eyes went distant again. “That drag race in Billings, he smoked ’em. Hell of a mechanic. Solid guy. Sorry he’s gone.” He refocused on her. “So how’d you two end up way out here?”</p>
+<p><b><span id="U0180" style="color: #753e00;">&#x25CF;</span></b>"I remember." Vince's eyes went distant again. “That drag race in Billings, he smoked ’em. Hell of a mechanic. Solid guy. Sorry he’s gone.” He refocused on her. “So how’d you two end up way out here?”</p>
 <p>"Ed found this land and restaurant for sale back in ‘58. We always dreamed of running our own business, a café. Tourist trade’s been good to us. But I’m gettin’ too damn old to run it alone. Don’t think my kids’ll take it over. Maybe I’ll sell in a couple years."</p>
 <p>They kept on talking while I finished my plate. I got restless after that. I interrupted their conversation. "I'm gonna head back up to the cabin, lie down, and put some ice on my face. You two keep talking."</p>
 <p>Vince looked to me with concern. "You okay to walk back on your own?"</p>
@@ -325,6 +325,142 @@
             </div>
             
         </div>
+<script>
+    // --- CONFIGURATION ---
+    // You can adjust these values to change the scrolling behavior.
+    const CONFIG = {
+      // The unique ID for the introductory dot.
+    headerDotId: 'Ustart',
+                                          // Scroll animation duration in milliseconds.
+    scrollDuration: 800,
+                                    // Time in milliseconds to hold for a long press (reverse scroll).
+    longPressDelay: 500,
+                                               // The final position for the first dot, in pixels from the top of the window.
+    // This is used only when clicking the introductory dot.
+    topOffsetPixels: 100,
+                                                        };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- ELEMENT DISCOVERY ---
+    const headerDot = document.getElementById(CONFIG.headerDotId);
+    // Select all spans whose ID starts with "U" (numeric content dots).
+    const contentDots = Array.from(document.querySelectorAll('span[id^="U"]')).sort((a, b) => {
+        // Sort numerically to ensure correct order, just in case.
+      const numA = parseInt(a.id.substring(1), 10);
+      const numB = parseInt(b.id.substring(1), 10);
+        return numA - numB;
+        });
+
+        if (!contentDots.length) return; // Exit if no content dots are found.
+
+        // Combine header and content dots for attaching events.
+        const allDots = headerDot ? [headerDot, ...contentDots] : [...contentDots];
+
+        // --- CORE SCROLLING FUNCTION ---
+        /**
+            * Animate scroll to a target element.
+            * @param {HTMLElement} targetElement The element to scroll to.
+            * @param {number} finalPosition The target vertical position in the viewport for the element.
+            */
+        const smoothScrollTo = (targetElement, finalPosition) => {
+        const startY = window.scrollY;
+      const targetY = targetElement.getBoundingClientRect().top + startY - finalPosition;
+      const distance = targetY - startY;
+      let startTime = null;
+
+      // Easing function for acceleration/deceleration effect.
+      const easeInOutQuad = (t, b, c, d) => {
+          t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+            };
+
+            const animation = (currentTime) => {
+          if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutQuad(timeElapsed, startY, distance, CONFIG.scrollDuration);
+        window.scrollTo(0, run);
+        if (timeElapsed < CONFIG.scrollDuration) {
+            requestAnimationFrame(animation);
+        }
+        };
+
+            requestAnimationFrame(animation);
+        };
+
+        // --- EVENT HANDLING LOGIC ---
+        allDots.forEach(dot => {
+        let pressTimer = null;
+      let isLongPress = false;
+
+      const handlePress = (e) => {
+          // Prevent default browser actions (like text selection on long press).
+        e.preventDefault();
+
+        isLongPress = false;
+        pressTimer = setTimeout(() => {
+            isLongPress = true;
+          // LONG PRESS: Scroll backwards.
+          const currentDotIndex = contentDots.indexOf(dot);
+          const isHeader = (dot.id === CONFIG.headerDotId);
+
+          let targetDot;
+          if (isHeader || currentDotIndex === 0) {
+              // Header dot or first content dot goes to the last content dot.
+            targetDot = contentDots[contentDots.length - 1];
+            } else {
+              // Go to the previous content dot.
+            targetDot = contentDots[currentDotIndex - 1];
+          }
+
+          const clickPosition = dot.getBoundingClientRect().top;
+          smoothScrollTo(targetDot, clickPosition);
+
+          }, CONFIG.longPressDelay);
+        };
+
+      const handleRelease = (e) => {
+          clearTimeout(pressTimer);
+        // If it was a short press, handle the forward scroll.
+        if (!isLongPress) {
+            // SHORT PRESS / TAP: Scroll forwards.
+          const currentDotIndex = contentDots.indexOf(dot);
+          const isHeader = (dot.id === CONFIG.headerDotId);
+
+          let targetDot;
+          if (isHeader) {
+              // Header dot always goes to the first content dot.
+             targetDot = contentDots[0];
+             } else if (currentDotIndex === contentDots.length - 1) {
+              // Last content dot loops back to the first content dot.
+            targetDot = contentDots[0];
+            } else {
+              // Go to the next content dot.
+            targetDot = contentDots[currentDotIndex + 1];
+          }
+
+          // Determine the final scroll position.
+          const finalPosition = isHeader 
+          ? CONFIG.topOffsetPixels 
+            : dot.getBoundingClientRect().top;
+
+            smoothScrollTo(targetDot, finalPosition);
+        }
+        };
+
+      // Assign events for both mouse and touch devices.
+      dot.addEventListener('mousedown', handlePress);
+      dot.addEventListener('mouseup', handleRelease);
+      dot.addEventListener('mouseleave', () => clearTimeout(pressTimer)); // Cancel if mouse leaves
+
+      dot.addEventListener('touchstart', handlePress, { passive: false });
+      dot.addEventListener('touchend', handleRelease);
+      dot.addEventListener('touchcancel', () => clearTimeout(pressTimer)); // Cancel on interruption
+      });
+    });
+</script>
+
     </body>
 
 <html>

@@ -39,7 +39,7 @@
                   Latest Update: 2025-07-15 14:36:26-07:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   explicit queer sex, prostitution</p>
-                  <p>The symbol <b><span class=orange>&#x25CF;</span></b> indicates an <br />
+                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
                   updated paragraph within the last 10 days.<br />
                   The darker the symbol, the older the update.</p>
  
@@ -149,7 +149,7 @@
 <p>I sat back on my bike, gnawing the jerky.</p>
 <p>Ten minutes later, Ted came back out the side door smiling. "I think we're gonna set a record this weekend. They're doin' great. Let's move on."</p>
 <p>David started his engine immediately. I followed suit. Within a couple minutes, we hit the on-ramp to I-15 southbound. I thought we'd been going fast on US2, but on the freeway, David set the pace at eighty. A full twenty-five miles per hour over the absurd fifty-five-mile-per-hour speed limit. Totally exhilarating.</p>
-<p><b><span id="U0104" style="color: #753e00;">&#x25CF;</span></b>This freeway was pretty straight, with a few curves that were clearly engineered for faster speeds. Prior to the 1974 nationwide mandate of a fifty-five-mile-per-hour speed limit, Montana had no speed limit: safe and prudent was the rule. The state hated the federal speed mandate and refused to enforce it. Yeah, they still gave out tickets, but it wasn't for speeding, it was for wasting natural resources and therefore not a moving violation. The penalty was five dollars, could be paid directly to the officer, and had no effect on driving records.</p>
+<p><b><span id="U0104" style="color: #663300;">&#x25CF;</span></b>This freeway was pretty straight, with a few curves that were clearly engineered for faster speeds. Prior to the 1974 nationwide mandate of a fifty-five-mile-per-hour speed limit, Montana had no speed limit: safe and prudent was the rule. The state hated the federal speed mandate and refused to enforce it. Yeah, they still gave out tickets, but it wasn't for speeding, it was for wasting natural resources and therefore not a moving violation. The penalty was five dollars, could be paid directly to the officer, and had no effect on driving records.</p>
 <p>Even at eighty miles per hour, we passed a highway patrol officer, and he didn't flinch. They rarely ever pulled over motorcycles.</p>
 <p>We next rolled into the town of Conrad. Again, we pulled into one of Ted's stations. This time, David got off his bike, stepped around Ted's bike, and approached me.</p>
 <p>"Listen, if you’re ridin’ sweep, you damn well better know how. When point throws a signal to pass, you move. We don’t slither around traffic like a damn snake."</p>
@@ -344,6 +344,142 @@
             </div>
             
         </div>
+<script>
+    // --- CONFIGURATION ---
+    // You can adjust these values to change the scrolling behavior.
+    const CONFIG = {
+      // The unique ID for the introductory dot.
+    headerDotId: 'Ustart',
+                                          // Scroll animation duration in milliseconds.
+    scrollDuration: 800,
+                                    // Time in milliseconds to hold for a long press (reverse scroll).
+    longPressDelay: 500,
+                                               // The final position for the first dot, in pixels from the top of the window.
+    // This is used only when clicking the introductory dot.
+    topOffsetPixels: 100,
+                                                        };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- ELEMENT DISCOVERY ---
+    const headerDot = document.getElementById(CONFIG.headerDotId);
+    // Select all spans whose ID starts with "U" (numeric content dots).
+    const contentDots = Array.from(document.querySelectorAll('span[id^="U"]')).sort((a, b) => {
+        // Sort numerically to ensure correct order, just in case.
+      const numA = parseInt(a.id.substring(1), 10);
+      const numB = parseInt(b.id.substring(1), 10);
+        return numA - numB;
+        });
+
+        if (!contentDots.length) return; // Exit if no content dots are found.
+
+        // Combine header and content dots for attaching events.
+        const allDots = headerDot ? [headerDot, ...contentDots] : [...contentDots];
+
+        // --- CORE SCROLLING FUNCTION ---
+        /**
+            * Animate scroll to a target element.
+            * @param {HTMLElement} targetElement The element to scroll to.
+            * @param {number} finalPosition The target vertical position in the viewport for the element.
+            */
+        const smoothScrollTo = (targetElement, finalPosition) => {
+        const startY = window.scrollY;
+      const targetY = targetElement.getBoundingClientRect().top + startY - finalPosition;
+      const distance = targetY - startY;
+      let startTime = null;
+
+      // Easing function for acceleration/deceleration effect.
+      const easeInOutQuad = (t, b, c, d) => {
+          t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+            };
+
+            const animation = (currentTime) => {
+          if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = easeInOutQuad(timeElapsed, startY, distance, CONFIG.scrollDuration);
+        window.scrollTo(0, run);
+        if (timeElapsed < CONFIG.scrollDuration) {
+            requestAnimationFrame(animation);
+        }
+        };
+
+            requestAnimationFrame(animation);
+        };
+
+        // --- EVENT HANDLING LOGIC ---
+        allDots.forEach(dot => {
+        let pressTimer = null;
+      let isLongPress = false;
+
+      const handlePress = (e) => {
+          // Prevent default browser actions (like text selection on long press).
+        e.preventDefault();
+
+        isLongPress = false;
+        pressTimer = setTimeout(() => {
+            isLongPress = true;
+          // LONG PRESS: Scroll backwards.
+          const currentDotIndex = contentDots.indexOf(dot);
+          const isHeader = (dot.id === CONFIG.headerDotId);
+
+          let targetDot;
+          if (isHeader || currentDotIndex === 0) {
+              // Header dot or first content dot goes to the last content dot.
+            targetDot = contentDots[contentDots.length - 1];
+            } else {
+              // Go to the previous content dot.
+            targetDot = contentDots[currentDotIndex - 1];
+          }
+
+          const clickPosition = dot.getBoundingClientRect().top;
+          smoothScrollTo(targetDot, clickPosition);
+
+          }, CONFIG.longPressDelay);
+        };
+
+      const handleRelease = (e) => {
+          clearTimeout(pressTimer);
+        // If it was a short press, handle the forward scroll.
+        if (!isLongPress) {
+            // SHORT PRESS / TAP: Scroll forwards.
+          const currentDotIndex = contentDots.indexOf(dot);
+          const isHeader = (dot.id === CONFIG.headerDotId);
+
+          let targetDot;
+          if (isHeader) {
+              // Header dot always goes to the first content dot.
+             targetDot = contentDots[0];
+             } else if (currentDotIndex === contentDots.length - 1) {
+              // Last content dot loops back to the first content dot.
+            targetDot = contentDots[0];
+            } else {
+              // Go to the next content dot.
+            targetDot = contentDots[currentDotIndex + 1];
+          }
+
+          // Determine the final scroll position.
+          const finalPosition = isHeader 
+          ? CONFIG.topOffsetPixels 
+            : dot.getBoundingClientRect().top;
+
+            smoothScrollTo(targetDot, finalPosition);
+        }
+        };
+
+      // Assign events for both mouse and touch devices.
+      dot.addEventListener('mousedown', handlePress);
+      dot.addEventListener('mouseup', handleRelease);
+      dot.addEventListener('mouseleave', () => clearTimeout(pressTimer)); // Cancel if mouse leaves
+
+      dot.addEventListener('touchstart', handlePress, { passive: false });
+      dot.addEventListener('touchend', handleRelease);
+      dot.addEventListener('touchcancel', () => clearTimeout(pressTimer)); // Cancel on interruption
+      });
+    });
+</script>
+
     </body>
 
 <html>

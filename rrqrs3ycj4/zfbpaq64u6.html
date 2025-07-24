@@ -364,7 +364,7 @@
   window.addEventListener('load', () => {
     // --- ELEMENT DISCOVERY ---
     const headerDot = document.getElementById(CONFIG.headerDotId);
-    const contentDots = Array.from(document.querySelectorAll('span[id^="Un"]')).sort((a, b) => {
+    const contentDots = Array.from(document.querySelectorAll('span[id^="U"]')).sort((a, b) => {
       const numA = parseInt(a.id.substring(1), 10);
       const numB = parseInt(b.id.substring(1), 10);
       return numA - numB;

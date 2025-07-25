@@ -224,6 +224,12 @@ a:hover {
   color: yellowgreen;
 }
 
+/* Change cursor to a pointer on clickable dots */
+span[id^="U"] {
+    cursor: pointer;
+}
+
+
 
 @media (max-width: 600px) {
   .content {

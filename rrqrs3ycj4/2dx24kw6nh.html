@@ -280,117 +280,152 @@
             
         </div>
 <script>
-  // --- CONFIGURATION ---
-  // You can adjust these values to change the scrolling behavior.
-  const CONFIG = {
-    // The unique ID for the introductory dot.
-    headerDotId: 'Ustart',
-    // Scroll animation duration in milliseconds.
-    scrollDuration: 800,
-    // Time in milliseconds to detect a double click/tap.
-    doubleClickDelay: 300,
-    // The final position for the first dot, in pixels from the top of the window.
-    // This is used only when clicking the introductory dot.
-    topOffsetPixels: 100,
-  };
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    */
+document.addEventListener('DOMContentLoaded', () => {
 
-  // Switched to the 'load' event to ensure all page assets (images, fonts)
-  // are loaded. This provides stable element positions for accurate scrolling.
-  window.addEventListener('load', () => {
-    // --- ELEMENT DISCOVERY ---
-    const headerDot = document.getElementById(CONFIG.headerDotId);
-    const contentDots = Array.from(document.querySelectorAll('span[id^="U"]')).sort((a, b) => {
-      const numA = parseInt(a.id.substring(1), 10);
-      const numB = parseInt(b.id.substring(1), 10);
-      return numA - numB;
-    });
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
 
-    if (!contentDots.length) return;
+                                               // Easing function for the animation (easeInOutCubic).
+        // You can find other easing functions online (e.g., at easings.net).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
 
-    const allDots = headerDot ? [headerDot, ...contentDots] : [...contentDots];
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
 
-    // --- CORE SCROLLING FUNCTION ---
-    const smoothScrollTo = (targetElement, finalPosition) => {
-      const startY = window.scrollY;
-      const targetY = targetElement.getBoundingClientRect().top + startY - finalPosition;
-      const distance = targetY - startY;
-      let startTime = null;
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        // Use a number (e.g., 1.5 for "line-height: 1.5;").
+        lineHeight: 1.5,
+                 };
+    // ===================================
 
-      const easeInOutQuad = (t, b, c, d) => {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
-      };
 
-      const animation = (currentTime) => {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = easeInOutQuad(timeElapsed, startY, distance, CONFIG.scrollDuration);
-        window.scrollTo(0, run);
-        if (timeElapsed < CONFIG.scrollDuration) {
-          requestAnimationFrame(animation);
+    const startDot = document.getElementById('Ustart');
+    // Select all paragraph dots, convert the NodeList to an Array, and sort them by ID.
+    // The 'U0' prefix ensures we don't accidentally grab 'Ustart' here.
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                // If there are no paragraph dots, there's nothing to do.
+    if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none'; // Optionally hide start dot
+    return;
+    }
+
+    let isScrolling = false;
+
+    /**
+        * The main scroll animation function.
+        * @param {number} targetY - The absolute vertical position (in pixels) to scroll to.
+        */
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return; // Prevent multiple scrolls at once
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
         }
-      };
-      requestAnimationFrame(animation);
-    };
+        requestAnimationFrame(animation);
+    }
 
-    // --- SCROLL HANDLERS ---
-    const handleForwardScroll = (dot) => {
-      const currentDotIndex = contentDots.indexOf(dot);
-      const isHeader = (dot.id === CONFIG.headerDotId);
-      
-      let targetDot;
-      if (isHeader) {
-         targetDot = contentDots[0];
-      } else if (currentDotIndex === contentDots.length - 1) {
-        targetDot = contentDots[0]; // Loop from last to first
-      } else {
-        targetDot = contentDots[currentDotIndex + 1];
-      }
+    /**
+        * Calculates the target scroll position and initiates the scroll.
+        * @param {HTMLElement} clickedDot - The dot that was clicked.
+        * @param {HTMLElement} targetDot - The destination dot.
+        */
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
 
-      const finalPosition = isHeader ? CONFIG.topOffsetPixels : dot.getBoundingClientRect().top;
-      smoothScrollTo(targetDot, finalPosition);
-    };
-
-    const handleReverseScroll = (dot) => {
-      const currentDotIndex = contentDots.indexOf(dot);
-      const isHeader = (dot.id === CONFIG.headerDotId);
-      
-      let targetDot;
-      if (isHeader || currentDotIndex === 0) {
-        targetDot = contentDots[contentDots.length - 1]; // Loop from first to last
-      } else {
-        targetDot = contentDots[currentDotIndex - 1];
-      }
-      
-      const clickPosition = dot.getBoundingClientRect().top;
-      smoothScrollTo(targetDot, clickPosition);
-    };
-
-    // --- EVENT LISTENER ATTACHMENT ---
-    allDots.forEach(dot => {
-      let clickTimer = null;
-
-      // The 'click' event handles both mouse clicks and mobile taps.
-      dot.addEventListener('click', (e) => {
-        e.preventDefault(); // Prevents text selection on double click
-
-        // If a timer is running, this is a double click.
-        if (clickTimer) {
-          clearTimeout(clickTimer);
-          clickTimer = null;
-          handleReverseScroll(dot); // ⏪ Double-click scrolls backward
-        } else {
-          // On the first click, set a timer.
-          clickTimer = setTimeout(() => {
-            clickTimer = null;
-            handleForwardScroll(dot); // ⏩ Single-click scrolls forward
-          }, CONFIG.doubleClickDelay);
+        if (clickedDot.id === 'Ustart') {
+            // Special case: Position the first dot a few lines from the top.
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            // Standard case: Make the target dot appear where the clicked dot was.
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
         }
-      });
-    });
-  });
+
+        smoothScrollTo(targetY);
+    }
+
+    /**
+        * Handles forward navigation (single-click).
+        * @param {Event} event - The click event.
+        */
+    function handleForward(event) {
+        const clickedDot = event.currentTarget;
+        let targetDot;
+
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            // Loop from the last dot back to the first one.
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    /**
+        * Handles backward navigation (double-click).
+        * @param {Event} event - The dblclick event.
+        */
+    function handleBackward(event) {
+        const clickedDot = event.currentTarget;
+        const totalDots = paragraphDots.length;
+
+        // Double-clicking Ustart is an edge case; we'll go to the last dot.
+        if (clickedDot.id === 'Ustart') {
+            scrollToDot(clickedDot, paragraphDots[totalDots - 1]);
+        return;
+        }
+
+        const currentIndex = paragraphDots.indexOf(clickedDot);
+        // The formula `(a % n + n) % n` correctly handles negative results for modulo.
+        const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+        const targetDot = paragraphDots[prevIndex];
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    // Attach event listeners to all the dots
+    if (startDot) {
+        startDot.addEventListener('click', handleForward);
+        startDot.addEventListener('dblclick', handleBackward);
+    }
+
+    paragraphDots.forEach(dot => {
+        dot.addEventListener('click', handleForward);
+        dot.addEventListener('dblclick', handleBackward);
+        });
+});
+
 </script>
 
 

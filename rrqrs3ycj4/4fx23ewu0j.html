@@ -187,7 +187,7 @@
     *
     * This script enables smooth scrolling between elements with specific IDs
     * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 2: Fixes double-click behavior.
+    * VERSION 3: A robust fix for single and double-click logic.
     */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -205,9 +205,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                                                                    // Your site's line-height. Used to calculate the pixel offset above.
         lineHeight: 1.5,
 
-        // Milliseconds to wait after a single click before acting, to see if it's a double-click.
+        // Milliseconds to wait to see if a single click is actually a double-click.
         doubleClickDelay: 250,
-        };
+                                                                              };
     // ===================================
 
 
@@ -221,7 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let isScrolling = false;
-    let clickTimer = null; // Timer to differentiate single/double clicks
 
     function smoothScrollTo(targetY) {
         if (isScrolling) return;
@@ -263,10 +262,6 @@ document.addEventListener('DOMContentLoaded', () => {
         smoothScrollTo(targetY);
     }
 
-    /**
-        * Determines the next dot in the sequence and scrolls to it.
-        * @param {HTMLElement} clickedDot - The dot that was clicked.
-        */
     function navigateForward(clickedDot) {
         let targetDot;
         if (clickedDot.id === 'Ustart') {
@@ -279,16 +274,11 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollToDot(clickedDot, targetDot);
     }
 
-    /**
-        * Determines the previous dot in the sequence and scrolls to it.
-        * @param {HTMLElement} clickedDot - The dot that was double-clicked.
-        */
     function navigateBackward(clickedDot) {
         const totalDots = paragraphDots.length;
         let targetDot;
-
         if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1]; // Go to the last dot
+            targetDot = paragraphDots[totalDots - 1];
             } else {
             const currentIndex = paragraphDots.indexOf(clickedDot);
             const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
@@ -297,32 +287,31 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollToDot(clickedDot, targetDot);
     }
 
-    // Consolidate all clickable dots into a single array
+    let clickTimer = null;
     const allDots = [startDot, ...paragraphDots].filter(Boolean);
 
     allDots.forEach(dot => {
-        // Single-click handler
         dot.addEventListener('click', (event) => {
-            // Set a timer. If a dblclick event doesn't cancel it, run the forward navigation.
-            clearTimeout(clickTimer);
-            clickTimer = setTimeout(() => {
-                navigateForward(event.currentTarget);
-                }, config.doubleClickDelay);
-            });
+            const clickedDot = event.currentTarget;
 
-        // Double-click handler
-        dot.addEventListener('dblclick', (event) => {
-            // 1. Prevent the default text selection behavior.
-            event.preventDefault();
-
-            // 2. Cancel the pending single-click timer.
-            clearTimeout(clickTimer);
-
-            // 3. Immediately run the backward navigation.
-            navigateBackward(event.currentTarget);
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
             });
         });
 });
+
 
 </script>
 

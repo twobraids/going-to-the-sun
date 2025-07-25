@@ -331,6 +331,7 @@
     *
     * This script enables smooth scrolling between elements with specific IDs
     * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 2: Fixes double-click behavior.
     */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -340,39 +341,34 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollDuration: 800,
 
                                                // Easing function for the animation (easeInOutCubic).
-        // You can find other easing functions online (e.g., at easings.net).
         easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
 
         // For the 'Ustart' dot: how many lines from the top to position the first dot.
         startDotOffsetLines: 3,
 
                                                                                    // Your site's line-height. Used to calculate the pixel offset above.
-        // Use a number (e.g., 1.5 for "line-height: 1.5;").
         lineHeight: 1.5,
-                 };
+
+        // Milliseconds to wait after a single click before acting, to see if it's a double-click.
+        doubleClickDelay: 250,
+        };
     // ===================================
 
 
     const startDot = document.getElementById('Ustart');
-    // Select all paragraph dots, convert the NodeList to an Array, and sort them by ID.
-    // The 'U0' prefix ensures we don't accidentally grab 'Ustart' here.
     const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
     .sort((a, b) => a.id.localeCompare(b.id));
 
-                                // If there are no paragraph dots, there's nothing to do.
-    if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none'; // Optionally hide start dot
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
     return;
     }
 
     let isScrolling = false;
+    let clickTimer = null; // Timer to differentiate single/double clicks
 
-    /**
-        * The main scroll animation function.
-        * @param {number} targetY - The absolute vertical position (in pixels) to scroll to.
-        */
     function smoothScrollTo(targetY) {
-        if (isScrolling) return; // Prevent multiple scrolls at once
+        if (isScrolling) return;
 
         const startY = window.scrollY;
         const distance = targetY - startY;
@@ -396,43 +392,31 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(animation);
     }
 
-    /**
-        * Calculates the target scroll position and initiates the scroll.
-        * @param {HTMLElement} clickedDot - The dot that was clicked.
-        * @param {HTMLElement} targetDot - The destination dot.
-        */
     function scrollToDot(clickedDot, targetDot) {
         let targetY;
-
         if (clickedDot.id === 'Ustart') {
-            // Special case: Position the first dot a few lines from the top.
             const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
             const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
             targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
             } else {
-            // Standard case: Make the target dot appear where the clicked dot was.
             const startPosTop = clickedDot.getBoundingClientRect().top;
             const targetPosTop = targetDot.getBoundingClientRect().top;
             const scrollDistance = targetPosTop - startPosTop;
             targetY = window.scrollY + scrollDistance;
         }
-
         smoothScrollTo(targetY);
     }
 
     /**
-        * Handles forward navigation (single-click).
-        * @param {Event} event - The click event.
+        * Determines the next dot in the sequence and scrolls to it.
+        * @param {HTMLElement} clickedDot - The dot that was clicked.
         */
-    function handleForward(event) {
-        const clickedDot = event.currentTarget;
+    function navigateForward(clickedDot) {
         let targetDot;
-
         if (clickedDot.id === 'Ustart') {
             targetDot = paragraphDots[0];
             } else {
             const currentIndex = paragraphDots.indexOf(clickedDot);
-            // Loop from the last dot back to the first one.
             const nextIndex = (currentIndex + 1) % paragraphDots.length;
             targetDot = paragraphDots[nextIndex];
         }
@@ -440,39 +424,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**
-        * Handles backward navigation (double-click).
-        * @param {Event} event - The dblclick event.
+        * Determines the previous dot in the sequence and scrolls to it.
+        * @param {HTMLElement} clickedDot - The dot that was double-clicked.
         */
-    function handleBackward(event) {
-        const clickedDot = event.currentTarget;
+    function navigateBackward(clickedDot) {
         const totalDots = paragraphDots.length;
+        let targetDot;
 
-        // Double-clicking Ustart is an edge case; we'll go to the last dot.
         if (clickedDot.id === 'Ustart') {
-            scrollToDot(clickedDot, paragraphDots[totalDots - 1]);
-        return;
+            targetDot = paragraphDots[totalDots - 1]; // Go to the last dot
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
         }
-
-        const currentIndex = paragraphDots.indexOf(clickedDot);
-        // The formula `(a % n + n) % n` correctly handles negative results for modulo.
-        const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-        const targetDot = paragraphDots[prevIndex];
         scrollToDot(clickedDot, targetDot);
     }
 
-    // Attach event listeners to all the dots
-    if (startDot) {
-        startDot.addEventListener('click', handleForward);
-        startDot.addEventListener('dblclick', handleBackward);
-    }
+    // Consolidate all clickable dots into a single array
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
 
-    paragraphDots.forEach(dot => {
-        dot.addEventListener('click', handleForward);
-        dot.addEventListener('dblclick', handleBackward);
+    allDots.forEach(dot => {
+        // Single-click handler
+        dot.addEventListener('click', (event) => {
+            // Set a timer. If a dblclick event doesn't cancel it, run the forward navigation.
+            clearTimeout(clickTimer);
+            clickTimer = setTimeout(() => {
+                navigateForward(event.currentTarget);
+                }, config.doubleClickDelay);
+            });
+
+        // Double-click handler
+        dot.addEventListener('dblclick', (event) => {
+            // 1. Prevent the default text selection behavior.
+            event.preventDefault();
+
+            // 2. Cancel the pending single-click timer.
+            clearTimeout(clickTimer);
+
+            // 3. Immediately run the backward navigation.
+            navigateBackward(event.currentTarget);
+            });
         });
 });
 
-</script>
 
 
     </body>

@@ -42,9 +42,6 @@
                   Latest Update: 2025-08-01 16:16:00-07:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   heavy emotional shit ahead</p>
-                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -59,7 +56,7 @@
 <h2 id="TheIronHorse">The Iron Horse</h2>
 <p>I smelled it a full block before I saw it—acrid, wrong. My heart leapt to my throat when I turned that last corner to the Horse. It was gone. Just a hollow rectangle of brick walls, darkened with soot. Daylight through the glassless windows showed blackened wooden beams crisscrossing each other from the collapsed roof. The blackened bones of more than a half dozen motorcycles, some still on their side stands, stood guard along the front.</p>
 <p>Wait, that's Vince's chopper by the front door—one of the fish tail pipes flat on the asphalt, the other sagging to the side at the wrong angle—like they melted. He loved that bike—the one with the noisy pushrods—the one he built himself.</p>
-<p><b><span id="U0011" style="color: #663300;">&#x25CF;</span></b>Marks on the asphalt showed this hadn’t just happened—no water—all dry. I traced where rivers of fire hose runoff had floated cinders and ash into the street. This happened days ago. No fire fighters around, no cops, nobody to tell me what happened.</p>
+<p>Marks on the asphalt showed this hadn’t just happened—no water—all dry. I traced where rivers of fire hose runoff had floated cinders and ash into the street. This happened days ago. No fire fighters around, no cops, nobody to tell me what happened.</p>
 <p>I began to tremble.</p>
 <p>I needed to call Vince and Chris. I scanned the street for a payphone—nothing. I looked back to the shell of the Horse and the burnt corpse of Vince's chopper—my eyes started watering.</p>
 <p>The bike bucked as I slammed it into first gear, aiming back to the highway. A battered notepad on the asphalt caught my eye. I stopped with a short skid. I popped off the bike as if spring-loaded. A tire track over a spiral-bound notepad, the metal bindings crushed flat, the pages fanned out like a deck of cards. I picked it up, bent it to see the pages—pencil sketches of smiling faces—people I knew and loved—one of Dolph's notepads. I stuck it in the breast pocket of my jacket and jumped back onto the bike.</p>
@@ -183,139 +180,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

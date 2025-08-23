@@ -37,7 +37,10 @@
             <div class="lars-inner-box">
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-03-04 10:19:24-08:00<br />
-                  Latest Update: 2025-06-07 17:54:41-07:00</i></p>
+                  Latest Update: 2025-08-23 14:47:21-07:00</i></p>
+                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -53,9 +56,9 @@
 <h2 id="TheBlackfeetReservation,Montana">The Blackfeet Reservation, Montana</h2>
 <p>Soon after arriving, a group of four Harleys emerged from the Glacier Park Hotel side of the railroad underpass. I watched them stop at US2, turn right to head up Marias Pass, and, I assumed, on to West Glacier. One of the bike passengers raised a hand to me, and I waved back.</p>
 <p>The passenger train, Empire Builder, rolled in from the West, and I watched it disgorge a flock of tourists. In only a few minutes, the Amtrak train pulled out, resuming its eastbound journey.</p>
-<p>I watched the line of four bright Red Jammers, vintage motor coaches, pull up to the original log Great Northern Railway station. The White Motor Company Model 706 motor coaches, debuted in 1936 as a fleet of thirty-five. Known for the loud grinding of their unsynchronized transmissions, crawled all the roads of the park ferrying tourists to and from all the lakeside hotels. With canvas roll-top roofs and four bench seats, each with its own door, they sat sixteen plus one passenger in the front with the driver. One at a time, each jammer pulled away from the station with the signature clashing of metal teeth.</p>
+<p><b><span id="U0013" style="color: #ffa500;">&#x25CF;</span></b>I watched the line of four bright Red Jammers, official vintage motor coaches, pull up to the original log Great Northern Railway station. One at a time, each jammer pulled away from the station with an earsplitting grind of their elderly unsynchronized transmission. Some went to the local hotel while some went North to Many Glacier.</p>
 <p>I sighed as ten o'clock came and went.</p>
-<p>I watched another westbound Burlington Northern freight pass by the station without slowing.  Not long afterwards, another freight passed by going in the other direction.</p>
+<p><b><span id="U0015" style="color: #ffa500;">&#x25CF;</span></b>I watched another westbound Burlington Northern freight pass by the station without slowing.  Not long afterwards, another rumbled by the other way.</p>
 <p>At 10:30, I could only call myself crestfallen. I mentally kicked myself for getting so wound up for this failed rendezvous. How could I ever have been so naïve to have expected this fantasy to actually come true? I got up, opened a saddle bag, took a long drag from my water bottle, and ate a handful of my trail mix.</p>
 <p>I decided to just go do the ride alone: just as always in everything, by myself. I leaned over and stowed my water bottle. As I shut the saddle bag, I heard the telltale syncopated rhythm of Harley pipes. I whipped around to the south and saw David cross over the centerline of US2 and onto the gravel where I waited. My heart leapt from the depths to the heights in a matter of two seconds. I let out a long sigh of relief.</p>
 <p>"Howdy," David called over the noise of his bike. He parked, dismounted, and proffered his hand. Surprised, I reached for his hand, but instead of clasping, he grabbed onto my wrist. Totally confused, I looked up to him, met his eyes, and he made a downward gesture with his head. I realized that I was supposed to grab his wrist. I did so, there was a single shake, and he let go. “That’s how you check if the other guy’s got a blade up his sleeve.” I think I just got a first lesson in biker culture.</p>
@@ -121,6 +124,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

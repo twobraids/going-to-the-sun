@@ -40,9 +40,6 @@
                   <p>Destined to evolve into the opening chapter...</p>
                   <p>Original Post: 2025-03-10 16:41:52-07:00<br />
                   Latest Update: 2025-08-12 20:22:51-07:00</i></p>
-                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -123,7 +120,7 @@
 <p>Riding through town gave me no trouble. It won't be crowded with tourists until Memorial Day weekend at the end of the month. Once on the far side of town, the road straightens out as it crosses Two Medicine Creek and enters the high plains of the Blackfeet Reservation. Now wanting to get to the school as quickly as I could, I sped up to fifty and moved into the proper place in my lane.</p>
 <p>The sun had warmed my skin, but the air was cold.  I wished I had gloves. As I crossed Two Medicine Creek, an errant mayfly splattered on the left lens of my dark glasses. I felt the splash of its internal juices on my cheek.</p>
 <p>Most other traffic passed me, I just kept my speed constant.</p>
-<p><b><span id="U0077" style="color: #663300;">&#x25CF;</span></b>Shifting up and down felt effortless at speed; it was only the slow stuff that felt sketchy. Halfway to Browning, it hit me—I was having one hell of a good time. I started to laugh, a terrified laugh, but a laugh nevertheless. The engine rumbled between my legs, vibrating my balls, the wind tearing past stimulating my skin. It's the same living-in-the-body feeling of riding a fast single track on the mountain bike—times ten. Freedom. Natural. Like I was born to do this—gave me a hard-on.</p>
+<p>Shifting up and down felt effortless at speed; it was only the slow stuff that felt sketchy. Halfway to Browning, it hit me—I was having one hell of a good time. I started to laugh, a terrified laugh, but a laugh nevertheless. The engine rumbled between my legs, vibrating my balls, the wind tearing past stimulating my skin. It's the same living-in-the-body feeling of riding a fast single track on the mountain bike—times ten. Freedom. Natural. Like I was born to do this—gave me a hard-on.</p>
 <p>Turning a motorcycle is far more instinctive than I expected. On a bicycle, the faster the speed, the more turning is done by weight shifting, not with the handlebars. Leaning the bike onto the sides of rounded tires does the turning. The spinning wheels create gyroscopic stability, keeping the bike upright. It's incredibly simple to slightly lean onto those tire sidewalls.</p>
 <p>I was fucking hooked.</p>
 <h2 id="BlackfeetCommunityCollege">Blackfeet Community College</h2>
@@ -196,139 +193,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

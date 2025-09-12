@@ -40,9 +40,6 @@
                   Latest Update: 2025-08-31 16:55:37-07:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   explicit gay sex</p>
-                  <p>The symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -90,8 +87,8 @@
 <p>Vince nodded his head. "Yeah, we ain’t got nothin’ to do with that Jesus racket."</p>
 <p>Vince continued, "We’re hostin’ another MC Saturday night. Foresters, chapter outta Western Oregon and Washington. Headin’ to Deadwood, South Dakota for their big annual run. Loggers can be a rough bunch, but like Chris said, gonna be a hell of a party."</p>
 <p>Chris nodded. "Throwin’ you straight into the fire, but you already know—we’re short on dealers. You'll learn fast. Foresters roll through every year, good crowd especially at the poker tables."</p>
-<p><b><span id="U0044" style="color: #663300;">&#x25CF;</span></b>Vince interrupted again. "Foresters got a chapter down in Missoula—some old Bastards got it chartered, they've pulled in quite a few younger guys. They’ll be headin’ up here too. Don’t expect trouble. Might be pitchin’ to rope us in, they always do. We got brothers workin’ the sawmill. I’ll hear ’em out, but I ain’t draggin’ the Bastards into somethin’ I can’t control."</p>
-<p><b><span id="U0045" style="color: #663300;">&#x25CF;</span></b>Chris flashed a frown at Vince and reasserted his agenda. "Next week, I got you in for three days. After that, four weeks with a five-day schedule, Thursdays through Mondays. That's when we'll be most crowded. This look good to you?"</p>
+<p>Vince interrupted again. "Foresters got a chapter down in Missoula—some old Bastards got it chartered, they've pulled in quite a few younger guys. They’ll be headin’ up here too. Don’t expect trouble. Might be pitchin’ to rope us in, they always do. We got brothers workin’ the sawmill. I’ll hear ’em out, but I ain’t draggin’ the Bastards into somethin’ I can’t control."</p>
+<p>Chris flashed a frown at Vince and reasserted his agenda. "Next week, I got you in for three days. After that, four weeks with a five-day schedule, Thursdays through Mondays. That's when we'll be most crowded. This look good to you?"</p>
 <p>I nodded. "Where am I staying while I'm here?"</p>
 <p>"Gettin' a room set up for you at the motel we’re renovatin’ next to the Horse. Not quite finished, but the plumbing works. You get a one-minute commute. Lot between the Horse and the motel’s gettin’ blocked off in a couple weeks. This is big for us—food vendors, four-week party, new people rollin’ through every day. Vince’s thing. Everything he touches turns into a carnival."</p>
 <p>"Fuck off." Vince stood up, picking up my empty bowl and taking it to the dishwasher.</p>
@@ -280,139 +277,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

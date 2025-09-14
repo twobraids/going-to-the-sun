@@ -68,28 +68,25 @@
                   
             {{ content_html }}
             
-            {% if blog_author_note and "placeholder" in blog_author_note %}
-            {% else %}
-                <div class="lars-nav-section">
-                    <div class="lars-nav-newer">
-                    {% if prev %}
-                        <a href="{{ prev.blog_relative_url }}#top">&#9668; Story Arc Backward</a><br />
-                    {% else %}
-                        <span class="lars-nav-not-written">&#9668; Story Arc Backward</span><br />
-                    {% endif %}
-                    </div>
-                    <div class="lars-nav-center">
-                        <a href="{{ contents_relative_url }}">Going to the Sun - Contents</a>
-                    </div>
-                    <div class="lars-nav-older">
-                    {% if next %}
-                        <a href="{{ next.blog_relative_url }}#top">Story Arc Forward &#9658;</a><br />
-                    {% else %}
-                        <span class="lars-nav-not-written">Story Arc Forward &#9658;</span><br />
-                    {% endif %}
-                    </div>
+            <div class="lars-nav-section">
+                <div class="lars-nav-newer">
+                {% if prev %}
+                    <a href="{{ prev.blog_relative_url }}#top">&#9668; Story Arc Backward</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">&#9668; Story Arc Backward</span><br />
+                {% endif %}
                 </div>
-            {% endif %}
+                <div class="lars-nav-center">
+                    <a href="{{ contents_relative_url }}">Going to the Sun - Contents</a>
+                </div>
+                <div class="lars-nav-older">
+                {% if next %}
+                    <a href="{{ next.blog_relative_url }}#top">Story Arc Forward &#9658;</a><br />
+                {% else %}
+                    <span class="lars-nav-not-written">Story Arc Forward &#9658;</span><br />
+                {% endif %}
+                </div>
+            </div>
             
             <div class="lars-inner-box">
               <p>This is a work of fiction based on experiences from my life.</p>

@@ -38,9 +38,6 @@
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-07-22 15:26:41-07:00<br />
                   Latest Update: 2025-09-13 21:51:05-07:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -67,13 +64,13 @@
 <p>I felt the surging anger, my teeth clenched. I stomped back into the cabin, grabbed the bottle and pulled the cloth out—the smell of bad gas—wicked out and evaporated over the year.</p>
 <p>I pissed into the narrow opening of the bottle. I held it up to the light, not quite the right color for gasoline, but it would do. I wanted my tag alongside Vince's.</p>
 <p>"Here, David, you haven't finished your whiskey. Drink up." I growled—I sounded like a fucking madman.</p>
-<p><b><span id="U0023" style="color: #663300;">&#x25CF;</span></b>I stuffed the rag back in the bottle and slammed it onto the table.</p>
+<p>I stuffed the rag back in the bottle and slammed it onto the table.</p>
 <p>Stormed back out to my bike—done with this place.</p>
 <p>Back out on the highway a few minutes later, I felt a breeze and looked down. I hadn't put my dick away. Using my clutch hand, I pushed it back into my pants and got the zipper at least half way up.</p>
 <h2 id="RailroadCreekRanch">Railroad Creek Ranch</h2>
 <p>I turned off US2 on to Railroad Creek Ranch as the sun dipped below the western mountains—nervous—didn't feel safe to go straight to my cabin. As I approached the fork—left to the restaurant, right to my cabin, I looked hard at the road dust. Marked. Truck tires. I kept moving left. I rode all the way to Gladys’s restaurant and parked next to customer cars.</p>
 <p>It sounded like she kicked the door open. Gladys rushed down the steps toward me. "Goddamn you, Karl. Worried about you. I kept waitin' for you to come down." She shook her head. "You've been gone for more'n a week. Why didn't you call me?"</p>
-<p><b><span id="U0029" style="color: #663300;">&#x25CF;</span></b>I looked at her in confusion—I've never called her.</p>
+<p>I looked at her in confusion—I've never called her.</p>
 <p>She stepped up, pulled me into a hug—all padding and straps, like getting hugged by a sofa—she wore a girdle—scent of soap and kitchen grease. She'd never so much as touched me since I met her three years ago. She was the landlady, not my grandmother.</p>
 <p>Once she finally drew back, her eyes settled on the healing scabs on my forehead. "You got hurt in the fire?"</p>
 <p>I shook my head. "I wasn't there. Was at my camp up at Bison Lakes that weekend. Didn't even know it happened until I showed up for work last Friday. It was just gone. ...everyone was gone."</p>
@@ -124,139 +121,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

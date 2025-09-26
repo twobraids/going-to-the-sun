@@ -39,20 +39,23 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>Eh, over the top and out the window...</p>
                   <p>Original Post: 2025-06-07 17:54:41-07:00<br />
-                  Latest Update: 2025-09-14 16:25:45-07:00</i></p>
+                  Latest Update: 2025-09-25 22:08:32-07:00</i></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
             <h2 id="TheIronHorse">The Iron Horse</h2>
 <p>I pulled on my down jacket for the sixty second walk over to the Horse for my shift—eight until closing. I stepped out, pulling my door shut—goddamn, how far below zero tonight? Weaving between the potholes sealed with iron-hard plugs of ice, I kept to the gravel to the front door. Crowded lot—more pickup trucks than normal—spotted a lot of 4 plates—Foresters from Missoula, maybe.</p>
 <p>I pushed through the door into the warmth. The right side of my face felt the radiant heat of it as I smiled and nodded at Dolph. I pushed through the crowd toward the office. Lots of Forester patches—not all Missoula—bunch of Oregon guys—Springfield and Roseburg patches.</p>
-<p>Bike clubs in the winter are weird—lots of patches, no bikes in the lot.</p>
+<p><b><span id="U0003" style="color: #ffa500;">&#x25CF;</span></b>Bike clubs in the winter are weird—lots of patches, but no bikes in the lot.</p>
 <p>Two guys, Lugnut and Bull, stood sentry on either side of the hallway to the office, the cardroom and the Bastard's Club Room. I breezed by them and knocked on the office door.</p>
 <p>Chris let me in with a welcoming grin.</p>
 <hr>
-<p>We took that left door and I stepped into the Bastards Clubroom for the first time. With the huge wooden beams trussing the high ceiling, the fire in the stone fireplace, and the long central table, reminded me of a viking long house. I grinned with the wicked thought—with wall hangings that seemed choreographed, perfectly tuned colors, and lighting that drew focus—a gay man had to have designed this. I turned to Chris.</p>
+<p><b><span id="U0007" style="color: #ffa500;">&#x25CF;</span></b>We took that left door and I stepped into the Bastards Clubroom for the first time. The huge wooden beams trussing the high ceiling, the fire in the stone fireplace, and the long central table—like a viking long house. I grinned with the wicked thought—with wall hangings that seemed choreographed, perfectly tuned colors, and lighting that drew focus—a gay man had to have designed this. I turned to Chris.</p>
 <p>He grinned back at me, reading my mind. "Luke did it years ago. Gay design gene. You didn't notice the design down in his bar? That trough urinal?"</p>
-<p>I flashed back a memory of pissing on a chrome Buick logo and laughed. "Yeah that's brilliant, every guy gets to choose what brand to piss on."</p>
+<p><b><span id="U0009" style="color: #ffa500;">&#x25CF;</span></b>Remembered of pissing on a chrome Buick logo. I laughed. "Yeah that's brilliant, every guy gets to choose what brand to piss on."</p>
 <p>“When Harley busted free from AMF a couple years ago, he must have cut a dozen AMF logos off basketballs for the trough.” We had a Bastards’ run down there just to piss on AMF.”</p>
 <p>Shaking my head, I thought back, but came up empty. “I don’t think I ever saw them.”</p>
 <p>"Vince wanted have a trough here too, but Sarah vetoed it. She's the one with the practical smarts."</p>
@@ -151,6 +154,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

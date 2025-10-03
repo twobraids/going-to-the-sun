@@ -39,12 +39,32 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>A placeholder for content not yet written.</p>
                   <p>Original Post: 2025-09-14 16:25:45-07:00<br />
-                  Latest Update: 2025-09-14 16:25:45-07:00</i></p>
+                  Latest Update: 2025-10-02 17:07:34-07:00</i></p>
                   <p class="green"><a href="zfbpaq64u6.html#top">Skip to the next chapter &#9658;</a></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
             <h2 id="TheIronHorse">The Iron Horse</h2>
+<p><b><span id="U0001" style="color: #ffa500;">&#x25CF;</span></b>I stood in the office with Judy, cashing out at the end of my shift. Pretty routine—tips too low—just matter of setting expectations with the card room filled with workers from the aluminum plant. The lumber mill workers tip better. The two groups rarely show up on the same night. Bars have rhythms.</p>
+<p><b><span id="U0002" style="color: #ffa500;">&#x25CF;</span></b>With cash in hand, I turned to leave and found Dolph and Rooster standing at the door blocking my exit. I stepped toward them expecting they'd part and let me leave. Didn't happen, my boot squeaked on the floor as I stopped.</p>
+<p><b><span id="U0003" style="color: #ffa500;">&#x25CF;</span></b>"Vince wants to see you," Dolph said.</p>
+<p><b><span id="U0004" style="color: #ffa500;">&#x25CF;</span></b>Looking at each in turn, I shrugged. "Sure. What's up?" Didn't get an answer.</p>
+<p><b><span id="U0005" style="color: #ffa500;">&#x25CF;</span></b>The led me directly across the hall where Chris had taken me to the little apartment to fuck. One fluorescent tube the corridor's lights flickered randomly like a weak strobe light. The apartment door sat open.</p>
+<p><b><span id="U0006" style="color: #ffa500;">&#x25CF;</span></b>Dolph walked right in and Rooster herded me in ahead of him. Vince sat a the table with a pitcher of beer and a what looked like a cigar box.  Dolph sat down, reaching for the box. Vince gestured for me to sit. Once my chair, Rooster sat down, too.</p>
+<p><b><span id="U0007" style="color: #ffa500;">&#x25CF;</span></b>I looked around the table. "Uh, what's up?"</p>
+<p><b><span id="U0008" style="color: #ffa500;">&#x25CF;</span></b>"I just wanted the three of us to spend some time talking with ya. I've gotten to know ya pretty good, but these guys haven't had the opportunity. Time to change that."</p>
+<hr>
+<p><b><span id="U0010" style="color: #ffa500;">&#x25CF;</span></b>Over the next half hour, I had an interview. Vince asking me questions about my past, how I got to the Rez, card dealing, and computer programming. Dolph and Rooster didn't really say much.</p>
+<hr>
+<p><b><span id="U0012" style="color: #ffa500;">&#x25CF;</span></b>"I don't know quite what to think of you." Rooster frowned at me with furrowed brow. "You don't fuckin' drink, you're scrawny as shit."</p>
+<p><b><span id="U0013" style="color: #ffa500;">&#x25CF;</span></b>"Snake Eyes is scrawny, too." Vince countered.</p>
+<p><b><span id="U0014" style="color: #ffa500;">&#x25CF;</span></b>Rooster response came quick. "Yeah, yeah. Chris can strip a bike and rebuild it."</p>
+<p><b><span id="U0015" style="color: #ffa500;">&#x25CF;</span></b>Vince locked eyes with Rooster. "Chris has agreed to apprentice Karl."</p>
+<p><b><span id="U0016" style="color: #ffa500;">&#x25CF;</span></b>"Wait a minute," I interrupted. "What does me stripping a bike have to do with anything?"</p>
+<p><b><span id="U0017" style="color: #ffa500;">&#x25CF;</span></b>Vince looked straight at me, cigar smoldering in his hand. “Karl, you’re gonna pledge the Club. Rules are simple—later, when you go brother, you need your own bike. And you need to wrench it yourself.”</p>
             
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
@@ -65,6 +85,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

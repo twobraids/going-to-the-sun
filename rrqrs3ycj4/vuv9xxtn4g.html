@@ -37,9 +37,12 @@
             <div class="lars-inner-box">
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-01-12 10:21:38-08:00<br />
-                  Latest Update: 2025-08-31 15:55:34-07:00</i></p>
+                  Latest Update: 2025-10-04 11:39:34-07:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   explicit gay sex, illicit drugs</p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -478,7 +481,7 @@
 <p>“First off—business. I need help. Sturgis crowds are comin’ in, and we gotta get through the next four weeks. That’s where you come in. But as a friend? I wanna ride with you, get to know you. And yeah, I’ll admit it—I wanna fuck around with you again.</p>
 <p>“You’re sharp—ain’t just about the cards. You program computers. Hell, I don’t think I’ve ever even seen a computer, let alone know what the fuck ‘programming’ means. But I do know we’re gonna need to understand ‘em sooner or later."</p>
 <p>“I want you in the club. No one new’s joined since the Missoula Disaster. That shit gutted us—took out all our leadership, every member over forty, and a bunch of the younger ones, like Ed. Cherry’s the youngest we got at thirty-five. I ain’t lettin’ the Bastards age out under me.”</p>
-<p>I spoke up again with my wager. “Larry said he expected I would be the first prospect since the Missoula Disaster. That kind of makes it sound like I’m some sort of mining claim. If that is to happen, it’s gonna have to be a two-way street. I imagine that it’s set up so that a prospect has to prove worthiness to be accepted. I think the club ought to prove worthiness to be joined"</p>
+<p><b><span id="U0436" style="color: #ffa500;">&#x25CF;</span></b>I spoke up again with my wager. “Larry said he expected I would be the first prospect by the end of the summer. That kind of makes it sound like I’m some sort of mining claim. If that is to happen, it’s gonna have to be a two-way street. I imagine that it’s set up so that a prospect has to prove worthiness to be accepted. I think the club ought to prove worthiness to be joined"</p>
 <p>"That's fair." Vince let out a heavy sigh. “Ten years back, I had obligations I knew were bullshit. Took a loyalty oath, and the only thing I felt real obligation to was breakin’ it. I ain’t here to feed you no fishhooks.”</p>
 <p>“Thank you,” I said, "Chris told me earlier that your word is the law in the club. I think even benevolent dictators eventually fall."</p>
 <p>“Yeah, I’m the leader. Charter gives me the power, even lets me overrule the council. But what goddamn council? We don’t have enough brothers left to make one. Charter says we need a Council of Brothers, but let’s be real—we ain’t followed that thing in almost a decade.</p>
@@ -526,6 +529,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

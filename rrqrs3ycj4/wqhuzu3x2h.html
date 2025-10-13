@@ -39,7 +39,10 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>Unfinished draft<br />Bunch of disconnected scenes</p>
                   <p>Original Post: 2025-05-26 14:24:54-07:00<br />
-                  Latest Update: 2025-09-19 07:00:32-07:00</i></p>
+                  Latest Update: 2025-10-13 09:15:05-07:00</i></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -132,7 +135,7 @@
 <p>He held out a piece of paper. "Take this down to the recorder's office on the ground floor.  Fill it out the paper work. She'll give you the title transfer form to sign and directions on where to pickup the bike."</p>
 <p>I didn't move. Dolph stood up, took the paper, frowning at me.  We walked out as the sheriff started to read the preamble for the sale of David's F250.</p>
 <p>We walked out to the corridor toward the stairs down to the recorders office. We walked down in silence, through the doorway into the recorder's office.</p>
-<h2 id="Holyshit,nobodywantstoreadaboutgoingtothecountyrecorder'soffice.">Holy shit, nobody wants to read about going to the county recorder's office.</h2>
+<p><b><span id="U0089" style="color: #ffa500;">&#x25CF;</span></b>———> Holy shit, nobody wants to read about going to the county recorder's office.</p>
 <p>I handed the lady the sheriff's paper. She read it, nodded and turned away to a filing cabinet. Pulled out some forms brought them back to me and handing me a pen.</p>
 <p>When I finally handed them back to her, she gave me DMV's registration form, stamped with the county seal. "You need to keep this form with the vehicle until the state DMV returns your registration and title." She smiled at me. "You know where the county road shop is?"</p>
 <p>Dolph answered for me. "Yup."</p>
@@ -143,11 +146,11 @@
 <p>We drove off through the snowy streets to find the county shops.</p>
 <p>We had to wait as there wasn't anyone in the office. The outdoor yard was a hive of activity. Snow plows heading out, others heading in.</p>
 <p>When we finally got their attention, I handed the paperwork to the clerk and she stamped and kept it. "We'll open the east side garage door and you can back the truck in."</p>
-<p>We returned to the truck and drove around to the east side of the building as the door opened.  Dolph backed as a guy in coveralls and gloves directed him.</p>
+<p><b><span id="U0100" style="color: #ffa500;">&#x25CF;</span></b>We returned to the truck and drove around to the east side of the building as the door opened.  Dolph backed in as a guy in coveralls and gloves directed him.</p>
 <p>I didn't spot the bike at first, but as soon as I did, I reacted just as I knew I would. Didn't want to even look at it. I felt so bad taking his bike fully aware of the irony—it's not his fault that he's so fucked up. How in the hell am I gonna ride that thing?</p>
 <p>Goddamn, still feeling for the guy that beat me senseless. Is that gonna go on forever?</p>
-<hr>
 <h2 id="CutBankCreekMotorLodge">Cut Bank Creek Motor Lodge</h2>
+<p><b><span id="U0104" style="color: #ffa500;">&#x25CF;</span></b>With David's Wide Glide secured in the bed of Dolph's truck, we parked at the motel on</p>
             
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
@@ -168,6 +171,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

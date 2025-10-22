@@ -40,9 +40,6 @@
                   <p>Destined to evolve into the opening chapter...</p>
                   <p>Original Post: 2025-03-10 16:41:52-07:00<br />
                   Latest Update: 2025-10-11 11:12:35-07:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -167,7 +164,7 @@
 <p>Back out on the highway toward East Glacier, I marveled at the wall of mountains twenty miles in front of me: White Calf, Mad Wolf, Red, Rising Wolf, Calf Robe. I imagined the landscape with its vast primal glaciers only ten thousand years ago.</p>
 <p>US2 from Browning to East Glacier has three segments, all roughly equal length straight sections. With little traffic, I decided to practice controlling the bike.</p>
 <p>As I had done earlier, I rode on the shoulder, speeding up and slowing down to a stop.  Each stop was a little more abrupt. I needed to figure out how much pressure it took to slide the rear tire. I feathered that rear brake until I felt that edge where kinetic friction and static friction meet. That consumed the first straight leg of the highway.</p>
-<p><b><span id="U0121" style="color: #663300;">&#x25CF;</span></b>I took the gentle left curve where the highway stopped climbing and instead cut across a series of alternating moraine hills and pothole lakes. The Montana Department of Highways did a great job leveling and straightening this section. I could see the scars of some older incarnation of the highway cutting and weaving through the potholes. The high points had road cuts, the low points and ponds had fill dirt. In this section, I practiced my front brake tests. Over and over I finessed the right brake lever that had betrayed me a couple of hours earlier. I searched for that sweet spot without flipping the bike again.</p>
+<p>I took the gentle left curve where the highway stopped climbing and instead cut across a series of alternating moraine hills and pothole lakes. The Montana Department of Highways did a great job leveling and straightening this section. I could see the scars of some older incarnation of the highway cutting and weaving through the potholes. The high points had road cuts, the low points and ponds had fill dirt. In this section, I practiced my front brake tests. Over and over I finessed the right brake lever that had betrayed me a couple of hours earlier. I searched for that sweet spot without flipping the bike again.</p>
 <p>Taking the next gentle curve to the right, I entered the final straight section. I repeated the same tests with both brakes, seeking the golden ratio between the right-hand lever and the right-foot pedal for the shortest stopping distance. Tempted, but I did not try an all-out emergency stop—can't learn it all today.</p>
 <p>Hands got really cold—maybe my ski gloves would work. Spending money on proper riding gloves would mean missing a meal later this Summer. No income—can’t spend money on things I didn't really need. With warm weather ahead, I wasn't chopping wood for Gladys. That meant I owed more for rent. No paycheck—what the fuck was I gonna do?</p>
 <p>Ten minutes later, beyond East Glacier, I rode up to my inaugural crash site.  I waited for a pair of trucks, then I turned onto the gravel. My shoulders tensed as I entered the deeper gravel just off the pavement, but the bike pushed through just fine. I carefully rode the gravel back to the woodshed and got the bike parked.</p>
@@ -208,139 +205,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

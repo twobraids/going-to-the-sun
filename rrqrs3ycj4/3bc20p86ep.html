@@ -39,7 +39,10 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>A few scenes still need fleshing out.</p>
                   <p>Original Post: 2025-05-30 05:43:01-07:00<br />
-                  Latest Update: 2025-10-30 21:54:43-07:00</i></p>
+                  Latest Update: 2025-11-15 20:50:09-08:00</i></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -122,7 +125,7 @@
 <h2 id="SeventhStreet">Seventh Street</h2>
 <p>The players of the far end of my shift had all been Foresters partying. I heard "Like playin' in Reno" several times—maybe the no limits deal didn't fly in Oregon. They drank hard, smoked heavily, and tipped outrageously—no complaints from me.</p>
 <p>In the last half hour of my shift, Rook and a Forester with the Roseburg patch joined the rest of the guys at my table. I nodded in welcome and smiled. Rook gave a smile that shifted my dick my pants. His buddy, "Fir" on the front of his cut, looked skeptical—not sure if of me or the game.</p>
-<p>He looked young, probably about my age, very dense beard, but shaved on the neck and cheeks, a shave of that useless variety: by the end of the day, it's already noticeably growing back. I admired that—would have fought it had it been mine.</p>
+<p><b><span id="U0079" style="color: #ffa500;">&#x25CF;</span></b>He looked young, probably about my age, very dense beard, but shaved on the neck and cheeks, a shave of that useless variety: by the end of the day, it's already noticeably growing back. I envied that—fighting it was such a waste of time and effort.</p>
 <p>I spun out the third street deal, two hole cards and the door card. I marked Fir as the low hand, so I looked to him for the bring-in. He didn't act until Rook leaned in and gave a quick prompting—Fir just tagged himself as a novice player, no limits table was not the right place for him. Fir pushed the two bucks.</p>
 <p>The games continued and Fir's brothers showed him no mercy. They goaded him into betting wildly and he paid hard for it. Rook didn't do all that much better, repeated the same mistakes he made last night.</p>
 <p>Almost lost track of the game thinking of last night with Rook. Tried not to look at him much.</p>
@@ -145,7 +148,7 @@
 <p>I tried make out facial features, but failed. "Ok. I can't see you worth shit in this light, so I can't say I remember you."</p>
 <p>"Fir."</p>
 <p>"Ah, near the end of my shift. You’re the Forester that came in with Rook." I walked closer to him, but to his left to force him to turn his face to the light. “Your brothers didn't cut you any slack at the table tonight.”</p>
-<p>He looked down, the brim of his cap thwarting my maneuver. "Yeah, they never do. Cost me fifty bucks."</p>
+<p><b><span id="U0102" style="color: #ffa500;">&#x25CF;</span></b>He looked down,  his cap’s shadow thwarting my maneuver. "Yeah, they never do. Cost me fifty bucks."</p>
 <p>"Why'd you come to the table? You weren't into the game."</p>
 <p>He looked up—wary eyes. "Rook pulled me in. Wanted me to see you."</p>
 <p>Goddamn, they got me on display—fuck though, my dick got hard—that hair sticking out the top of his t-shirt.</p>
@@ -206,6 +209,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

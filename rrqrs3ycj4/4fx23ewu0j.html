@@ -39,9 +39,12 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>Incomplete DRAFT<br />just a sketch of some ideas<br /> Neither well bonded nor edited</p>
                   <p>Original Post: 2025-06-07 17:54:41-07:00<br />
-                  Latest Update: 2025-10-06 10:44:37-07:00</i></p>
+                  Latest Update: 2025-12-12 15:35:29-08:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   heavy emotional shit ahead</p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -109,13 +112,13 @@
 <p>I wanted the wind and the highway to settle me. Always worked before—not today.</p>
 <p>Vince dead? No, that's not right—gotta be with Chris and Sarah. They're safe, just don't know where.</p>
 <p>I stopped at the top of the pass by the sign announcing the continental divide—5,610 feet. I walked into the forest on the north side of the road to piss. A rough trail snaked through the trees up along the ridge line.</p>
-<p>Hiking north along the Continental Divide—about hundred thirty miles—I could be at my cabin in two weeks. Disappear into my mountains like I did two years ago.</p>
-<p>Just walk away from my bike. No, never mine. David's bike.</p>
+<p><b><span id="U0064" style="color: #ffa500;">&#x25CF;</span></b>Hiking north along the Continental Divide—about hundred thirty miles—food cache on Mt Baldy—I could be at my cabin in two weeks. Disappear into my mountains like I did two years ago.</p>
+<p><b><span id="U0065" style="color: #ffa500;">&#x25CF;</span></b>Just walk away from my bike. No, not mine. David's bike.</p>
 <p>Don't have my pack, got no food, got no water, no sleeping bag, no tent. Wrong boots—I'd be crippled in a couple hours.</p>
-<p>No, not walking into the wilderness.</p>
 <p>I turned around, stalked back to the bike, mounted, started it up. Startled at the ignition sound—hearing again. I heard the tap-tap-tap of the lifters in the engine. Like the pushrods of Vince's chopper.</p>
 <p>Vince was dead.</p>
 <p>I sat there frozen, hands on the handlebars, face forward, side stand up, bike leaning its weight on my right leg. Tears streamed down my face as cars, trucks, and a couple Goldwings cruised by.</p>
+<p><b><span id="U0070" style="color: #ffa500;">&#x25CF;</span></b>This was entirely my fault.</p>
 <p>My shadow stretched to the double yellow by the time my eyes ran out of tears. I pulled in the clutch, stomped it into first, and took off eastbound. Took the turn onto MT435—carved the curves as if the Ghost River Clan were right on my ass. Transfixed, I watched the evening highway flash by me. Two near misses—an antelope, the other—misjudged a curve and crowded the center line as I met a box truck going the other way.</p>
 <p>My headlight lit up the roadside sage—jackrabbits and prairie dogs—as I rolled into Augusta. Turned left a block before Ted's gas station, then onto his road, and up into his driveway.</p>
 <h2 id="Augusta,Montana">Augusta, Montana</h2>
@@ -199,6 +202,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

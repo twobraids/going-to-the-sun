@@ -42,9 +42,6 @@
                   Latest Update: 2025-12-17 17:51:13-08:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   gay sex, prostitution</p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -368,15 +365,15 @@
 <p>I paused, confused, then shook my head. "That's Ted."</p>
 <p>Chris frowned. "Ok, uh, Ted. You work the same deal with him as you do with David?"</p>
 <p>"No, I just met him today. I rode down to meet David in Heart Butte, we picked him up at his house in Augusta."</p>
-<p><b><span id="U0321" style="color: #753e00;">&#x25CF;</span></b>He didn't look satisfied, then asked, "Where you stayin'?"</p>
-<p><b><span id="U0322" style="color: #753e00;">&#x25CF;</span></b>"Motel out on the highway, so I was gonna bunk in the double with Ted. If he snores like he laughs, I'm not gonna get any sleep."</p>
-<p><b><span id="U0323" style="color: #753e00;">&#x25CF;</span></b>He nodded and smiled. "I think we can arrange some better accommodations for you."</p>
+<p>He didn't look satisfied, then asked, "Where you stayin'?"</p>
+<p>"Motel out on the highway, so I was gonna bunk in the double with Ted. If he snores like he laughs, I'm not gonna get any sleep."</p>
+<p>He nodded and smiled. "I think we can arrange some better accommodations for you."</p>
 <p>Just then, the woman that I recognized as the cashier that converted my chips, approached with a ledger book: "All balanced and ready for your signature."</p>
 <p>Chris looked at her then turned back to me. "I've got about twenty minutes of work to do here before we lock up for the night. You want a beer?" He reached for the woman's ledger.</p>
 <p>"No, I don't drink," I thought of my faux beer bottle lost hours ago to an overeager busboy.</p>
 <p>"Oh, yeah, I didn't see you drink anything all night," he turned back to the woman patiently waiting, "Thank you, Judy, you can split anytime."</p>
-<p><b><span id="U0328" style="color: #753e00;">&#x25CF;</span></b>He focused back an me.  "That's another reason I want you as dealer, sober and level-headed."</p>
-<p><b><span id="U0329" style="color: #753e00;">&#x25CF;</span></b>"Good night," Judy said, as she headed for the back door.</p>
+<p>He focused back an me.  "That's another reason I want you as dealer, sober and level-headed."</p>
+<p>"Good night," Judy said, as she headed for the back door.</p>
 <p>"I got some closing duties to get to in the office, hang wherever you'd like, we'll be done in a bit."</p>
 <p>I killed most of the next twenty minutes at a Williams Black Knight pinball machine near the pool tables. I wasn't very good at it. I ran out of quarters.</p>
 <p>Vince and Chris approached me and said they were ready to go.</p>
@@ -433,139 +430,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

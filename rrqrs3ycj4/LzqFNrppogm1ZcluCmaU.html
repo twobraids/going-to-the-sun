@@ -39,9 +39,12 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>In Development</p>
                   <p>Original Post: 2025-11-08 08:14:37-08:00<br />
-                  Latest Update: 2025-12-22 21:55:59-08:00</i></p>
+                  Latest Update: 2026-01-01 11:00:05-08:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   At least two scenes involving sex</p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -211,6 +214,19 @@
 <p>"The two clubs are negotiating with the money people. Everybody's security people will be on hand. The money got theirs, the hotel, the bike clubs and us."</p>
 <p>———> end development cut 402</p>
 <hr>
+<p><b><span id="U0166" style="color: #ffa500;">&#x25CF;</span></b>When the meeting ended, I slipped out the door trying to not be noticed. I beelined straight back through the lobby and into the corridor Don called Off The Record. I glanced into that first room where the women still copied disks.</p>
+<p><b><span id="U0167" style="color: #ffa500;">&#x25CF;</span></b>All the way at the end of the hall, I stopped at the doorway of the last room. Four guys sat in the dark facing green CRT screens, all facing away from the doorway. One head turned having seen the light from the doorway shift as my body blocked it.</p>
+<p><b><span id="U0168" style="color: #ffa500;">&#x25CF;</span></b>I reached for the light switch and flipped the lights on. The fluorescent lights flickered for an instant. Four pasty faces turned around to look at me, squinting and blinking in the light.</p>
+<p><b><span id="U0169" style="color: #ffa500;">&#x25CF;</span></b>The objections came quick. "Hey!" "Turn the lights off." "Who are you?"</p>
+<p><b><span id="U0170" style="color: #ffa500;">&#x25CF;</span></b>I held the floppy disk up. "What the fuck are you doing with my code?"</p>
+<p><b><span id="U0171" style="color: #ffa500;">&#x25CF;</span></b>The guy furthest from the door, about ten years older than me, stood up. "Who are you?" The others leaned away from me, but stayed in their chairs.</p>
+<p><b><span id="U0172" style="color: #ffa500;">&#x25CF;</span></b>"I'm the original author of your code base."</p>
+<p><b><span id="U0173" style="color: #ffa500;">&#x25CF;</span></b>The guy standing it the back. "No, we've written this here." He sounded defiant. "Dave, run and get Don."</p>
+<p><b><span id="U0174" style="color: #ffa500;">&#x25CF;</span></b>The kid named Dave, didn't even look eighteen, stood, made a step toward the door I blocked. He halted, looked back to the guy standing and then back at me.</p>
+<p><b><span id="U0175" style="color: #ffa500;">&#x25CF;</span></b>I stepped aside just a little. "Yeah, Dave. Why don't you go get Don?" The kid flinched at his name. Looking to the floor, he fled the room turning necessarily sideways, not daring to face me, through the door.</p>
+<p><b><span id="U0176" style="color: #ffa500;">&#x25CF;</span></b>The room had one of the those slap-it-together-yourself book freestanding shelves covered books. I saw the same volumes that I had: the Lattice C docs, the MS-DOS Programmer's Reference, and the K&R C book.</p>
+<p><b><span id="U0177" style="color: #ffa500;">&#x25CF;</span></b>"Show me the code. formblock.asm scroll down to the bottom." I saw his eyes widen at the file name, he knew it. Proof enough to me that they had my code.</p>
+<p><b><span id="U0178" style="color: #ffa500;">&#x25CF;</span></b>"I don't know who you are. This code is owned by the company"</p>
 <hr>
 <h2 id="Arriving">Arriving</h2>
 <hr>
@@ -272,6 +288,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

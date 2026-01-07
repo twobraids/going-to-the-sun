@@ -39,7 +39,10 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>In Development</p>
                   <p>Original Post: 2025-09-14 15:53:45-07:00<br />
-                  Latest Update: 2025-11-10 17:07:06-08:00</i></p>
+                  Latest Update: 2026-01-07 11:00:05-08:00</i></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -66,7 +69,7 @@
 <p>Who the fuck was Mettler?</p>
 <p>Once across, though, the job became much more difficult. The coulee heading south boxed-up, forcing a zigzag up through the denser trees and undergrowth up onto the shoulder. Took me about forty minutes to get back up into the more open ridge terrain.</p>
 <p>Now had to follow along the bare west side of the parallel ridges, cross one perpendicular drainage then hit the ridge on the divide with Hyde Creek. From there it was a straight hike up to Mt Baldy—how many mountains claimed that name?</p>
-<p>The south side of the bare Mt Baldy blushed with pink flowers.  Made me smile, bitterroots. The namesake flower of the Bitterroot Bastards. It didn't appear on the patch, a mass of cock-sucker pink petals emerging directly from the ground. No leaves until later in the summer, but by fall, even they've withered leaving no trace that the underground plant exists.</p>
+<p><b><span id="U0023" style="color: #ffa500;">&#x25CF;</span></b>The south side of the bare Mt Baldy blushed with pink flowers.  Made me smile, bitterroots. The namesake flower of the Bitterroot Bastards. It didn't appear on the patch, a mass of cock-sucker pink petals emerging directly from the ground. No leaves until later in the summer, but by fall, even they've withered leaving no trace that the underground plant existed.</p>
 <p>My camp site sat nestled between boulders below the peak in a draw with a great yawning view east to the morning sun. From the tops of the protective boulders, tomorrow’s destination beckoned only a few rugged miles on the ridgeline south.</p>
 <p>The flat sandy level spot gave me just enough room for my tent. Didn't take long to set it up. My cache of firewood waited patiently under the overhang just above the tent site.</p>
 <p>As night fell, I sat on the highest boulder smoking a joint. The shadow on the front range mountains stretched out, longer and longer, into the land of the Blackfeet, until lost in the haze of the horizon.</p>
@@ -108,7 +111,7 @@
 <p>I struggled back to my feet, facing downhill. Pain told me that my right ankle twisted. Looking down, blood trickled down from my left knee—nothing I couldn’t do about either now. First aid kit’s back at Bison Lakes camp.</p>
 <p>Looking back up to the peak, the talus took on the lobed flow patterns of glacial ice. The whole mountain flowed down into the valley below—a slow motion melting candle—no wick, no flame—just the burning white of icy snow.</p>
 <p>"Not angel dust. Not angel dust." My chant seemed futile, disconnected—my words smelled of sulphur. Synesthesia, the word swirled around and squeezed my head—bile yellow.</p>
-<p>“Enough!” My shout knocked back onto the empty talus slope below the peak. Took me a while ground myself and resume my trudge upward.</p>
+<p><b><span id="U0065" style="color: #ffa500;">&#x25CF;</span></b>“Enough!” My shout knocked me back onto the empty talus slope below the peak. Took me a while ground myself and resume my trudge upward.</p>
 <p>The talus gave way to larger and larger boulders. Ahead, a wall of rock clothed in splotches of black, putty green, and rusty orange lichen—dancing symbols on the rock that I still couldn’t read.</p>
 <p>As the rocks got larger and larger toward the peak, I resorted to leaping. Each launch, the feel of the hard muscle, brought me right back to the kickstarter of the rat bike, that final test by the Bastards.</p>
 <p>A full brother for only two months—my time in the Bastards was only two months.</p>
@@ -146,6 +149,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

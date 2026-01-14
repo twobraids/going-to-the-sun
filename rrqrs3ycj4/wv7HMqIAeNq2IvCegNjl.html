@@ -39,16 +39,25 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>In Development</p>
                   <p>Original Post: 2026-01-13 09:28:32-08:00<br />
-                  Latest Update: 2026-01-14 11:00:05-08:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
+                  Latest Update: 2026-01-14 15:00:10-08:00</i></p>
  
             </div>
                   
-            <p><b><span id="U0000" style="color: #ffa500;">&#x25CF;</span></b>I woke long before dawn, the the Milky Way arched form the eastern horizon—faint, swinging north then descending to the west—bright. The moon hung</p>
-<p><b><span id="U0001" style="color: #ffa500;">&#x25CF;</span></b>That moment of leaving a mountain peak, a tiny electrostatic shock of disappointment.</p>
-<p><b><span id="U0002" style="color: #b77900;">&#x25CF;</span></b>———> end Cut 723</p>
+            <p>I woke long before dawn, the the Milky Way arched form the eastern horizon—faint, swinging north then descending to the west—bright. The moon hung to my right in the south, only a third of its face lit. To the north, my great bear hung in the sky watching over me.</p>
+<p>Warm and comfortable in my sleeping bag, I waited for the zodiacal light. Not really prominent this time of the year, I didn’t bank on seeing it. One at a time, the three stars of Orion’s Belt rose from behind the horizon. First time I’d ever seen Orion in the summer.</p>
+<p>A half hour later, I got the nut flush I hoped for: the Zodiacal Light. The faint triangle of light, just a few degrees north of the due east, rose slowly into the sky, not really very visible  looking directly at it. I caught it only by side-eying the horizon. It's really a fall or spring phenomenon, it was never strong in the mid-summer.</p>
+<p>Another half hour later, the moment that first stab of sunlight, I looked north to the peaks of Glacier Park. They had caught the light before I did, my peak a thousand feet shorter than them.</p>
+<p>The closest park peak was, of course, Calf Robe. I remembered looking south to this very peak. I didn't know its name until I had gotten home and located it on the topo maps above my bed.</p>
+<p>I nestled back down into my sleeping bag. Probably below freezing out there. Over the years of climbing to peaks, I'd noticed that dawn always kick starts the breezes. I wanted a few minutes longer in the warmth I had saved through the night.</p>
+<p>Didn't mean to, but I slipped back to sleep. From the angle of the sun, about fifteen degrees, I figured I had slept another hour.</p>
+<p>I pulled my backpack closer, digging into one of the pockets for my bag of granola trail mix. Once I got my water bottle opened and I downed half of it, I realized how strongly I needed to pee.</p>
+<p>While I was naked in the sleeping bag, I learned long ago that sleeping with my clothes left in the bag with me meant putting on warm clothes instead cold ones. I struggled a bit, but I got myself dressed before I climbed out into the cold air.</p>
+<p>Stepping up to the highest rock of the peak, while unzipping the pants that I had zipped up only seconds earlier, I arched my pee stream out over the edge. I watched it spatter into that rocky chute that I had actually considered climbing yesterday. That would have been death.</p>
+<p>I needed to get out of the wind. I secured my pack and, with the rope, I lowered to down the cleft I had climbed yesterday. Once it was down, I let the rope drop and it free fell to the bottom.</p>
+<p>There was alway a moment when leaving a mountain peak, a tiny electrostatic shock of disappointment. Most peaks are one time experiences, while there were always more of them, few would ever see me return.</p>
+<p>I chimneyed down, reversing my moves from yesterday. The pika, sitting on rock near my pack had only harsh words for me. A series of high pitched barks of alarm as it eyed me. I flashed an open palm to it and it vanished behind its rock. Just two seconds later, from a rock a few feet above me, it restated its objections in no uncertain terms.</p>
+<p>With the rope recoiled and lashed to the pack, I hefted it onto my shoulders and left the pika in peace.</p>
+<p>I could see almost my entire route laid in front of me. I wasn't retracing my path from yesterday, I was going straight over to the ridge this side of Hyde Creek. I would follow it all the way down to the Two Medicine River, then climb back up to checkout what those bulldozers were doing.</p>
             
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
@@ -69,139 +78,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

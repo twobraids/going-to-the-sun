@@ -39,9 +39,12 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>In Development</p>
                   <p>Original Post: 2025-11-08 08:14:37-08:00<br />
-                  Latest Update: 2026-01-08 15:00:10-08:00</i></p>
+                  Latest Update: 2026-01-19 23:00:19-08:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   At least two scenes involving sex</p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -257,21 +260,21 @@
 <p>Rooster's voice sounded from behind me giving an order to Don in his office. "Get Sarah on the horn. Let her know he's onto her." He paused. "You oughta unplug that thing."</p>
 <p>I charged down into the lobby, before I thought to temper my pace—deep breath.</p>
 <p>"Never seen you angry," Dolph said as he caught up with me.</p>
-<p>Rooster swept up from behind, "About fucking time. Was startin' to doubt. Told you once you gotta earn respect. Could'a happened a lot sooner, but you did right.”</p>
-<p>He shook his head. "Listen, Sarah's jerking you around 'cause you let her. Take it up with her, not that soft suit down the hall. You're a full brother, stake your claim, and take it. Carnie'd back you on this."</p>
+<p><b><span id="U0212" style="color: #ffa500;">&#x25CF;</span></b>Rooster swept up from behind, "About fucking time. Was startin' to doubt. Told you once you gotta earn respect.” He turned to Dolph. “You see that the look on the suit? Like Two Braids popped his favorite balloon.”</p>
+<p><b><span id="U0213" style="color: #ffa500;">&#x25CF;</span></b>He laughed and gave me brotherly slap on the back. “You did that right. Listen, Sarah's jerking you around 'cause you let her. Take it up with her, not that soft suit down the hall. You're a full brother, stake your claim, and take it.” He nodded, “Carnie'd back you on this. Sarah’s not in charge of any brother.”</p>
 <p>Dolph nodded.</p>
 <hr>
 <p>The phone rang, Chris snagged it off the table. "Chris, here."</p>
-<p>"Hey, Sarah. Thought I'd hear from you today."</p>
+<p><b><span id="U0217" style="color: #ffa500;">&#x25CF;</span></b>"Hey, Sarah. ‘Spect I'd hear from you."</p>
 <p>"Well, yeah. He's here."</p>
-<p>"I'm not sure that's a good idea right now."</p>
+<p><b><span id="U0219" style="color: #ffa500;">&#x25CF;</span></b>"Don’t think that’s a good idea right now."</p>
 <p>He pointed at me, then the phone, and tipped his head to make it a question.</p>
 <p>I sat for a moment, then shook my head.</p>
-<p>"Uh, no. Does't look like that going to happen." He listened for a moment. "Oh, hell no, you started it, you fix it."</p>
+<p><b><span id="U0222" style="color: #ffa500;">&#x25CF;</span></b>"Uh, no. Not gonna happen." He listened for a moment. "Oh, hell no. You started it, you fix it."</p>
 <p>I heard a loud shout from Sarah's end.</p>
 <p>"Yeah, fuck you, too Sarah. So, we're staged for tonight's gig. We'll be on the bikes in a couple hours.”</p>
 <p>“Yeah, all green lights. We're going for it." Another listening pause.</p>
-<p>"Great. I'll give you a report around eleven, tell you how it's going."</p>
+<p><b><span id="U0226" style="color: #ffa500;">&#x25CF;</span></b>"Great. Tell you about it tomorrow."</p>
 <hr>
 <h2 id="Arriving">Arriving</h2>
 <hr>
@@ -333,6 +336,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

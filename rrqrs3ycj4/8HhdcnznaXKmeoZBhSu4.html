@@ -39,7 +39,10 @@
                   <p><strong>Author's Note:</strong></p>
                   <p>In Development</p>
                   <p>Original Post: 2025-09-14 15:53:45-07:00<br />
-                  Latest Update: 2026-01-13 22:37:43-08:00</i></p>
+                  Latest Update: 2026-01-26 13:54:30-08:00</i></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -53,6 +56,8 @@
 <p>I couldn’t keep to this ridge, it got too steep. The trees got shorter and shorter as I ascended the slope until they just gave up and I left them behind. Switched to open gravel or draws of rubble.</p>
 <p>To get to the peak, I had to venture onto the open west face and start zig-zagging upward and a cross talus slopes, great chutes and angled planes of loose rock the size of serving platters. I was bad at it. I kept turning directly upslope in fascination with the sensations of my leg muscles, imaging the bundles of fibers, made of cells responding to nerves.</p>
 <p>Talus—crazy stuff to walk on. I filled up with the musical dance of ceramic clinks as if I walked on stacks of dishes. The rocks all became glass shingles, matte sea glass, flat plates larger than my feet, pastel greens, yellows, blues. I slid and shifted with each step, my balance shifted as my arms shot outward to from my sides. With the mid afternoon sun warming my face, I laughed and laughed.</p>
+<p><b><span id="U0010" style="color: #ffa500;">&#x25CF;</span></b>———> rewrite CUT717 Corrected Psilocybin</p>
+<p><b><span id="U0011" style="color: #ffa500;">&#x25CF;</span></b>———> all about recursion, the landscape, programming, motorcycles, Dancing to the rhythm of the landscape.</p>
 <p>A movement caught my eye. Holy shit—somebody standing down slope, maybe a twenty yards. His face went from shadow to light. The sun brightened to a glare.</p>
 <p>"Vince!" I leapt downhill at a run—how was he here? I slipped and slid on the glass, couldn’t get traction, as Vince turned and strode down and away. "No!  Vince, it's me. Stop!"</p>
 <p>I lost my balance and tumbled onto the lichen crusted slope of rubble. I lay there for a moment afraid to look up, knowing in my heart that no one ran from me down slope. I’m tripping—not real. I shut my eyes.</p>
@@ -74,7 +79,8 @@
 <p>My hand clapped to my own scabbed wound. I traced his scar with my eye, but I felt my own, above my eyebrow, across my temple and into my hairline. All the pain exploded back—the bright flash of Cherry's shotgun.</p>
 <p>The great maw of a grizzly lunged at me, the smell of mildew, foul breath all brown and dead.  I dropped and rolled on the talus—the clinking of rocks against each other.  I sprawled on the rocks, my face to the sky.</p>
 <p>No bear, no Vince, no cabin.</p>
-<p>Gotta turn this around—not the place for a bad trip. This is wrong, never had mushrooms affect me like this—supposed to see patterns, not full on hallucinations. That's an angel dust thing—like Gauge's freak out on the night of the Ghost River Clan's fight.</p>
+<p><b><span id="U0033" style="color: #ffa500;">&#x25CF;</span></b>Gotta turn this around—not the place for a bad trip. This is wrong, never had mushrooms affect me like this—supposed to see patterns, not full on hallucinations. That's an angel dust thing—like Gauge's freak out on the night of the Ghost River Clan's fight.</p>
+<p><b><span id="U0034" style="color: #ffa500;">&#x25CF;</span></b>———> end CUT717</p>
 <p>I struggled back to my feet, facing downhill. Pain told me that my right ankle twisted. Looking down, blood trickled down from my left knee—nothing I couldn’t do about either now. First aid kit’s back at Bison Lakes camp.</p>
 <p>Looking back up to the peak, the talus took on the lobed flow patterns of glacial ice. The whole mountain flowed down into the valley below—a slow motion melting candle—no wick, no flame—just the burning white of icy snow.</p>
 <p>"Not angel dust. Not angel dust." My chant seemed futile, disconnected—my words smelled of sulphur. I said the word outloud, “Synesthesia.” It swirled around and squeezed my head—bile yellow, some sort of disease.</p>
@@ -114,6 +120,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

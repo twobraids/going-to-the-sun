@@ -37,9 +37,12 @@
             <div class="lars-inner-box">
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-04-03 17:42:32-07:00<br />
-                  Latest Update: 2025-12-14 10:38:47-08:00</i></p>
+                  Latest Update: 2026-02-08 11:00:05-08:00</i></p>
                   <p> <span class="yellow"><strong>CONTENT WARNING</strong></span><br />
                   explicit queer sex, prostitution</p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -58,7 +61,7 @@
 <p>He sounded like a school teacher dressing down a misbehaving student. "You can't just wear something like that. Those are dangerous men. You can't wear their patch. If they see it, they’ll come after you."</p>
 <p>I smiled. "They gave it to me."</p>
 <p>"Who gave it to you?"</p>
-<p>"Vince handed it to me handed it to me. They called me into a meeting with the officers, the VP and the Sargent of Arms. They handed me the patch."</p>
+<p><b><span id="U0015" style="color: #ffa500;">&#x25CF;</span></b>"Carnie handed it to me handed it to me. They called me into a meeting with the officers, the VP and the Sargent of Arms. They handed me the patch."</p>
 <p>His mouth gaped and his brow knitted. "Karl. Why would you do that?"</p>
 <p>"They saved my ass. Last July in the bar, that was the end of my money. Yeah, I made some cash that night, but it’s not a living. I'd be sleeping in my car by winter if they hadn't hired me on."</p>
 <p>"Son, you understand what they are?"</p>
@@ -74,7 +77,7 @@
 <p>"Let's go in, don't want to keep David waiting." Ted put his hand on my shoulder. "Stow the patch. David's not ready to see that. Dunno how he’d feel about it, but, for sure, it’s not gonna to help. Don't even mention it to him. Some other time.”</p>
 <p>I frowned.</p>
 <p>He looked over to the bar entrance and then back to me. "Karl, you and I have to talk about this Bitterroot Bastards thing. I don't want you getting in over your head. Sometime when David's not around." He waited for me to remove the patched overlay and stash it in my saddle bag, already crowded with groceries.</p>
-<p>Echoing in my head, Vince's voice, "You’re on this bike, you’re wearing the patch. Always."</p>
+<p><b><span id="U0031" style="color: #ffa500;">&#x25CF;</span></b>Echoing in my head, Carnie's voice, "You’re on this bike, you’re wearing the patch. Always."</p>
 <p>Ted pushed through the door, and I followed. Crowded. Noisy. Lunchtime tourists. David sat at the bar, facing away from the door.</p>
 <p>Ted raised his voice over the crowd noise as he stepped up to David. "Look what I found outside."</p>
 <p>David turned, his eyes locked onto me. I expected a change in expression, but it didn't happen. He said nothing.</p>
@@ -108,7 +111,7 @@
 <p>Figuring he needed to repeat himself, Ted asked, "So what do you think of bike? How's the ride?"</p>
 <p>"It's a really fun bike. Top-heavy compared to the Honda. I've gotten used to it. I love the low-throated power of it."</p>
 <p>Ted grinned at me. "Yeah, it's the perfect first Harley for you."</p>
-<p>"I rode it with Vince and Chris about a month ago..." I sighed as I realized I had just brought up the Bastards that Ted warned me against. Hell. Rolled on the throttle and aimed at David. "They'd never ridden the curves of 49. They loved it. Vince suggested I get one of those new Kawasaki Ninjas to really ride the curves." I awaited his reaction.</p>
+<p><b><span id="U0065" style="color: #ffa500;">&#x25CF;</span></b>"I rode it with Carnie and Snake about a month ago..." I sighed as I realized I had just brought up the Bastards that Ted warned me against. Hell. Rolled on the throttle and aimed at David. "They'd never ridden the curves of 49. They loved it. Carnie suggested I get one of those new Kawasaki Ninjas to really ride the curves." I awaited his reaction.</p>
 <p>"Oh, fuck off on that Jap shit. You wanna ride a fucking wind-up plastic toy bike?" David spat the words.</p>
 <p>There it was, that dust in my mouth again.</p>
 <p>Ted interrupted, trying to change the subject. He turned to me. "So where were you riding today?"</p>
@@ -156,7 +159,7 @@
 <p>"Listen, if you’re ridin’ sweep, you damn well better know how. When point throws a signal to pass, you move. We don’t slither around traffic like a damn snake."</p>
 <p>"Whaddaya mean?"</p>
 <p>"Lane changes go back to front. You see my signal, sweep moves first. You own that left lane till we’re all in. Every bike ahead takes their cue from you. Your job’s to keep pricks like that Nebraska clown from cuttin’ through and bustin’ us up."</p>
-<p>"I didn't know that. Thank you for telling me." I thought back to my rides with Vince and Chris. I remember Chris doing that exact move. He always moved over first, and only then did Vince move over.</p>
+<p><b><span id="U0113" style="color: #ffa500;">&#x25CF;</span></b>"I didn't know that. Thank you for telling me." I thought back to my rides with Carnie and Snake. I remember Snake doing that exact move. He always moved over first, and only then did Carnie move over.</p>
 <p>"Not so important when there's only three of us, but if you ever ride with a big group, you need to know how it works."</p>
 <p>About fifteen minutes later, Ted came out wearing a big smile. His businesses clearly were having a good weekend.</p>
 <p>We continued south, eventually turning off the freeway at MT200 in Vaughn at the last of Ted's freeway stations. This was my turn to get gas. As Ted promised in July, I got the gas for free.</p>
@@ -345,6 +348,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

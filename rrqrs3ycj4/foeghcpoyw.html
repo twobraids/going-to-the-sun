@@ -37,12 +37,15 @@
             <div class="lars-inner-box">
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-03-04 10:19:24-08:00<br />
-                  Latest Update: 2025-07-03 17:24:52-07:00</i></p>
+                  Latest Update: 2026-02-08 23:00:21-08:00</i></p>
+                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
+                  updated paragraph within the last 10 days.<br />
+                  The darker the symbol, the older the update.</p>
  
             </div>
                   
             <h2 id="Browning,Montana">Browning, Montana</h2>
-<p>The Teeples IGA Supermarket, the Blackfeet Indian Reservation's largest store, didn't live up to the word "super". The whole building could fit within some corner convenience stores I'd seen in far-off cities. I found myself there not for any great attraction other than it was open and closer than twenty-five miles. On a beautiful, warm spring day, I interrupted my motorcycle joy ride on the Two Medicine/Browning loop for a grocery run. As I approached Browning, I realized I could not get to my East Glacier grocery store before it closed for the day. I needed food, so, for the first time in my two years on the rez, I rolled into Teeples.</p>
+<p><b><span id="U0002" style="color: #ffa500;">&#x25CF;</span></b>The Teeples IGA Supermarket, the Blackfeet Indian Reservation's largest store, didn't live up to the word "super". The whole building could fit within some corner convenience stores I'd seen in far-off cities. I found myself there not for any great attraction other than it was open and closer than twenty-five miles. On a beautiful, warm spring day, I interrupted my motorcycle joy ride on the Two Medicine/Browning loop for a grocery run. As I rolled into Browning, the clock on the bank told me I couldn't get to my East Glacier grocery store before it closed for the day. I needed food, so, for the first time in my two years on the rez, I rolled into Teeples.</p>
 <p>Exiting the store with a bag heavily laden with canned beans, I returned to my motorcycle, a dirty and well-worn Honda CX-500. I set the bag on the ground next to the bike. The Harley parked in the next space over had not been there when I pulled in: FXWG Wide Glide with a black tank, my dream bike.  Frozen for a couple of minutes in enchantment with the raked-out front end and the twin shovel-head cylinders, I remembered my groceries and returned to loading them into my saddlebags.</p>
 <p>On finishing, I stood up, turned around, and was startled to find the Harley's obvious owner. He stared at me, wide-eyed, as if he saw a ghost. The odd expression had lasted only a moment, reverting quickly to haughty disinterest. He gave me an upward, acknowledging nod, sending a thrill down my spine.</p>
 <p>I flashed back to my ten-year-old self, sitting in the car with my mother at the wheel. She took us around and around the Albertson's parking lot looking for a parking space away from that group of men on  motorcycles.</p>
@@ -53,9 +56,9 @@
 <p>She grabbed my shoulder, stopping me. "Get out on this side. Stop looking at those animals!"</p>
 <p>I couldn't understand why she was so upset. They were so beautiful and happy.</p>
 <p>She dragged me across the bench seat, banging my shoulder on the steering wheel and then out, practically dumping me onto the pavement. She grabbed my hand and yanked me toward the grocery store, admonishing me for twisting around to catch another glimpse of those fascinating men.</p>
-<p>Breaking from my reverie, I looked, truly looked, at this man in front of me. Probably late thirties, well over six feet tall, wearing a black leather jacket overlaid with a denim vest. He had a thick, bushy mustache coupled with the shadowed stubble of a couple of weeks of no shaving.</p>
+<p><b><span id="U0013" style="color: #ffa500;">&#x25CF;</span></b>Breaking from my reverie, I had to memorize this man in front of me, how he dressed, how he stood. Probably late thirties, well over six feet tall, wearing a black leather jacket overlaid with a denim vest. He had a thick, bushy mustache coupled with the shadowed stubble of a couple of weeks of no shaving.</p>
 <p>He looked away, walking to his bike with his case of Rainier. Like the bike, he himself embodied my fantasies. I had no choice, I had to speak up. I could not let this opportunity pass. I needed to engage with him in some way.</p>
-<p>I greeted him with an “Howdy” and added my admiration of his bike. It's like the words came out of me before I could decide what to say. I felt embarrassingly self-conscious and inadequate for having dared to speak to him.</p>
+<p><b><span id="U0015" style="color: #ffa500;">&#x25CF;</span></b>I greeted him. "Howdy, that's a great bike." The words came out of me before I could decide what to say. The parking lot seemed to collapse until I stood in the bottom of funnel, self-conscious and inadequate for having dared to speak to him.</p>
 <p>He looked at me for an uncomfortable moment and responded, "Yeah, it’s a sweet ride." Looking at my bike, his expression rapidly turning to distain, "certainly more of a bike than that rice burner."</p>
 <p>"Someday, I'll be on a Harley.” I tried to be optimistic. “Might be a while, they're so expensive."</p>
 <p>"Chase your dreams, kid."</p>
@@ -101,6 +104,139 @@
             </div>
             
         </div>
+<script>
+/**
+    * Fluid Scrolling for Edited Paragraphs
+    *
+    * This script enables smooth scrolling between elements with specific IDs
+    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
+    * VERSION 3: A robust fix for single and double-click logic.
+    */
+document.addEventListener('DOMContentLoaded', () => {
+
+    // ========== CONFIGURATION ==========
+    const config = {
+        // Duration of the scroll animation in milliseconds.
+        scrollDuration: 800,
+
+                                               // Easing function for the animation (easeInOutCubic).
+        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+
+        // For the 'Ustart' dot: how many lines from the top to position the first dot.
+        startDotOffsetLines: 3,
+
+                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
+        lineHeight: 1.5,
+
+        // Milliseconds to wait to see if a single click is actually a double-click.
+        doubleClickDelay: 250,
+                                                                              };
+    // ===================================
+
+
+    const startDot = document.getElementById('Ustart');
+    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
+    .sort((a, b) => a.id.localeCompare(b.id));
+
+                                if (paragraphDots.length === 0) {
+        if (startDot) startDot.style.display = 'none';
+    return;
+    }
+
+    let isScrolling = false;
+
+    function smoothScrollTo(targetY) {
+        if (isScrolling) return;
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        let startTime = null;
+        isScrolling = true;
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
+            const easedProgress = config.easing(progress);
+
+            window.scrollTo(0, startY + distance * easedProgress);
+
+            if (timeElapsed < config.scrollDuration) {
+                requestAnimationFrame(animation);
+                } else {
+                isScrolling = false;
+            }
+        }
+        requestAnimationFrame(animation);
+    }
+
+    function scrollToDot(clickedDot, targetDot) {
+        let targetY;
+        if (clickedDot.id === 'Ustart') {
+            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
+            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
+            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
+            } else {
+            const startPosTop = clickedDot.getBoundingClientRect().top;
+            const targetPosTop = targetDot.getBoundingClientRect().top;
+            const scrollDistance = targetPosTop - startPosTop;
+            targetY = window.scrollY + scrollDistance;
+        }
+        smoothScrollTo(targetY);
+    }
+
+    function navigateForward(clickedDot) {
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[0];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const nextIndex = (currentIndex + 1) % paragraphDots.length;
+            targetDot = paragraphDots[nextIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    function navigateBackward(clickedDot) {
+        const totalDots = paragraphDots.length;
+        let targetDot;
+        if (clickedDot.id === 'Ustart') {
+            targetDot = paragraphDots[totalDots - 1];
+            } else {
+            const currentIndex = paragraphDots.indexOf(clickedDot);
+            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
+            targetDot = paragraphDots[prevIndex];
+        }
+        scrollToDot(clickedDot, targetDot);
+    }
+
+    let clickTimer = null;
+    const allDots = [startDot, ...paragraphDots].filter(Boolean);
+
+    allDots.forEach(dot => {
+        dot.addEventListener('click', (event) => {
+            const clickedDot = event.currentTarget;
+
+            // If this is the first click (no timer is running)
+            if (clickTimer === null) {
+                clickTimer = setTimeout(() => {
+                    // Timer expired, so it was a single click.
+                    clickTimer = null; // Reset for the next click
+                    navigateForward(clickedDot);
+                    }, config.doubleClickDelay);
+                } else {
+                // A timer is already running, so this is a double click.
+                clearTimeout(clickTimer); // Cancel the pending single-click action
+                clickTimer = null; // Reset for the next click
+                event.preventDefault(); // Stop text selection
+                navigateBackward(clickedDot);
+            }
+            });
+        });
+});
+
+
+</script>
 
     </body>
 

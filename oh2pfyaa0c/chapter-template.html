@@ -68,6 +68,9 @@
                   
             {{ content_html }}
             
+            {% if blog_updates_present %}
+                <p><b><span id="{{ end_dot_string }}" style="color: orange;">&#x25CF;</span></b>  
+            {% endif %}
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
                 {% if prev %}

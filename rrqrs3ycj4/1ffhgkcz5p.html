@@ -40,9 +40,6 @@
                   <p>In Development</p>
                   <p>Original Post: 2025-09-27 19:33:19-07:00<br />
                   Latest Update: 2026-02-08 14:27:54-08:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -53,7 +50,7 @@
 <p>"No questions. You're takin' the rat bike. Go." He crossed his arms and looked down his nose at me. Dolph, Slim, Rooster, and Bull stood smirking behind him.</p>
 <p>I knew what this was all about. Tests and challenges, part of the life of a prospect. In February, they had me chopping wood. I cleaned toilets. I coached Stitch on playing poker. I rewired the lights over the pool tables so they didn't have to chain extension cords.</p>
 <p>Finish an undisclosed number of these tests and pledges become brothers.</p>
-<p><b><span id="U0007" style="color: #4d3800;">&#x25CF;</span></b>Kickstarter lever on the right side—glad Snake taught me about them last summer—I didn't see the point—just got it.  He had me start his own chopper over and over. Didn’t let me ride it, though. His voice droning at me, enumerating each step—like running a program in my head.</p>
+<p><b><span id="U0007" style="color: #443300;">&#x25CF;</span></b>Kickstarter lever on the right side—glad Snake taught me about them last summer—I didn't see the point—just got it.  He had me start his own chopper over and over. Didn’t let me ride it, though. His voice droning at me, enumerating each step—like running a program in my head.</p>
 <p>I looked back at the guys for a minute, then nodded. "It’s a set up. Can I go get the tools off my bike?"</p>
 <p><b><span id="U0009" style="color: #443300;">&#x25CF;</span></b>Carnie shook his head.</p>
 <p>"Can I bum a pressure gauge from you?"</p>
@@ -125,7 +122,7 @@
 <p>Another beat of silence.</p>
 <p>"I stand for Two Braids."  This time, Rook's voice from far down the table.</p>
 <p>"He has three. Who testifies? Tell us how the prospect has earned his place."</p>
-<p><b><span id="U0079" style="color: #4d3800;">&#x25CF;</span></b>A chair scraped on the rough floor. "It takes more than muscle to run the Bastards, the bar, and the rest of our operations." Snake's voice. "Two Braids brings skills we've never had. While his card dealing has brought in cash, his knowledge of computers has reinvented the administration of the club as well giving us new ways to bring in the cash that we all share."</p>
+<p><b><span id="U0079" style="color: #443300;">&#x25CF;</span></b>A chair scraped on the rough floor. "It takes more than muscle to run the Bastards, the bar, and the rest of our operations." Snake's voice. "Two Braids brings skills we've never had. While his card dealing has brought in cash, his knowledge of computers has reinvented the administration of the club as well giving us new ways to bring in the cash that we all share."</p>
 <p>A pause with a couple murmurs. Couldn't tell who.</p>
 <p>"New Year's Eve." Dolph again. "Two Braids' spotted Foresters' mole. He watches, makes connections rest of us don’t see. Followed orders. Kept quiet. That's respecting club’s authority. That's loyalty."</p>
 <p>A few moments of silence.</p>
@@ -149,7 +146,7 @@
 <p><b><span id="U0100" style="color: #443300;">&#x25CF;</span></b>Jesus fucking Christ—Carnie and his goddamn carnival.</p>
 <p>I let it hang for a moment of my own.</p>
 <p>"I'm all in."</p>
-<p><b><span id="U0103" style="color: #4d3800;">&#x25CF;</span></b>I heard Snake chuckle from somewhere off to my left.</p>
+<p><b><span id="U0103" style="color: #443300;">&#x25CF;</span></b>I heard Snake chuckle from somewhere off to my left.</p>
 <p><b><span id="U0104" style="color: #443300;">&#x25CF;</span></b>Carnie continued. "Brother Two Braids, stand up and accept the symbol of the bond with your brothers."</p>
 <p><b><span id="U0105" style="color: #443300;">&#x25CF;</span></b>I stood up. Carnie yanked my blindfold off. He stood in front of me grinning holding a worn sleeveless jean jacket with an embroidered Bastards patch. I pulled it on.</p>
 <p><b><span id="U0106" style="color: #443300;">&#x25CF;</span></b>I held my poker face, fighting a smile. Carnie and I clasped wrists, then he yanked me into a fraternal hug.</p>
@@ -157,7 +154,6 @@
 <hr>
 <p>Spent afternoon riding formation with the bastards around Flathead Lake, stopping at a bar in Polson and overwhelming the tiny bar in Elmo.</p>
             
-                <p><b><span id="U0110" style="color: orange;">&#x25CF;</span></b>  
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
                     <a href="unuwwxfqq9.html#top">&#9668; Story Arc Backward</a><br />
@@ -177,139 +173,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

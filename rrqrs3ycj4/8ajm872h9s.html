@@ -38,9 +38,6 @@
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-07-22 15:26:41-07:00<br />
                   Latest Update: 2026-02-08 17:35:49-08:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -56,7 +53,7 @@
 <p>The bird fled over willows across the river.</p>
 <p>A quick u-turn spitting gravel, I popped back onto the highway. Ascending the northern side of the river canyon, I let the pipes rip, shifting hard, leaving only my echo in the empty valley.</p>
 <p><b><span id="U0011" style="color: #443300;">&#x25CF;</span></b>The rest of my ride home honored Vince—no, Carnie. Proud to wear my colors, cruising north on the Blackfeet lands that no club had the right to claim.</p>
-<p><b><span id="U0012" style="color: #4d3800;">&#x25CF;</span></b>Couple hours north, Mollies Nipple Road flashed by, so, of course, David invaded my head. A few minutes later, I slowed for the Heart Butte Cutoff—not the fastest route home. At the last minute, I rolled the bike left toward David's Heart Butte cabin.</p>
+<p><b><span id="U0012" style="color: #443300;">&#x25CF;</span></b>Couple hours north, Mollies Nipple Road flashed by, so, of course, David invaded my head. A few minutes later, I slowed for the Heart Butte Cutoff—not the fastest route home. At the last minute, I rolled the bike left toward David's Heart Butte cabin.</p>
 <p>Thirty minutes later I slowed and stopped at his road. The brush had grown over it, not quite blocking it, but leaving just enough space to thread the bike through. Took me ten minutes to decide to ride up.</p>
 <p>The cabin stood largely as David left it last year, but everything overgrown and rank. The cabin door still stood open.</p>
 <p>I parked the bike about where I had parked the Honda that day. In honor of my own foresight on that day, I jockeyed the bike around to face outward.</p>
@@ -93,7 +90,7 @@
 <p>Didn’t take my path. I walked the gully next to the stream—the water noise would cover any sounds I made. Once I got to the old snag bridge, I crossed over to the other side and connected with the last thirty yards of my trail. I crept toward my woodshed, moving slowly, scanning all around. My dusty Subaru came into sight. I froze for a full minute listening.</p>
 <p>No truck sat in front of the cabin, but clearly the tracks said someone had turned around here.</p>
 <p>I walked around to the back door, carefully watching for footprints or anything out of place. I tried the doorknob—still locked. Unlocked it, stepped in.</p>
-<p><b><span id="U0049" style="color: #4d3800;">&#x25CF;</span></b>A thick manilla envelope on my table—stood out like flashing light. That kind with two round tabs and a waxed red thread to secure it—the type Sarah always used.</p>
+<p><b><span id="U0049" style="color: #443300;">&#x25CF;</span></b>A thick manilla envelope on my table—stood out like flashing light. That kind with two round tabs and a waxed red thread to secure it—the type Sarah always used.</p>
 <p>I almost ripped it open but caught myself, kept my hands off it.</p>
 <p>Still not trusting my own home, I stepped slowly through the kitchen—nothing out of place. I walked to the front door—still locked.  Lower bedroom—clear. The loft—untouched.</p>
 <p>I climbed back down and stood facing the folder on the table. I pulled on the thread—Sarah had wrapped it—counter clockwise on the top—opposite of what felt right. Dumped the contents: two sheets of paper and a shitload of cash.</p>
@@ -108,7 +105,6 @@
 <p>I kicked out my back door breaking the screen door hinges... stormed up the trail... past the fire ring... up to the glade with the beaver ponds...  the slap of a beavertail on the water... out to my log... I laid down and waited for the stars.</p>
 <p>I slept on the ground with only the sky over me. I dreamed of a grizzly bear finishing the job.</p>
             
-                <p><b><span id="U0063" style="color: orange;">&#x25CF;</span></b>  
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
                     <a href="bapo8ycavm.html#top">&#9668; Story Arc Backward</a><br />
@@ -128,139 +124,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

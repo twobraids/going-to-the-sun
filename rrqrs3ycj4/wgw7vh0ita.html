@@ -38,9 +38,6 @@
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-03-04 10:19:24-08:00<br />
                   Latest Update: 2026-02-14 11:06:27-08:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -141,9 +138,9 @@
 <p>He jabbed a finger on the bar. “All them laws, taxes, licenses? Total bullshit. Just so keep us under their boot. They dragged my ass to ‘Nam. Slavery, plain and simple. They try to own us, like we’re just numbers in their system, cattle in the feedlot.”  He paused, looking at me hard. "They get you on the draft roll?"</p>
 <p><b><span id="U0096" style="color: #443300;">&#x25CF;</span></b>David had transformed in front of me. Passion replaced his distain. This was energy I had to engage. "Carter restarted the Selective Service in 80. I was in the first group that had to register." I laughed. "I gotta admit. it didn't feel like freedom."</p>
 <p><b><span id="U0097" style="color: #443300;">&#x25CF;</span></b>David nodded his head, dead serious. “That’s just it. You signed, and that put you under their thumb. You entered a contract with the Federal Corporation. But here’s the thing," he leaned in again, "you did it under what's called 'duress'. And you can get out of it."</p>
-<p><b><span id="U0098" style="color: #4d3800;">&#x25CF;</span></b>He loved talking about this. A feverish light flared behind his eyes, cutting through the beer haze. His slouch over the bar straightened to chest-out pride. He became beautiful like he'd been at Teeples when me met.</p>
+<p><b><span id="U0098" style="color: #443300;">&#x25CF;</span></b>He loved talking about this. A feverish light flared behind his eyes, cutting through the beer haze. His slouch over the bar straightened to chest-out pride. He became beautiful like he'd been at Teeples when me met.</p>
 <p><b><span id="U0099" style="color: #443300;">&#x25CF;</span></b>David's voice tightened with conviction as he leaned in. "It’s called withdrawin' your consent. First step, you mail 'em a formal affidavit. Straight up declare that you signed under duress, didn’t understand the nature of the so-called contract, and that you’re takin' back your sovereign status."</p>
-<p><b><span id="U0100" style="color: #4d3800;">&#x25CF;</span></b>A tuft of dark chest hair poking over his collar, twitched slightly with his breath matching the cadence of his lecture. Under that dark stubble, the corners of his mouth had dimples. I hadn't been brave enough, or, hell, even had the opportunity, to look so closely at his face.</p>
+<p><b><span id="U0100" style="color: #443300;">&#x25CF;</span></b>A tuft of dark chest hair poking over his collar, twitched slightly with his breath matching the cadence of his lecture. Under that dark stubble, the corners of his mouth had dimples. I hadn't been brave enough, or, hell, even had the opportunity, to look so closely at his face.</p>
 <p><b><span id="U0101" style="color: #443300;">&#x25CF;</span></b>He smirked, pride in knowing something I didn't. “Now, they ain’t gonna like it. Might push back, maybe even threaten you. But here’s the thing, they ain’t got lawful authority to force you into a contract you didn’t knowingly enter. Whole game’s about trickin’ folks into playin’ along. You just gotta stand firm, know the loopholes, and ride through their bullshit system without givin’ ‘em your consent."</p>
 <p><b><span id="U0102" style="color: #443300;">&#x25CF;</span></b>His eyebrows didn't quite meet in the middle, but they marked time to his voice, one moment high, the next, down and furrowed.</p>
 <p><b><span id="U0103" style="color: #443300;">&#x25CF;</span></b>He had no fucking clue about civic or legal structure, but I had to keep him engaged, so I could keep looking at him. "So, how did you end up in Vietnam?"</p>
@@ -173,7 +170,6 @@
 <p><b><span id="U0127" style="color: #443300;">&#x25CF;</span></b>I knew I'd have to deal with this hard-on when I got back to my cabin.</p>
 <p><b><span id="U0128" style="color: #443300;">&#x25CF;</span></b>The road eventually pushed the thoughts aside. Had to focus on the pavement, the bike, and leaning into the curves and dips of this post-glacial landscape.</p>
             
-                <p><b><span id="U0129" style="color: orange;">&#x25CF;</span></b>  
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
                     <a href="foeghcpoyw.html#top">&#9668; Story Arc Backward</a><br />
@@ -193,139 +189,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 

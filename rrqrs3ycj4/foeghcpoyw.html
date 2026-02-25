@@ -38,9 +38,6 @@
                 <p class="orange"><strong>Rough Draft</strong><br /></p>
                   <p>Original Post: 2025-03-04 10:19:24-08:00<br />
                   Latest Update: 2026-02-16 08:09:27-08:00</i></p>
-                  <p>The <i>clickable</i> symbol <b><span id="Ustart" class=orange>&#x25CF;</span></b> indicates an <br />
-                  updated paragraph within the last 10 days.<br />
-                  The darker the symbol, the older the update.</p>
  
             </div>
                   
@@ -51,8 +48,8 @@
 <p><b><span id="U0005" style="color: #443300;">&#x25CF;</span></b>The checker double bagged my cans to keep them from tearing through. The late afternoon sun blinded me as I pushed through the door and beelined to my bike, anxious to start the ride home.</p>
 <p><b><span id="U0006" style="color: #443300;">&#x25CF;</span></b>The Harley parked in the next space had not been there when I pulled in: FXWG Wide Glide with a black tank and fenders. I froze up. Stood there like an idiot staring at it. That raked-out fork. Arrow straight pipes stretching all the way back to the hub of the rear wheel. So beautiful.</p>
 <p><b><span id="U0007" style="color: #443300;">&#x25CF;</span></b>I set my grocery bag on the ground, opened the saddle bag and stacked the cans. I cinched the flap trying not to crush the bread on top.</p>
-<p><b><span id="U0008" style="color: #4d3800;">&#x25CF;</span></b>I stood up, key in hand to start the bike when the Harley's owner pushed out of the store.</p>
-<p><b><span id="U0009" style="color: #4d3800;">&#x25CF;</span></b>The guy stood between me and the doorway: dark glasses stowed on top of his head, big black boots, jeans, and a black leather vest over a white T-shirt. His eyebrows had raised high, wrinkling his forehead. His jaw hung lax, showing a line of lower teeth with a gap.</p>
+<p><b><span id="U0008" style="color: #443300;">&#x25CF;</span></b>I stood up, key in hand to start the bike when the Harley's owner pushed out of the store.</p>
+<p><b><span id="U0009" style="color: #443300;">&#x25CF;</span></b>The guy stood between me and the doorway: dark glasses stowed on top of his head, big black boots, jeans, and a black leather vest over a white T-shirt. His eyebrows had raised high, wrinkling his forehead. His jaw hung lax, showing a line of lower teeth with a gap.</p>
 <p><b><span id="U0010" style="color: #443300;">&#x25CF;</span></b>I turned around to see what he was looking at.</p>
 <p><b><span id="U0011" style="color: #443300;">&#x25CF;</span></b>Nothing.</p>
 <p><b><span id="U0012" style="color: #443300;">&#x25CF;</span></b>When I turned back, he was halfway to his own bike. No particular expression.</p>
@@ -103,7 +100,6 @@
 <p><b><span id="U0057" style="color: #443300;">&#x25CF;</span></b>Self-conscious even though he was gone, I started my bike, disappointed by its rumbly purr. I rolled back, exiting the parking lot onto the highway, avoided the gaping pothole. He turned right. I turned left.</p>
 <p><b><span id="U0058" style="color: #443300;">&#x25CF;</span></b>I accelerated toward the wall of mountains twenty-five miles west. Chase your dreams, kid.</p>
             
-                <p><b><span id="U0059" style="color: orange;">&#x25CF;</span></b>  
             <div class="lars-nav-section">
                 <div class="lars-nav-newer">
                     <a href="bjtfaqz3dz.html#top">&#9668; Story Arc Backward</a><br />
@@ -123,139 +119,6 @@
             </div>
             
         </div>
-<script>
-/**
-    * Fluid Scrolling for Edited Paragraphs
-    *
-    * This script enables smooth scrolling between elements with specific IDs
-    * ('Ustart', 'U0001', etc.), triggered by single or double clicks.
-    * VERSION 3: A robust fix for single and double-click logic.
-    */
-document.addEventListener('DOMContentLoaded', () => {
-
-    // ========== CONFIGURATION ==========
-    const config = {
-        // Duration of the scroll animation in milliseconds.
-        scrollDuration: 800,
-
-                                               // Easing function for the animation (easeInOutCubic).
-        easing: t => t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
-
-        // For the 'Ustart' dot: how many lines from the top to position the first dot.
-        startDotOffsetLines: 3,
-
-                                                                                   // Your site's line-height. Used to calculate the pixel offset above.
-        lineHeight: 1.5,
-
-        // Milliseconds to wait to see if a single click is actually a double-click.
-        doubleClickDelay: 250,
-                                                                              };
-    // ===================================
-
-
-    const startDot = document.getElementById('Ustart');
-    const paragraphDots = Array.from(document.querySelectorAll('span[id^="U0"]'))
-    .sort((a, b) => a.id.localeCompare(b.id));
-
-                                if (paragraphDots.length === 0) {
-        if (startDot) startDot.style.display = 'none';
-    return;
-    }
-
-    let isScrolling = false;
-
-    function smoothScrollTo(targetY) {
-        if (isScrolling) return;
-
-        const startY = window.scrollY;
-        const distance = targetY - startY;
-        let startTime = null;
-        isScrolling = true;
-
-        function animation(currentTime) {
-            if (startTime === null) startTime = currentTime;
-            const timeElapsed = currentTime - startTime;
-            const progress = Math.min(timeElapsed / config.scrollDuration, 1);
-            const easedProgress = config.easing(progress);
-
-            window.scrollTo(0, startY + distance * easedProgress);
-
-            if (timeElapsed < config.scrollDuration) {
-                requestAnimationFrame(animation);
-                } else {
-                isScrolling = false;
-            }
-        }
-        requestAnimationFrame(animation);
-    }
-
-    function scrollToDot(clickedDot, targetDot) {
-        let targetY;
-        if (clickedDot.id === 'Ustart') {
-            const bodyFontSize = parseFloat(getComputedStyle(document.body).fontSize);
-            const offset = config.startDotOffsetLines * config.lineHeight * bodyFontSize;
-            targetY = targetDot.getBoundingClientRect().top + window.scrollY - offset;
-            } else {
-            const startPosTop = clickedDot.getBoundingClientRect().top;
-            const targetPosTop = targetDot.getBoundingClientRect().top;
-            const scrollDistance = targetPosTop - startPosTop;
-            targetY = window.scrollY + scrollDistance;
-        }
-        smoothScrollTo(targetY);
-    }
-
-    function navigateForward(clickedDot) {
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[0];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const nextIndex = (currentIndex + 1) % paragraphDots.length;
-            targetDot = paragraphDots[nextIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    function navigateBackward(clickedDot) {
-        const totalDots = paragraphDots.length;
-        let targetDot;
-        if (clickedDot.id === 'Ustart') {
-            targetDot = paragraphDots[totalDots - 1];
-            } else {
-            const currentIndex = paragraphDots.indexOf(clickedDot);
-            const prevIndex = ((currentIndex - 1) % totalDots + totalDots) % totalDots;
-            targetDot = paragraphDots[prevIndex];
-        }
-        scrollToDot(clickedDot, targetDot);
-    }
-
-    let clickTimer = null;
-    const allDots = [startDot, ...paragraphDots].filter(Boolean);
-
-    allDots.forEach(dot => {
-        dot.addEventListener('click', (event) => {
-            const clickedDot = event.currentTarget;
-
-            // If this is the first click (no timer is running)
-            if (clickTimer === null) {
-                clickTimer = setTimeout(() => {
-                    // Timer expired, so it was a single click.
-                    clickTimer = null; // Reset for the next click
-                    navigateForward(clickedDot);
-                    }, config.doubleClickDelay);
-                } else {
-                // A timer is already running, so this is a double click.
-                clearTimeout(clickTimer); // Cancel the pending single-click action
-                clickTimer = null; // Reset for the next click
-                event.preventDefault(); // Stop text selection
-                navigateBackward(clickedDot);
-            }
-            });
-        });
-});
-
-
-</script>
 
     </body>
 
